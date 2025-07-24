@@ -1,0 +1,157 @@
+{
+  "railways": [
+    {
+      "id": 100,
+      "name": "縱貫線(基隆=新竹)",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "縱貫線(基隆=新竹)"
+        },
+        {
+          "districtID": 2,
+          "districtName": "台北=桃園間改線段"
+        },
+        {
+          "districtID": 3,
+          "districtName": "楊梅=湖口間改線段"
+        }
+      ]
+    },
+    {
+      "id": 200,
+      "name": "台中線(山線)",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "台中線(山線)"
+        },
+        {
+          "districtID": 2,
+          "districtName": "搬運線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "三義豐原間改線段"
+        }
+      ]
+    },
+    {
+      "id": 300,
+      "name": "海岸線(海線)",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "海岸線(海線)"
+        }
+      ]
+    },
+    {
+      "id": 400,
+      "name": "縱貫線(彰化=嘉義)",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "縱貫線(彰化=嘉義)"
+        }
+      ]
+    },
+    {
+      "id": 500,
+      "name": "縱貫線(嘉義=高雄)",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "縱貫線(嘉義=高雄)"
+        },
+        {
+          "districtID": 2,
+          "districtName": "往高雄港舊線"
+        }
+      ]
+    },
+    {
+      "id": 600,
+      "name": "屏東線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "屏東線"
+        }
+      ]
+    },
+    {
+      "id": 700,
+      "name": "宜蘭線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "宜蘭線"
+        }
+      ]
+    },
+    {
+      "id": 800,
+      "name": "北迴線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "北迴線"
+        }
+      ]
+    },
+    {
+      "id": 900,
+      "name": "台東線(花東鐵路)",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "台東線(花東鐵路)"
+        },
+        {
+          "districtID": 2,
+          "districtName": "中興改線段"
+        },
+        {
+          "districtID": 3,
+          "districtName": "台東海岸線"
+        }
+      ]
+    }
+  ],
+  "stations": [
+    {
+      "id": 1,
+      "name": "基隆",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 0,
+      "nextStation": 2,
+      "hasDetail": true
+    },
+    {
+      "id": 2,
+      "name": "三坑",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 1,
+      "nextStation": 3,
+      "hasDetail": true
+    }
+  ]
+}
