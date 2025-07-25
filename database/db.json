@@ -2,12 +2,12 @@
   "railways": [
     {
       "id": 100,
-      "name": "縱貫線(基隆=新竹)",
+      "name": "縱貫線(基隆=竹南)",
       "co": 1,
       "district": [
         {
           "districtID": 1,
-          "districtName": "縱貫線(基隆=新竹)"
+          "districtName": "縱貫線(基隆=竹南)"
         },
         {
           "districtID": 2,
@@ -124,6 +124,250 @@
         {
           "districtID": 3,
           "districtName": "台東海岸線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "花蓮港=鳳林間台車"
+        },
+        {
+          "districtID": 5,
+          "districtName": "台東軌道"
+        }
+      ]
+    },
+    {
+      "id": 1000,
+      "name": "南迴線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "南迴線"
+        }
+      ]
+    },
+    {
+      "id": 1100,
+      "name": "集集線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "集集線"
+        }
+      ]
+    },
+    {
+      "id": 1200,
+      "name": "內灣線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "內灣線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "六家線"
+        }
+      ]
+    },
+    {
+      "id": 1300,
+      "name": "平溪線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "平溪線"
+        }
+      ]
+    },
+    {
+      "id": 1400,
+      "name": "深澳線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "深澳線"
+        }
+      ]
+    },
+    {
+      "id": 1500,
+      "name": "沙崙線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "沙崙線"
+        }
+      ]
+    },
+    {
+      "id": 1600,
+      "name": "淡水線(北淡線)",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "淡水線(北淡線)"
+        },
+        {
+          "districtID": 2,
+          "districtName": "新北投線"
+        }
+      ]
+    },
+    {
+      "id": 1700,
+      "name": "新店線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新店線"
+        }
+      ]
+    },
+    {
+      "id": 1800,
+      "name": "中和線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "中和線"
+        }
+      ]
+    },
+    {
+      "id": 1900,
+      "name": "林口線(桃林鐵路)",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "林口線(桃林鐵路)"
+        }
+      ]
+    },
+    {
+      "id": 2000,
+      "name": "東勢線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "東勢線"
+        }
+      ]
+    },
+    {
+      "id": 2100,
+      "name": "神岡線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "神岡線"
+        }
+      ]
+    },
+    {
+      "id": 2200,
+      "name": "東港線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "東港線"
+        }
+      ]
+    },
+    {
+      "id": 2300,
+      "name": "基隆臨港線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "基隆臨港線"
+        }
+      ]
+    },
+    {
+      "id": 2400,
+      "name": "花蓮臨港線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "花蓮臨港線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "花蓮海岸線"
+        }
+      ]
+    },
+    {
+      "id": 2500,
+      "name": "台中港線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "台中港線"
+        }
+      ]
+    },
+    {
+      "id": 2600,
+      "name": "高雄臨港線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "第一臨港線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "第二臨港線"
+        }
+      ]
+    },
+    {
+      "id": 2700,
+      "name": "松山機場線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "松山機場線"
+        }
+      ]
+    },
+    {
+      "id": 2800,
+      "name": "新竹機場線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新竹機場線"
+        }
+      ]
+    },
+    {
+      "id": 2900,
+      "name": "中油嘉義溶劑廠支線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "中油嘉義溶劑廠支線"
         }
       ]
     }
@@ -131,19 +375,25 @@
   "stations": [
     {
       "id": 1,
-      "name": "基隆",
+      "name": "基隆站",
       "status": "active",
-      "line": {
-        "lineID": 100,
-        "lineDistrict": 1
-      },
+      "line": [
+        {
+          "lineID": 100,
+          "lineDistrict": 1
+        },
+        {
+          "lineID": 2300,
+          "lineDistrict": 1
+        }
+      ],
       "prevStation": 0,
       "nextStation": 2,
       "hasDetail": true
     },
     {
       "id": 2,
-      "name": "三坑",
+      "name": "三坑站",
       "status": "active",
       "line": {
         "lineID": 100,
@@ -151,6 +401,390 @@
       },
       "prevStation": 1,
       "nextStation": 3,
+      "hasDetail": true
+    },
+    {
+      "id": 3,
+      "name": "八堵站",
+      "status": "active",
+      "line": [
+        {
+          "lineID": 100,
+          "lineDistrict": 1
+        },
+        {
+          "lineID": 700,
+          "lineDistrict": 1
+        }
+      ],
+      "prevStation": 2,
+      "nextStation": 4,
+      "hasDetail": true
+    },
+    {
+      "id": 4,
+      "name": "七堵站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 3,
+      "nextStation": [5, 6, 7, 8],
+      "hasDetail": true
+    },
+    {
+      "id": 5,
+      "name": "百福站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 4,
+      "nextStation": 9,
+      "hasDetail": true
+    },
+    {
+      "id": 6,
+      "name": "北五堵站",
+      "status": "disused",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 4,
+      "nextStation": 9,
+      "hasDetail": true
+    },
+    {
+      "id": 7,
+      "name": "五堵北號誌站",
+      "status": "disused",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 4,
+      "nextStation": 9,
+      "hasDetail": true
+    },
+    {
+      "id": 8,
+      "name": "五堵(貨)站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 4,
+      "nextStation": 9,
+      "hasDetail": false
+    },
+    {
+      "id": 9,
+      "name": "五堵站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": [5, 6, 7, 8],
+      "nextStation": 10,
+      "hasDetail": true
+    },
+    {
+      "id": 10,
+      "name": "汐止站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 9,
+      "nextStation": 11,
+      "hasDetail": true
+    },
+    {
+      "id": 11,
+      "name": "汐科站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 10,
+      "nextStation": 12,
+      "hasDetail": true
+    },
+    {
+      "id": 12,
+      "name": "南港站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 11,
+      "nextStation": 13,
+      "hasDetail": true
+    },
+    {
+      "id": 13,
+      "name": "松山站",
+      "status": "active",
+      "line": [
+        {
+          "lineID": 100,
+          "lineDistrict": 1
+        },
+        {
+          "lineID": 2700,
+          "lineDistrict": 1
+        }
+      ],
+      "prevStation": 12,
+      "nextStation": [14, 15, 16, 17, 18],
+      "hasDetail": true
+    },
+    {
+      "id": 14,
+      "name": "光復緊急停靠站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 13,
+      "nextStation": 18,
+      "hasDetail": false
+    },
+    {
+      "id": 15,
+      "name": "復興緊急停靠站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 13,
+      "nextStation": 18,
+      "hasDetail": false
+    },
+    {
+      "id": 16,
+      "name": "新生站",
+      "status": "disused",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 13,
+      "nextStation": 17,
+      "hasDetail": true
+    },
+    {
+      "id": 17,
+      "name": "華山站",
+      "status": "disused",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": [13, 16],
+      "nextStation": 18,
+      "hasDetail": true
+    },
+    {
+      "id": 18,
+      "name": "台北站",
+      "status": "active",
+      "line": [
+        {
+          "lineID": 100,
+          "lineDistrict": 1
+        },
+        {
+          "lineID": 1600,
+          "lineDistrict": 1
+        }
+      ],
+      "prevStation": [13, 14, 15, 17],
+      "nextStation": [19, 20],
+      "hasDetail": true
+    },
+    {
+      "id": 19,
+      "name": "西門緊急停靠站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 18,
+      "nextStation": 20,
+      "hasDetail": true
+    },
+    {
+      "id": 20,
+      "name": "萬華站",
+      "status": "active",
+      "line": [
+        {
+          "lineID": 100,
+          "lineDistrict": 1
+        },
+        {
+          "lineID": 1700,
+          "lineDistrict": 1
+        }
+      ],
+      "prevStation": [18, 19],
+      "nextStation": [21, 22],
+      "hasDetail": true
+    },
+    {
+      "id": 21,
+      "name": "港嘴站",
+      "status": "disused",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 20,
+      "nextStation": 22,
+      "hasDetail": true
+    },
+    {
+      "id": 22,
+      "name": "板橋站",
+      "status": "active",
+      "line": [
+        {
+          "lineID": 100,
+          "lineDistrict": 1
+        },
+        {
+          "lineID": 1800,
+          "lineDistrict": 1
+        }
+      ],
+      "prevStation": [20, 21],
+      "nextStation": 23,
+      "hasDetail": true
+    },
+    {
+      "id": 23,
+      "name": "浮洲站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 22,
+      "nextStation": 24,
+      "hasDetail": true
+    },
+    {
+      "id": 24,
+      "name": "樹林站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 23,
+      "nextStation": [25, 26],
+      "hasDetail": true
+    },
+    {
+      "id": 25,
+      "name": "K42號誌站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 24,
+      "nextStation": 26,
+      "hasDetail": true
+    },
+    {
+      "id": 26,
+      "name": "南樹林站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": [24, 25],
+      "nextStation": 27,
+      "hasDetail": true
+    },
+    {
+      "id": 27,
+      "name": "山佳站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 26,
+      "nextStation": 28,
+      "hasDetail": true
+    },
+    {
+      "id": 28,
+      "name": "鶯歌站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 27,
+      "nextStation": [29, 30],
+      "hasDetail": true
+    },
+    {
+      "id": 29,
+      "name": "鳳鳴站",
+      "status": "active",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 28,
+      "nextStation": 31,
+      "hasDetail": true
+    },
+    {
+      "id": 30,
+      "name": "桃園北號誌站",
+      "status": "disused",
+      "line": {
+        "lineID": 100,
+        "lineDistrict": 1
+      },
+      "prevStation": 28,
+      "nextStation": 31,
+      "hasDetail": true
+    },
+    {
+      "id": 31,
+      "name": "桃園站",
+      "status": "active",
+      "line": [
+        {
+          "lineID": 100,
+          "lineDistrict": 1
+        },
+        {
+          "lineID": 1900,
+          "lineDistrict": 1
+        }
+      ],
+      "prevStation": [29, 30],
+      "nextStation": 31,
       "hasDetail": true
     }
   ]
