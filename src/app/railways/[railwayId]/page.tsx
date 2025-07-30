@@ -121,10 +121,11 @@ const RailwayContent = ({ params }: RailwayContentProps): JSX.Element => {
         // highway.descriptions = descriptionsData[railwayId] || [];
 
         setData(railway);
+        console.log(railway);
+
         setAllStations(stations); // ⬅️ 儲存抓到的車站
         setTitle(`Railway ${railway.name}`);
         document.title = `${railway.name}`;
-        console.log(data);
       } catch (error: any) {
         setError(error.message);
       }
@@ -132,7 +133,14 @@ const RailwayContent = ({ params }: RailwayContentProps): JSX.Element => {
 
     fetchRailwayData();
     console.log(railwayId);
+    console.log(allStations);
   }, [railwayId]);
+
+  useEffect(() => {
+    if (data) {
+      console.log("✅ Railway data updated:", data);
+    }
+  }, [data]);
 
   if (error) return <h1>Error: {error}</h1>;
   if (notFoundPage) return <NotFound />;
@@ -159,6 +167,8 @@ const RailwayContent = ({ params }: RailwayContentProps): JSX.Element => {
               lineID={data.id}
               lineData={data}
               stations={allStations}
+              loading={loading}
+              setLoading={setLoading}
             />
           </div>
         </div>

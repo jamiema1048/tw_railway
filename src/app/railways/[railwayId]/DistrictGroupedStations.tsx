@@ -1,4 +1,5 @@
 import React from "react";
+import Loading from "./loading";
 
 interface Props {
   lineID: number;
@@ -15,6 +16,11 @@ interface Line {
   id: number;
   name: string;
   district: District[];
+}
+
+interface StationLineDistrictInfo {
+  id: number;
+  order: number;
 }
 
 interface StationLineInfo {
@@ -46,6 +52,8 @@ const DistrictGroupedStations: React.FC<Props> = ({
   lineID,
   lineData,
   stations,
+  loading,
+  setLoading,
 }) => {
   // 先建立一個 map: districtID -> 所屬車站[]
   const districtMap: Record<number, Station[]> = {};
@@ -62,18 +70,48 @@ const DistrictGroupedStations: React.FC<Props> = ({
       ? station.line
       : [station.line];
     for (const line of stationLines) {
-      if (line.lineID === lineID) {
+      console.log(line.lineID === lineID);
+      if (Number(line.lineID) === Number(lineID)) {
         // 該車站屬於此 route 的某 district
-        if (districtMap[line.lineDistrict]) {
-          districtMap[line.lineDistrict].push(station);
+        const districts = Array.isArray(line.lineDistrict)
+          ? line.lineDistrict
+          : [line.lineDistrict];
+        for (const d of districts) {
+          const districtID = typeof d === "number" ? d : d.id;
+          const order = typeof d === "number" ? Infinity : d.order ?? Infinity;
+          if (districtMap[districtID]) {
+            districtMap[districtID].push({ ...station, _order: order });
+            console.log(`✅ 加入 ${station.name} 到區 ${d}`);
+          } else {
+            console.warn(
+              `⚠️ ${station.name} 指定的 lineDistrict ${districtID} 在 districtMap 裡不存在`
+            );
+          }
         }
+      } else {
+        console.log(
+          `❌ ${station.name} 的 lineID ${line.lineID} ≠ 頁面 lineID ${lineID}`
+        );
       }
       console.log(lineData);
     }
     console.log(station);
   }
+  // 加入排序邏輯
+  for (const districtID in districtMap) {
+    districtMap[districtID].sort((a, b) => a._order - b._order);
+  }
 
-  return (
+  console.log("📦 props.lineID:", lineID);
+  console.log("📦 props.lineData:", lineData);
+  console.log("📦 props.stations:", stations);
+  console.log(districtMap.district);
+
+  return loading ? (
+    <>
+      <Loading />
+    </>
+  ) : (
     <div>
       {lineData.district.map((district) => (
         <div key={district.districtID} className="mb-6">
