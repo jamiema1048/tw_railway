@@ -207,6 +207,17 @@
     },
     {
       "id": 1600,
+      "name": "田中線",
+      "co": 1,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "田中線"
+        }
+      ]
+    },
+    {
+      "id": 1700,
       "name": "淡水線(北淡線)",
       "co": 1,
       "district": [
@@ -221,7 +232,7 @@
       ]
     },
     {
-      "id": 1700,
+      "id": 1800,
       "name": "新店線",
       "co": 1,
       "district": [
@@ -232,7 +243,7 @@
       ]
     },
     {
-      "id": 1800,
+      "id": 1900,
       "name": "中和線",
       "co": 1,
       "district": [
@@ -243,7 +254,7 @@
       ]
     },
     {
-      "id": 1900,
+      "id": 2000,
       "name": "林口線(桃林鐵路)",
       "co": 1,
       "district": [
@@ -254,7 +265,7 @@
       ]
     },
     {
-      "id": 2000,
+      "id": 2100,
       "name": "東勢線",
       "co": 1,
       "district": [
@@ -265,7 +276,7 @@
       ]
     },
     {
-      "id": 2100,
+      "id": 2200,
       "name": "神岡線",
       "co": 1,
       "district": [
@@ -276,7 +287,7 @@
       ]
     },
     {
-      "id": 2200,
+      "id": 2300,
       "name": "東港線",
       "co": 1,
       "district": [
@@ -287,7 +298,7 @@
       ]
     },
     {
-      "id": 2300,
+      "id": 2400,
       "name": "基隆臨港線",
       "co": 1,
       "district": [
@@ -298,7 +309,7 @@
       ]
     },
     {
-      "id": 2400,
+      "id": 2500,
       "name": "花蓮臨港線",
       "co": 1,
       "district": [
@@ -313,7 +324,7 @@
       ]
     },
     {
-      "id": 2500,
+      "id": 2600,
       "name": "台中港線",
       "co": 1,
       "district": [
@@ -324,7 +335,7 @@
       ]
     },
     {
-      "id": 2600,
+      "id": 2700,
       "name": "高雄臨港線",
       "co": 1,
       "district": [
@@ -339,7 +350,7 @@
       ]
     },
     {
-      "id": 2700,
+      "id": 2800,
       "name": "松山機場線",
       "co": 1,
       "district": [
@@ -350,7 +361,7 @@
       ]
     },
     {
-      "id": 2800,
+      "id": 2900,
       "name": "新竹機場線",
       "co": 1,
       "district": [
@@ -361,7 +372,7 @@
       ]
     },
     {
-      "id": 2900,
+      "id": 3000,
       "name": "中油嘉義溶劑廠支線",
       "co": 1,
       "district": [
@@ -377,13 +388,17 @@
       "id": 1,
       "name": "基隆站",
       "status": "active",
+      "openDate": "1891年10月20日",
+      "level": "一等站",
+      "miles": "基隆起0.0公里",
+      "stationCode": "0900",
       "line": [
         {
           "lineID": 100,
           "lineDistrict": { "id": 1, "order": 1 }
         },
         {
-          "lineID": 2300,
+          "lineID": 2400,
           "lineDistrict": { "id": 1, "order": 1 }
         }
       ],
@@ -395,6 +410,10 @@
       "id": 2,
       "name": "三坑站",
       "status": "active",
+      "openDate": "2003年5月9日",
+      "level": "簡易站",
+      "miles": "基隆起1.3公里",
+      "stationCode": "0910",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 2 }
@@ -407,6 +426,10 @@
       "id": 3,
       "name": "八堵站",
       "status": "active",
+      "openDate": "1899年7月20日",
+      "level": "二等站",
+      "miles": "基隆起3.7公里(縱貫線)、八堵起0.0公里(宜蘭線)",
+      "stationCode": "0920",
       "line": [
         {
           "lineID": 100,
@@ -425,6 +448,11 @@
       "id": 4,
       "name": "七堵站",
       "status": "active",
+      "openDate": "1891年10月20日",
+      "originalName": "八堵(1897年5月26日改名)、七肚(1899年7月20日改名)",
+      "level": "一等站",
+      "miles": "基隆起6.0公里",
+      "stationCode": "0930",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 4 }
@@ -437,6 +465,10 @@
       "id": 5,
       "name": "百福站",
       "status": "active",
+      "openDate": "2007年5月8日",
+      "level": "簡易站",
+      "miles": "基隆起8.7公里",
+      "stationCode": "0940",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 5 }
@@ -449,6 +481,10 @@
       "id": 6,
       "name": "北五堵站",
       "status": "disused",
+      "openDate": "1932年4月1日",
+      "closeDate": "約1969年",
+      "level": "招呼站",
+      "miles": "基隆起9.3公里",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 6 }
@@ -461,6 +497,9 @@
       "id": 7,
       "name": "五堵北號誌站",
       "status": "disused",
+      "openDate": "1975年2月",
+      "closeDate": "1975年",
+      "level": "號誌站",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 7 }
@@ -485,6 +524,10 @@
       "id": 9,
       "name": "五堵站",
       "status": "active",
+      "openDate": "1902年6月1日",
+      "level": "簡易站",
+      "miles": "基隆起K11+720",
+      "stationCode": "0950",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 9 }
@@ -497,6 +540,11 @@
       "id": 10,
       "name": "汐止站",
       "status": "active",
+      "openDate": "1889年4月30日",
+      "originalName": "水返腳(1920年10月1日改名)",
+      "level": "二等站",
+      "miles": "基隆起13.1公里",
+      "stationCode": "0960",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 10 }
@@ -509,6 +557,10 @@
       "id": 11,
       "name": "汐科站",
       "status": "active",
+      "openDate": "2007年12月30日",
+      "level": "簡易站",
+      "miles": "基隆起14.6公里",
+      "stationCode": "0970",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 11 }
@@ -521,6 +573,11 @@
       "id": 12,
       "name": "南港站",
       "status": "active",
+      "openDate": "約1893年",
+      "originalName": "南港仔(1899年7月20日改名)",
+      "level": "一等站",
+      "miles": "基隆起19.1公里",
+      "stationCode": "0980",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 12 }
@@ -533,13 +590,18 @@
       "id": 13,
       "name": "松山站",
       "status": "active",
+      "openDate": "1889年",
+      "originalName": "錫口(1920年10月1日)",
+      "level": "一等站",
+      "miles": "基隆起21.9公里(縱貫線)、松山起0.0公里(松山機場線)",
+      "stationCode": "0990",
       "line": [
         {
           "lineID": 100,
           "lineDistrict": { "id": 1, "order": 13 }
         },
         {
-          "lineID": 2700,
+          "lineID": 2800,
           "lineDistrict": { "id": 1, "order": 1 }
         }
       ],
@@ -575,6 +637,11 @@
       "id": 16,
       "name": "新生站",
       "status": "disused",
+      "openDate": "1930年12月25日",
+      "closeDate": "不詳",
+      "originalName": "北台北(1953年12月1日改名)",
+      "level": "招呼站",
+      "miles": "基隆起26.4公里",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 16 }
@@ -587,6 +654,12 @@
       "id": 17,
       "name": "華山站",
       "status": "disused",
+      "openDate": "1937年12月1日",
+      "closeDate": "1986年7月21日",
+      "originalName": "樺山(1949年5月1日改名)",
+      "level": "一等(貨運)站",
+      "miles": "基隆起27.4公里",
+      "stationCode": "099",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 17 }
@@ -599,13 +672,17 @@
       "id": 18,
       "name": "台北站",
       "status": "active",
+      "openDate": "1901年8月25日",
+      "level": "特等站",
+      "miles": "基隆起K28+394(縱貫線) 台北起0.0公里(淡水線)",
+      "stationCode": "1000",
       "line": [
         {
           "lineID": 100,
           "lineDistrict": { "id": 1, "order": 18 }
         },
         {
-          "lineID": 1600,
+          "lineID": 1700,
           "lineDistrict": { "id": 1, "order": 3 }
         }
       ],
@@ -617,6 +694,9 @@
       "id": 19,
       "name": "西門緊急停靠站",
       "status": "active",
+      "openDate": "1930年11月5日、1989年9月2日",
+      "closeDate": "戰後",
+      "originalName": "新起町(1989年9月2日設站)",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 19 }
@@ -629,13 +709,18 @@
       "id": 20,
       "name": "萬華站",
       "status": "active",
+      "openDate": "1901年8月25日",
+      "originalName": "艋舺(1920年10月1日改名)",
+      "level": "一等站",
+      "miles": "基隆起31.1公里(縱貫線) 萬華起0.0公里(新店線)",
+      "stationCode": "1010",
       "line": [
         {
           "lineID": 100,
           "lineDistrict": { "id": 1, "order": 20 }
         },
         {
-          "lineID": 1700,
+          "lineID": 1800,
           "lineDistrict": { "id": 1, "order": 1 }
         }
       ],
@@ -647,6 +732,11 @@
       "id": 21,
       "name": "港嘴站",
       "status": "disused",
+      "openDate": "1932年4月1日",
+      "closeDate": "1960年",
+      "originalName": "江子翠(1958年2月10日改名)",
+      "level": "招呼站",
+      "miles": "基隆起33.8公里",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 21 }
@@ -659,13 +749,18 @@
       "id": 22,
       "name": "板橋站",
       "status": "active",
+      "openDate": "1901年8月25日",
+      "originalName": "枋橋(1920年10月1日改名)",
+      "level": "一等站",
+      "miles": "基隆起K35+514(新站) 基隆起36.4公里(舊站)",
+      "stationCode": "1020",
       "line": [
         {
           "lineID": 100,
           "lineDistrict": { "id": 1, "order": 22 }
         },
         {
-          "lineID": 1800,
+          "lineID": 1900,
           "lineDistrict": { "id": 1, "order": 1 }
         }
       ],
@@ -677,6 +772,11 @@
       "id": 23,
       "name": "浮洲站",
       "status": "active",
+      "openDate": "1932年4月1日、2011年9月2日",
+      "closeDate": "1969年",
+      "level": "簡易站",
+      "miles": "基隆起38.0公里",
+      "stationCode": "1030",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 23 }
@@ -689,6 +789,10 @@
       "id": 24,
       "name": "樹林站",
       "status": "active",
+      "openDate": "1901年8月25日",
+      "level": "一等站",
+      "miles": "基隆起40.9公里",
+      "stationCode": "1040",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 24 }
@@ -701,6 +805,9 @@
       "id": 25,
       "name": "K42號誌站",
       "status": "active",
+      "openDate": "1997年3月14日",
+      "level": "號誌站",
+      "miles": "基隆起42.4公里",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 25 }
@@ -713,6 +820,10 @@
       "id": 26,
       "name": "南樹林站",
       "status": "active",
+      "openDate": "2015年12月25日",
+      "level": "簡易站",
+      "miles": "基隆起42.9公里",
+      "stationCode": "1050",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 26 }
@@ -725,6 +836,11 @@
       "id": 27,
       "name": "山佳站",
       "status": "active",
+      "openDate": "1903年10月7日",
+      "originalName": "山仔腳(1920年10月1日改名) 山子腳(1962年4月1日改名)",
+      "level": "三等站",
+      "miles": "基隆起44.8公里",
+      "stationCode": "1060",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 27 }
@@ -737,6 +853,11 @@
       "id": 28,
       "name": "鶯歌站",
       "status": "active",
+      "openDate": "1901年8月25日",
+      "originalName": "鶯歌石(1920年10月1日改名)",
+      "level": "二等站",
+      "miles": "基隆起K49+195",
+      "stationCode": "1070",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 28 }
@@ -749,6 +870,10 @@
       "id": 29,
       "name": "鳳鳴站",
       "status": "active",
+      "openDate": "2024年11月30日",
+      "level": "簡易站",
+      "miles": "基隆起54.2公里",
+      "stationCode": "1075",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 29 }
@@ -761,6 +886,9 @@
       "id": 30,
       "name": "桃園北號誌站",
       "status": "disused",
+      "openDate": "1975年4月18日",
+      "closeDate": "不詳",
+      "level": "號誌站",
       "line": {
         "lineID": 100,
         "lineDistrict": { "id": 1, "order": 30 }
@@ -773,6 +901,11 @@
       "id": 31,
       "name": "桃園站",
       "status": "active",
+      "openDate": "1891年7月",
+      "originalName": "桃仔園(1901年7月1日改名)",
+      "level": "一等站",
+      "miles": "基隆起57.4公里",
+      "stationCode": "1080",
       "line": [
         {
           "lineID": 100,
@@ -782,7 +915,7 @@
           ]
         },
         {
-          "lineID": 1900,
+          "lineID": 2000,
           "lineDistrict": { "id": 1, "order": 1 }
         }
       ],

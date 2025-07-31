@@ -15,6 +15,7 @@ interface District {
 interface Line {
   id: number;
   name: string;
+  co: number;
   district: District[];
 }
 
@@ -27,6 +28,12 @@ interface Station {
   id: number;
   name: string;
   line: StationLineInfo[];
+  openDate?: string;
+  closeDate?: string;
+  originalName?: string;
+  level?: string;
+  miles?: string;
+  stationCode?: string;
 }
 
 interface RailwayParams {
@@ -95,6 +102,16 @@ const RailwayContent = ({ params }: RailwayContentProps): JSX.Element => {
           (rwy) => Number(rwy.id) === Number(railwayId)
         );
 
+        const fixedStations = stations.map((s) => ({
+          //強制轉換為陣列
+          ...s,
+          line: Array.isArray(s.line) ? s.line : [s.line],
+        }));
+
+        const filteredStations = fixedStations.filter((s) =>
+          s.line.some((l) => Number(l.lineID) === Number(railwayId))
+        );
+
         setLoading(false);
 
         if (!railway) {
@@ -123,7 +140,7 @@ const RailwayContent = ({ params }: RailwayContentProps): JSX.Element => {
         setData(railway);
         console.log(railway);
 
-        setAllStations(stations); // ⬅️ 儲存抓到的車站
+        setAllStations(filteredStations); // ⬅️ 儲存抓到的車站
         setTitle(`Railway ${railway.name}`);
         document.title = `${railway.name}`;
       } catch (error: any) {

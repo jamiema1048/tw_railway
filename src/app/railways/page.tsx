@@ -8,12 +8,19 @@ import {
   MouseEvent,
 } from "react";
 import { TitleContext } from "../context/TitleContext";
+import Head from "next/head";
+import Link from "next/link";
 import Loading from "./loading";
 import Footer from "../footer/footer";
 
 interface Line {
   id: number;
   name: string;
+  co: number;
+  district: {
+    districtID: number;
+    districtName: string;
+  }[];
   // 你可以依照實際資料補上更多欄位
 }
 
@@ -34,6 +41,7 @@ export default function LinePage({ lineID }: { lineID: number }) {
         const data = await res.json();
         setLines(data);
         setLoading(false);
+        console.log(lines);
       } catch (err) {
         console.error(err);
       }
@@ -42,29 +50,51 @@ export default function LinePage({ lineID }: { lineID: number }) {
     fetchData();
   }, []);
 
-  return loading || lines.length === 0 ? (
+  useEffect(() => {
+    console.log("lines changed:", lines);
+    console.log("lines length changed:", lines.length);
+  }, [lines]);
+
+  useEffect(() => {
+    console.log("loading changed:", loading);
+  }, [loading]);
+
+  return loading ? (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black text-gray-200">
       <Loading />
       <Footer />
     </div>
   ) : (
-    <div className="min-h-screen bg-[#0f0f0f] text-gray-200 p-6">
-      <h1 className="text-3xl font-bold mb-8 text-center text-white">
-        🚉 車站一覽
-      </h1>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {lines.map((l) => (
-          <div
-            key={l.id}
-            className="bg-[#1a1a1a] border border-gray-700 rounded-xl shadow-md p-5 hover:bg-[#2a2a2a] transition-colors"
-          >
-            <h2 className="text-xl font-semibold text-white">{l.name}</h2>
+    <>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      {lines.length === 0 ? (
+        <div className="loading-container flex items-center justify-center">
+          <div className="w-12 h-12 border-4 border-t-4 border-gray-200 border-solid rounded-full animate-spin border-t-gray-800"></div>
+          <span className="ml-2 text-xl">Loading data...</span>
+        </div>
+      ) : (
+        <div className="min-h-screen bg-[#0f0f0f] text-gray-200 p-6">
+          <h1 className="text-3xl font-bold mb-8 text-center text-white">
+            🚉 車站一覽
+          </h1>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {lines.map((l) => (
+              <Link
+                href={`railways/${l.id}`}
+                key={l.id}
+                className="bg-[#1a1a1a] border border-gray-700 rounded-xl shadow-md p-5 hover:bg-[#2a2a2a] transition-colors"
+              >
+                <h2 className="text-xl font-semibold text-white">{l.name}</h2>
+              </Link>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      )}
       <div className="mt-12">
         <Footer />
       </div>
-    </div>
+    </>
   );
 }

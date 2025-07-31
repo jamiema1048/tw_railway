@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Loading from "./loading";
 
 interface Props {
@@ -131,7 +132,15 @@ const DistrictGroupedStations: React.FC<Props> = ({
                       : "text-gray-500"
                   }`}
                 >
-                  {station.name}
+                  {station.hasDetail ? (
+                    <>
+                      <Link href={`/stations/${station.id}`}>
+                        {station.name}
+                      </Link>
+                    </>
+                  ) : (
+                    <>{station.name}</>
+                  )}
                 </li>
               ))
             ) : (
