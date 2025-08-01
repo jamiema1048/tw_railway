@@ -76,6 +76,36 @@ export async function generateMetadata({
 
     const station = stations[0];
 
+    // 取得目前車站資料後，擴充去抓前後站
+    const prevIDs = Array.isArray(station.prevStation)
+      ? station.prevStation
+      : station.prevStation != null
+      ? [station.prevStation]
+      : [];
+
+    const nextIDs = Array.isArray(station.nextStation)
+      ? station.nextStation
+      : station.nextStation != null
+      ? [station.nextStation]
+      : [];
+
+    const adjacentIDs = [...prevIDs, ...nextIDs];
+
+    // 去重處理
+    const uniqueAdjacentIDs = [...new Set(adjacentIDs)].filter(
+      (id) => id != null
+    );
+
+    // 只在有前後站時發 fetch
+    const adjacentStations: Station[] = uniqueAdjacentIDs.length
+      ? await fetch(
+          `http://localhost:9000/stations?${uniqueAdjacentIDs
+            .map((id) => `id=${id}`)
+            .join("&")}`,
+          { cache: "no-store" }
+        ).then((res) => res.json())
+      : [];
+
     const stationLines: StationLineInfo[] = Array.isArray(station.line)
       ? station.line
       : [station.line];
@@ -128,6 +158,45 @@ export default async function StationPage({
   }
 
   const station = stations[0];
+
+  // 取得目前車站資料後，擴充去抓前後站
+  const prevIDs = Array.isArray(station.prevStation)
+    ? station.prevStation
+    : station.prevStation != null
+    ? [station.prevStation]
+    : [];
+
+  const nextIDs = Array.isArray(station.nextStation)
+    ? station.nextStation
+    : station.nextStation != null
+    ? [station.nextStation]
+    : [];
+
+  const adjacentIDs = [...prevIDs, ...nextIDs];
+
+  // 去重處理
+  const uniqueAdjacentIDs = [...new Set(adjacentIDs)]
+    .filter((id) => id != null)
+    .map((id) => String(id)); // ✅ 加這行
+
+  // 只在有前後站時發 fetch
+  const adjacentStations: Station[] = uniqueAdjacentIDs.length
+    ? await fetch(
+        `http://localhost:9000/stations?${uniqueAdjacentIDs
+          .map((id) => `id=${id}`)
+          .join("&")}&_=${Date.now()}`,
+        { cache: "no-store" }
+      ).then((res) => res.json())
+    : [];
+  console.log(prevIDs);
+  console.log(nextIDs);
+  console.log(adjacentIDs);
+  console.log(uniqueAdjacentIDs);
+  console.log(adjacentStations);
+  await fetch("http://localhost:9000/stations")
+    .then((res) => res.json())
+    .then((data) => console.log(typeof data[0].id)); // ← 看看是 "number" 還是 "string"
+
   // 確保 station.line 一定是陣列格式
   const stationLines: StationLineInfo[] = Array.isArray(station.line)
     ? station.line
@@ -147,5 +216,11 @@ export default async function StationPage({
     notFound(); // 如果沒有詳細資料，就顯示 404
   }
 
-  return <StationClient station={station} railways={matchedRailways} />;
+  return (
+    <StationClient
+      station={station}
+      railways={matchedRailways}
+      adjacentStations={adjacentStations}
+    />
+  );
 }

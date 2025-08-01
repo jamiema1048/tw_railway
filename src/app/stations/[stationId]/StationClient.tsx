@@ -4,6 +4,7 @@ import { useContext, useEffect } from "react";
 import { TitleContext } from "../../context/TitleContext";
 import Footer from "../../footer/footer";
 import Head from "next/head";
+import Link from "next/link";
 
 interface District {
   districtID: number;
@@ -41,9 +42,11 @@ interface Station {
 export default function StationClient({
   station,
   railways,
+  adjacentStations,
 }: {
   station: Station;
   railways: Line[];
+  adjacentStations: Station[];
 }) {
   const { title, setTitle } = useContext(TitleContext);
 
@@ -111,31 +114,110 @@ export default function StationClient({
                 (r) => Number(r.id) === Number(line.lineID)
               );
               return (
-                <li key={line.lineID}>
-                  路線名稱：
+                <Link
+                  key={line.lineID}
+                  href={`/railways/${line.lineID}`}
+                  className="text-blue-500 hover:underline mr-2"
+                >
                   {matchedRailway ? matchedRailway.name : `ID: ${line.lineID}`}
-                </li>
+                </Link>
               );
             }
           )}
         </ul>
 
         {station.prevStation && (
-          <p className="mt-4">
-            上一站 ID：
+          <div className="mt-4">
+            上一站：
             {Array.isArray(station.prevStation)
-              ? station.prevStation.join("、")
-              : station.prevStation}
-          </p>
+              ? station.prevStation.map((id) => {
+                  const match = adjacentStations.find((s) => s.id === id);
+                  console.log("prevStation match:", match);
+                  return match ? (
+                    match.hasDetail ? (
+                      <Link
+                        key={id}
+                        href={`/stations/${id}`}
+                        className="text-blue-500 hover:underline mr-2"
+                      >
+                        {match.name}
+                      </Link>
+                    ) : (
+                      <div className="text-white mr-2">{match.name}</div>
+                    )
+                  ) : (
+                    `ID: ${id}`
+                  );
+                })
+              : (() => {
+                  const match = adjacentStations.find(
+                    (s) => s.id === station.prevStation
+                  );
+                  console.log("prevStation single match:", match);
+                  return match ? (
+                    match.hasDetail ? (
+                      <Link
+                        href={`/stations/${station.prevStation}`}
+                        className="text-blue-500 hover:underline"
+                      >
+                        {match.name}
+                      </Link>
+                    ) : (
+                      <div className="text-white mr-2">{match.name}</div>
+                    )
+                  ) : (
+                    `ID: ${station.prevStation}`
+                  );
+                })()}
+          </div>
         )}
 
         {station.nextStation && (
-          <p>
-            下一站 ID：
+          <div className="mt-4">
+            下一站：
             {Array.isArray(station.nextStation)
-              ? station.nextStation.join("、")
-              : station.nextStation}
-          </p>
+              ? station.nextStation.map((id) => {
+                  const match = adjacentStations.find((s) => s.id === id);
+                  console.log("nextStation match:", match);
+                  return match ? (
+                    match.hasDetail ? (
+                      <Link
+                        key={id}
+                        href={`/stations/${id}`}
+                        className="text-blue-500 hover:underline mr-2"
+                      >
+                        {match.name}
+                      </Link>
+                    ) : (
+                      <div key={id} className="text-white mr-2">
+                        {match.name}
+                      </div>
+                    )
+                  ) : (
+                    `ID: ${id}`
+                  );
+                })
+              : (() => {
+                  const match = adjacentStations.find(
+                    (s) => s.id === station.nextStation
+                  );
+                  console.log("nextStation single match:", match);
+                  return match ? (
+                    match.hasDetail ? (
+                      <Link
+                        href={`/stations/${station.nextStation}`}
+                        className="text-blue-500 hover:underline mr-2"
+                      >
+                        {match.name}
+                      </Link>
+                    ) : (
+                      <div className="text-white mr-2">{match.name}</div>
+                    )
+                  ) : (
+                    `ID: ${station.nextStation}`
+                  );
+                })()}
+          </div>
         )}
       </main>
       <Footer />
