@@ -2196,10 +2196,14 @@
         {
           "lineID": 300,
           "lineDistrict": { "id": 1, "order": 25 }
+        },
+        {
+          "lineID": 400,
+          "lineDistrict": { "id": 1, "order": 1 }
         }
       ],
       "prevStation": [102, 134, 105, 103],
-      "nextStation": [],
+      "nextStation": [135, 136],
       "hasDetail": true
     },
     {
@@ -2662,6 +2666,1145 @@
       },
       "prevStation": 133,
       "nextStation": [106, 102, 104, 105],
+      "hasDetail": true
+    },
+    {
+      "id": 135,
+      "name": "花壇北號誌站",
+      "status": "disused",
+      "openDate": "待查",
+      "closeDate": "1971年8月2日",
+      "level": "號誌站",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 106,
+      "nextStation": 136,
+      "hasDetail": true
+    },
+    {
+      "id": 136,
+      "name": "花壇站",
+      "status": "active",
+      "openDate": "1905年3月26日",
+      "level": "乙種簡易站",
+      "originalName": "茄苳腳(1920年10月1日改名)",
+      "miles": "基隆起222.2公里",
+      "stationCode": "3370",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": [106, 135],
+      "nextStation": [137, 138],
+      "hasDetail": true
+    },
+    {
+      "id": 137,
+      "name": "227公里號誌站",
+      "status": "disused",
+      "openDate": "1958年10月24日",
+      "closeDate": "1971年8月2日",
+      "level": "號誌站",
+      "miles": "基隆起K226+920(舊海線)",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 136,
+      "nextStation": 139,
+      "hasDetail": true
+    },
+    {
+      "id": 138,
+      "name": "大村站",
+      "status": "active",
+      "openDate": "1934年11月1日、2006年3月31日",
+      "closeDate": "1938年7月1日",
+      "level": "簡易站",
+      "miles": "基隆起228.1公里(舊海線) K228+209(舊站)",
+      "stationCode": "3380",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 136,
+      "nextStation": 139,
+      "hasDetail": true
+    },
+    {
+      "id": 139,
+      "name": "員林站",
+      "status": "active",
+      "openDate": "1905年3月26日",
+      "level": "一等站",
+      "miles": "基隆起230.3公里(海線)",
+      "stationCode": "3390",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": [138, 137],
+      "nextStation": 140,
+      "hasDetail": true
+    },
+    {
+      "id": 140,
+      "name": "永靖站",
+      "status": "active",
+      "openDate": "1934年11月1日、1958年10月24日",
+      "closeDate": "約1942年",
+      "level": "招呼站",
+      "originalName": "永靖(1958年10月24日重新設站)、235公里號誌站(1961年2月1日改名)",
+      "miles": "基隆起233.8公里(海線)",
+      "stationCode": "3400",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 139,
+      "nextStation": 141,
+      "hasDetail": true
+    },
+    {
+      "id": 141,
+      "name": "社頭站",
+      "status": "active",
+      "openDate": "1905年3月26日",
+      "level": "三等站",
+      "miles": "基隆起237.5公里(海線)",
+      "stationCode": "3410",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 140,
+      "nextStation": 142,
+      "hasDetail": true
+    },
+    {
+      "id": 142,
+      "name": "田中站",
+      "status": "active",
+      "openDate": "1905年3月26日",
+      "level": "二等站",
+      "originalName": "田中央(1920年10月1日)",
+      "miles": "基隆起K241+820+27(海線)、田中起0.0公里(田中線)",
+      "stationCode": "3420",
+      "line": [
+        {
+          "lineID": 400,
+          "lineDistrict": { "id": 1, "order": 9 }
+        },
+        {
+          "lineID": 1600,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 141,
+      "nextStation": 143,
+      "hasDetail": true
+    },
+    {
+      "id": 143,
+      "name": "二水站",
+      "status": "active",
+      "openDate": "1905年1月15日",
+      "level": "二等站",
+      "originalName": "二八水(1920年10月1日改名)",
+      "miles": "基隆起K247+600+21(海線)、基隆起248.9公里(舊海線)、二水起0.0公里(集集線)",
+      "stationCode": "3430",
+      "line": [
+        {
+          "lineID": 400,
+          "lineDistrict": { "id": 1, "order": 10 }
+        },
+        {
+          "lineID": 1100,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 142,
+      "nextStation": [149, 144],
+      "hasDetail": true
+    },
+    {
+      "id": 144,
+      "name": "南二水號誌站",
+      "status": "disused",
+      "openDate": "1905年1月15日、戰後",
+      "closeDate": "1907年6月20日、1971年8月2日",
+      "level": "號誌站",
+      "originalName": "北濁水(戰後重新設站)",
+      "miles": "基隆起252.6公里(舊海線)",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 143,
+      "nextStation": [145, 148],
+      "hasDetail": true
+    },
+    {
+      "id": 145,
+      "name": "濁水溪北號誌站",
+      "status": "disused",
+      "openDate": "1950年12月20日",
+      "closeDate": "不詳",
+      "level": "號誌站",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 144,
+      "nextStation": 146,
+      "hasDetail": true
+    },
+    {
+      "id": 146,
+      "name": "濁水溪南號誌站",
+      "status": "disused",
+      "openDate": "1950年12月20日",
+      "closeDate": "不詳",
+      "level": "號誌站",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 145,
+      "nextStation": 147,
+      "hasDetail": true
+    },
+    {
+      "id": 147,
+      "name": "北林內號誌站",
+      "status": "disused",
+      "openDate": "不詳",
+      "closeDate": "1971年8月2日",
+      "level": "號誌站",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "prevStation": 146,
+      "nextStation": 149,
+      "hasDetail": true
+    },
+    {
+      "id": 148,
+      "name": "濁水驛",
+      "status": "disused",
+      "openDate": "1904年11月10日",
+      "closeDate": "1907年6月20日",
+      "miles": "基隆起K254+210(舊海線)",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 15 }
+      },
+      "prevStation": 144,
+      "nextStation": 150,
+      "hasDetail": true
+    },
+    {
+      "id": 149,
+      "name": "林內站",
+      "status": "active",
+      "openDate": "1907年6月20日",
+      "level": "三等站",
+      "miles": "基隆起255.7公里(海線)",
+      "stationCode": "3450",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "prevStation": [143, 147],
+      "nextStation": 150,
+      "hasDetail": true
+    },
+    {
+      "id": 150,
+      "name": "石榴站",
+      "status": "active",
+      "openDate": "1905年10月15日",
+      "level": "招呼站",
+      "originalName": "石榴班(1950年6月1日改名)",
+      "miles": "基隆起261.8公里(舊海線)",
+      "stationCode": "3460",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "prevStation": [148, 149],
+      "nextStation": 151,
+      "hasDetail": true
+    },
+    {
+      "id": 151,
+      "name": "斗六站",
+      "status": "active",
+      "openDate": "1904年2月1日",
+      "level": "一等站",
+      "miles": "基隆起265.3公里(海線)",
+      "stationCode": "3470",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 18 }
+      },
+      "prevStation": 150,
+      "nextStation": [152, 153],
+      "hasDetail": true
+    },
+    {
+      "id": 152,
+      "name": "270公里號誌站",
+      "status": "disused",
+      "openDate": "1958年10月24日",
+      "closeDate": "1971年8月2日",
+      "level": "號誌站",
+      "miles": "基隆起270.0公里(舊海線)",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 19 }
+      },
+      "prevStation": 151,
+      "nextStation": 153,
+      "hasDetail": true
+    },
+    {
+      "id": 153,
+      "name": "斗南站",
+      "status": "active",
+      "openDate": "1903年12月15日",
+      "level": "二等站",
+      "originalName": "他里霧(1920年10月1日改名)",
+      "miles": "基隆起272.9公里(海線)",
+      "stationCode": "3480",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 20 }
+      },
+      "prevStation": [151, 152],
+      "nextStation": 154,
+      "hasDetail": true
+    },
+    {
+      "id": 154,
+      "name": "石龜站",
+      "status": "active",
+      "openDate": "1958年10月24日",
+      "level": "招呼站",
+      "originalName": "278公里號誌站(1971年7月20日改名)",
+      "miles": "基隆起276.8公里(海線)、基隆起278.2公里(舊海線)",
+      "stationCode": "3490",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 21 }
+      },
+      "prevStation": 153,
+      "nextStation": 155,
+      "hasDetail": true
+    },
+    {
+      "id": 155,
+      "name": "大林站",
+      "status": "active",
+      "openDate": "1903年12月15日",
+      "level": "三等站",
+      "originalName": "大莆林(1920年10月1日改名)",
+      "miles": "基隆起281.4公里(海線)",
+      "stationCode": "4050",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 22 }
+      },
+      "prevStation": 154,
+      "nextStation": [156, 157],
+      "hasDetail": true
+    },
+    {
+      "id": 156,
+      "name": "頭橋號誌站",
+      "status": "disused",
+      "openDate": "不詳",
+      "closeDate": "不詳",
+      "level": "號誌站",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 23 }
+      },
+      "prevStation": 155,
+      "nextStation": 157,
+      "hasDetail": true
+    },
+    {
+      "id": 157,
+      "name": "民雄站",
+      "status": "active",
+      "openDate": "1903年12月15日",
+      "level": "三等站",
+      "originalName": "打貓(1920年10月1日改名)",
+      "miles": "基隆起282.5公里(海線)",
+      "stationCode": "4060",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 24 }
+      },
+      "prevStation": [155, 156],
+      "nextStation": 158,
+      "hasDetail": true
+    },
+    {
+      "id": 158,
+      "name": "嘉北站",
+      "status": "active",
+      "openDate": "2005年9月8日",
+      "level": "簡易站",
+      "miles": "基隆起293.9公里(海線)",
+      "stationCode": "4070",
+      "line": {
+        "lineID": 400,
+        "lineDistrict": { "id": 1, "order": 25 }
+      },
+      "prevStation": 157,
+      "nextStation": 159,
+      "hasDetail": true
+    },
+    {
+      "id": 159,
+      "name": "嘉義站",
+      "status": "active",
+      "openDate": "1902年4月20日",
+      "level": "一等站",
+      "miles": "基隆起296.5公里(海線)",
+      "stationCode": "4080",
+      "line": [
+        {
+          "lineID": 400,
+          "lineDistrict": { "id": 1, "order": 26 }
+        },
+        {
+          "lineID": 500,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 158,
+      "nextStation": 160,
+      "hasDetail": true
+    },
+    {
+      "id": 160,
+      "name": "北回歸線站",
+      "status": "plan",
+      "openDate": "1937年5月1日、預計2026年",
+      "closeDate": "2002年8月13日",
+      "level": "甲種簡易站",
+      "miles": "基隆起300.7公里(海線)",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 159,
+      "nextStation": 161,
+      "hasDetail": true
+    },
+    {
+      "id": 161,
+      "name": "水上站",
+      "status": "active",
+      "openDate": "1902年4月20日、1949年8月20日",
+      "closeDate": "1912年3月20日",
+      "level": "簡易站",
+      "originalName": "水堀頭(1949年8月20日復站)、水頭(1949年10月10日改名)",
+      "miles": "基隆起303.1公里(海線)",
+      "stationCode": "4090",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 160,
+      "nextStation": 162,
+      "hasDetail": true
+    },
+    {
+      "id": 162,
+      "name": "南靖站",
+      "status": "active",
+      "openDate": "1911年3月20日",
+      "level": "甲種簡易站",
+      "originalName": "水堀頭(1920年10月1日改名)",
+      "miles": "基隆起305.7公里(海線)",
+      "stationCode": "4100",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 161,
+      "nextStation": 163,
+      "hasDetail": true
+    },
+    {
+      "id": 163,
+      "name": "後壁站",
+      "status": "active",
+      "openDate": "1902年4月20日",
+      "level": "甲種簡易站",
+      "originalName": "後壁藔(1920年10月1日改名)",
+      "miles": "基隆起311.7公里(海線)",
+      "stationCode": "4110",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 162,
+      "nextStation": [164, 165],
+      "hasDetail": true
+    },
+    {
+      "id": 164,
+      "name": "新營北號誌站",
+      "status": "disused",
+      "openDate": "不詳",
+      "closeDate": "1971年8月20日",
+      "level": "號誌站",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 163,
+      "nextStation": 165,
+      "hasDetail": true
+    },
+    {
+      "id": 165,
+      "name": "新營站",
+      "status": "active",
+      "openDate": "1901年12月16日",
+      "level": "一等站",
+      "originalName": "新營庄(1920年10月1日改名)",
+      "miles": "基隆起K320+885(舊海線)",
+      "stationCode": "4120",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": [163, 164],
+      "nextStation": [167, 166],
+      "hasDetail": true
+    },
+    {
+      "id": 166,
+      "name": "新營南號誌站",
+      "status": "disused",
+      "openDate": "1962年4月1日",
+      "closeDate": "不詳",
+      "level": "號誌站",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 165,
+      "nextStation": 167,
+      "hasDetail": true
+    },
+    {
+      "id": 167,
+      "name": "柳營站",
+      "status": "active",
+      "openDate": "1960年6月1日",
+      "level": "甲種簡易站",
+      "miles": "基隆起322.7公里(海線)",
+      "stationCode": "4130",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": [165, 166],
+      "nextStation": 168,
+      "hasDetail": true
+    },
+    {
+      "id": 168,
+      "name": "林鳳營站",
+      "status": "active",
+      "openDate": "1901年12月16日",
+      "level": "甲種簡易站",
+      "miles": "基隆起326.6公里(海線)",
+      "stationCode": "4140",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 167,
+      "nextStation": 169,
+      "hasDetail": true
+    },
+    {
+      "id": 169,
+      "name": "隆田站",
+      "status": "active",
+      "openDate": "1902年4月20日",
+      "level": "二等站",
+      "originalName": "番仔田(1902年6月1日改名)、番子田(1955年3月1日改名)",
+      "miles": "基隆起K332+111(海線)",
+      "stationCode": "4150",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 168,
+      "nextStation": 170,
+      "hasDetail": true
+    },
+    {
+      "id": 170,
+      "name": "拔林站",
+      "status": "active",
+      "openDate": "1901年12月16日、1972年11月3日",
+      "closeDate": "1905年5月15日",
+      "level": "招呼站",
+      "originalName": "拔仔林(1972年11月3日復站)",
+      "miles": "基隆起334.3公里(海線)",
+      "stationCode": "4160",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 169,
+      "nextStation": [171, 172],
+      "hasDetail": true
+    },
+    {
+      "id": 171,
+      "name": "善化北號誌站",
+      "status": "disused",
+      "openDate": "不詳",
+      "closeDate": "1971年8月2日",
+      "level": "號誌站",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 170,
+      "nextStation": 172,
+      "hasDetail": true
+    },
+    {
+      "id": 172,
+      "name": "善化站",
+      "status": "active",
+      "openDate": "1901年5月15日",
+      "level": "二等站",
+      "originalName": "灣裡(1920年10月1日改名)",
+      "miles": "基隆起K338+970+1(海線)",
+      "stationCode": "4170",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "prevStation": [170, 171],
+      "nextStation": [173, 174],
+      "hasDetail": true
+    },
+    {
+      "id": 173,
+      "name": "南科站",
+      "status": "active",
+      "openDate": "2010年7月14日",
+      "level": "簡易站",
+      "miles": "基隆起341.8公里(海線)",
+      "stationCode": "4180",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 15 }
+      },
+      "prevStation": 172,
+      "nextStation": 175,
+      "hasDetail": true
+    },
+    {
+      "id": 174,
+      "name": "善化南號誌站",
+      "status": "disused",
+      "openDate": "不詳",
+      "closeDate": "1971年8月2日",
+      "level": "號誌站",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "prevStation": 172,
+      "nextStation": 175,
+      "hasDetail": true
+    },
+    {
+      "id": 175,
+      "name": "新市站",
+      "status": "active",
+      "openDate": "1901年5月15日",
+      "level": "三等站",
+      "originalName": "新市街(1920年10月1日改名)",
+      "miles": "基隆起K348+009(舊海線)、基隆起K346+512+18(海線)",
+      "stationCode": "4190",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "prevStation": [173, 174],
+      "nextStation": 176,
+      "hasDetail": true
+    },
+    {
+      "id": 176,
+      "name": "永康站",
+      "status": "active",
+      "openDate": "1903年3月10日、1925年11月18日",
+      "closeDate": "1904年3月31日",
+      "level": "二等站",
+      "originalName": "鳥松庄(1925年11月18日復站)",
+      "miles": "基隆起351.5公里(海線)",
+      "stationCode": "4200",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 18 }
+      },
+      "prevStation": 175,
+      "nextStation": 177,
+      "hasDetail": true
+    },
+    {
+      "id": 177,
+      "name": "大橋站",
+      "status": "active",
+      "openDate": "2002年10月4日",
+      "level": "簡易站",
+      "miles": "基隆起355.2公里(海線)",
+      "stationCode": "4210",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 19 }
+      },
+      "prevStation": 176,
+      "nextStation": 178,
+      "hasDetail": true
+    },
+    {
+      "id": 178,
+      "name": "台南站",
+      "status": "active",
+      "openDate": "1900年11月29日",
+      "level": "一等站",
+      "miles": "基隆起357.9公里(海線)",
+      "stationCode": "4220",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 20 }
+      },
+      "prevStation": 177,
+      "nextStation": [179, 180, 183],
+      "hasDetail": true
+    },
+    {
+      "id": 179,
+      "name": "東門站",
+      "status": "disused",
+      "openDate": "1931年8月1日",
+      "closeDate": "1971年",
+      "level": "招呼站",
+      "miles": "基隆起358.9公里(海線)",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 21 }
+      },
+      "prevStation": 178,
+      "nextStation": [181, 182],
+      "hasDetail": true
+    },
+    {
+      "id": 180,
+      "name": "林森站",
+      "status": "plan",
+      "openDate": "預計2029年",
+      "level": "簡易站",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 22 }
+      },
+      "prevStation": 178,
+      "nextStation": 181,
+      "hasDetail": true
+    },
+    {
+      "id": 181,
+      "name": "南台南站",
+      "status": "plan",
+      "openDate": "1943年10月17日、預計2026年",
+      "closeDate": "1991年8月9日",
+      "level": "簡易站",
+      "miles": "基隆起361.2公里(海線)",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 23 }
+      },
+      "prevStation": [180, 179],
+      "nextStation": 183,
+      "hasDetail": true
+    },
+    {
+      "id": 182,
+      "name": "試驗所前乘降場",
+      "status": "disused",
+      "openDate": "1933年10月20日",
+      "closeDate": "約1942年",
+      "miles": "基隆起363.1公里(舊海線)",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 24 }
+      },
+      "prevStation": 179,
+      "nextStation": 183,
+      "hasDetail": true
+    },
+    {
+      "id": 183,
+      "name": "保安站",
+      "status": "active",
+      "openDate": "1908年11月10日",
+      "level": "三等站",
+      "originalName": "車路墘(1962年12月15日改名)",
+      "miles": "基隆起365.5公里(海線)",
+      "stationCode": "4250",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 25 }
+      },
+      "prevStation": [178, 181, 182],
+      "nextStation": 184,
+      "hasDetail": true
+    },
+    {
+      "id": 184,
+      "name": "仁德站",
+      "status": "active",
+      "openDate": "1900年11月29日、2014年1月10日",
+      "closeDate": "1908年11月10日",
+      "level": "簡易站",
+      "originalName": "車路墘(2014年1月10日復站)",
+      "miles": "基隆起366.8公里(海線)",
+      "stationCode": "4260",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 26 }
+      },
+      "prevStation": 183,
+      "nextStation": 185,
+      "hasDetail": true
+    },
+    {
+      "id": 185,
+      "name": "中洲站",
+      "status": "active",
+      "openDate": "1901年12月16日",
+      "level": "二等站",
+      "originalName": "中州庄(1920年10月1日改名)",
+      "miles": "基隆起K369+468+800(海線) 中洲起0.0公里(沙崙線)",
+      "stationCode": "4270",
+      "line": [
+        {
+          "lineID": 500,
+          "lineDistrict": { "id": 1, "order": 27 }
+        },
+        {
+          "lineID": 1500,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 184,
+      "nextStation": [186],
+      "hasDetail": true
+    },
+    {
+      "id": 186,
+      "name": "大湖站",
+      "status": "active",
+      "openDate": "1900年12月11日",
+      "level": "三等站",
+      "originalName": "大湖街(1920年10月1日改名)",
+      "miles": "基隆起372.4公里(海線)",
+      "stationCode": "4290",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 28 }
+      },
+      "prevStation": 185,
+      "nextStation": 187,
+      "hasDetail": true
+    },
+    {
+      "id": 187,
+      "name": "路竹站",
+      "status": "active",
+      "openDate": "1902年12月15日",
+      "level": "三等站",
+      "originalName": "半路竹(1920年10月1日改名)",
+      "miles": "基隆起375.3公里(海線)",
+      "stationCode": "4300",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 29 }
+      },
+      "prevStation": 186,
+      "nextStation": [188, 189],
+      "hasDetail": true
+    },
+    {
+      "id": 188,
+      "name": "三埤站",
+      "status": "disused",
+      "openDate": "1953年3月1日",
+      "closeDate": "1971年",
+      "level": "招呼站",
+      "miles": "基隆起378.1公里(海線)",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 30 }
+      },
+      "prevStation": 187,
+      "nextStation": 189,
+      "hasDetail": true
+    },
+    {
+      "id": 189,
+      "name": "岡山站",
+      "status": "active",
+      "openDate": "1900年11月29日",
+      "level": "一等站",
+      "originalName": "阿公店(1920年10月1日改名)",
+      "miles": "基隆起384.6公里(舊海線)、基隆起383.1公里(海線)",
+      "stationCode": "4310",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 31 }
+      },
+      "prevStation": [187, 188],
+      "nextStation": 190,
+      "hasDetail": true
+    },
+    {
+      "id": 190,
+      "name": "橋頭站",
+      "status": "active",
+      "openDate": "1901年5月15日",
+      "level": "三等站",
+      "originalName": "橋仔頭(1920年10月1日改名)、橋子頭(1955年3月1日改名)",
+      "miles": "基隆起386.7公里(海線)",
+      "stationCode": "4320",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 32 }
+      },
+      "prevStation": 189,
+      "nextStation": 191,
+      "hasDetail": true
+    },
+    {
+      "id": 191,
+      "name": "楠梓站",
+      "status": "active",
+      "openDate": "1900年11月29日",
+      "level": "二等站",
+      "originalName": "楠仔坑(1920年10月1日改名)",
+      "miles": "基隆起390.9公里(海線)",
+      "stationCode": "4330",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 33 }
+      },
+      "prevStation": 190,
+      "nextStation": 192,
+      "hasDetail": true
+    },
+    {
+      "id": 192,
+      "name": "新左營站",
+      "status": "active",
+      "openDate": "2006年12月1日",
+      "level": "一等站",
+      "miles": "基隆起K395+996(海線)",
+      "stationCode": "4340",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 34 }
+      },
+      "prevStation": 191,
+      "nextStation": 193,
+      "hasDetail": true
+    },
+    {
+      "id": 193,
+      "name": "左營(舊城)站",
+      "status": "active",
+      "openDate": "1900年11月29日",
+      "level": "簡易站",
+      "originalName": "舊城(1949年6月20日改名)、左營(2018年10月14日改名)",
+      "miles": "基隆起398.0公里(海線)",
+      "stationCode": "4350",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 35 }
+      },
+      "prevStation": 192,
+      "nextStation": 194,
+      "hasDetail": true
+    },
+    {
+      "id": 194,
+      "name": "內惟站",
+      "status": "active",
+      "openDate": "1953年5月1日、2018年10月14日",
+      "closeDate": "1971年",
+      "level": "簡易站",
+      "miles": "基隆起399.1公里(海線)",
+      "stationCode": "4360",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 36 }
+      },
+      "prevStation": 193,
+      "nextStation": 195,
+      "hasDetail": true
+    },
+    {
+      "id": 195,
+      "name": "美術館站",
+      "status": "active",
+      "openDate": "2018年10月14日",
+      "level": "乙種簡易站",
+      "miles": "基隆起400.8公里(海線)",
+      "stationCode": "4370",
+      "line": {
+        "lineID": 500,
+        "lineDistrict": { "id": 1, "order": 37 }
+      },
+      "prevStation": 194,
+      "nextStation": 196,
+      "hasDetail": true
+    },
+    {
+      "id": 196,
+      "name": "鼓山站",
+      "status": "active",
+      "openDate": "1929年10月1日、2018年10月14日",
+      "closeDate": "2009年5月13日",
+      "level": "簡易站",
+      "originalName": "田町(1950年4月15日改名)",
+      "miles": "基隆起402.0公里(海線)",
+      "stationCode": "4380",
+      "line": [
+        {
+          "lineID": 500,
+          "lineDistrict": [
+            { "id": 1, "order": 38 },
+            { "id": 2, "order": 1 }
+          ]
+        }
+      ],
+      "prevStation": 195,
+      "nextStation": [197, 199],
+      "hasDetail": true
+    },
+    {
+      "id": 197,
+      "name": "三塊厝站",
+      "status": "active",
+      "openDate": "1908年2月1日、2018年10月14日",
+      "closeDate": "1986年9月26日",
+      "level": "簡易站",
+      "miles": "基隆起403.7公里(海線)、高雄港起2.9公里(屏東線)",
+      "stationCode": "4390",
+      "line": [
+        {
+          "lineID": 500,
+          "lineDistrict": { "id": 1, "order": 39 }
+        },
+        {
+          "lineID": 600,
+          "lineDistrict": { "id": 1, "order": 3 }
+        }
+      ],
+      "prevStation": [196, 199],
+      "nextStation": 198,
+      "hasDetail": true
+    },
+    {
+      "id": 198,
+      "name": "高雄站",
+      "status": "active",
+      "openDate": "1941年6月22日",
+      "level": "特等站",
+      "miles": "基隆起404.5公里(海線)、基隆起406.1公里(舊海線)、高雄港起3.7公里",
+      "stationCode": "4400",
+      "line": [
+        {
+          "lineID": 500,
+          "lineDistrict": { "id": 1, "order": 40 }
+        },
+        {
+          "lineID": 600,
+          "lineDistrict": { "id": 1, "order": 4 }
+        }
+      ],
+      "prevStation": [197],
+      "nextStation": [201],
+      "hasDetail": true
+    },
+    {
+      "id": 199,
+      "name": "壽山站",
+      "status": "disused",
+      "openDate": "1931年8月1日",
+      "closeDate": "1962年",
+      "level": "招呼站",
+      "originalName": "山下町(1952年7月1日改名)",
+      "miles": "基隆起403.0公里(海線)、基隆起404.5公里(舊山線)、高雄港起1.4公里(屏東線)",
+      "line": [
+        {
+          "lineID": 500,
+          "lineDistrict": { "id": 2, "order": 2 }
+        },
+        {
+          "lineID": 600,
+          "lineDistrict": { "id": 1, "order": 2 }
+        }
+      ],
+      "prevStation": [196, 200],
+      "nextStation": [200, 197],
+      "hasDetail": true
+    },
+    {
+      "id": 200,
+      "name": "高雄港站",
+      "status": "disused",
+      "openDate": "1900年11月29日",
+      "closeDate": "2008年12月16日",
+      "level": "一等站",
+      "miles": "基隆起405.9公里(舊海線)、基隆起404.4公里(海線)、高雄港起0.0公里(屏東線)",
+      "line": [
+        {
+          "lineID": 500,
+          "lineDistrict": { "id": 2, "order": 3 }
+        },
+        {
+          "lineID": 600,
+          "lineDistrict": { "id": 1, "order": 1 }
+        },
+        {
+          "lineID": 2700,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 199,
+      "nextStation": [199],
       "hasDetail": true
     }
   ]
