@@ -31,6 +31,7 @@ interface Station {
   originalName?: string;
   level?: string;
   miles?: string;
+  height?: height;
   stationCode?: string;
   line: StationLineInfo[];
   prevStation?: number[] | number;

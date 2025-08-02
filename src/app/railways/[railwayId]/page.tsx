@@ -33,6 +33,7 @@ interface Station {
   originalName?: string;
   level?: string;
   miles?: string;
+  height?: string;
   stationCode?: string;
 }
 

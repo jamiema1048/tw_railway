@@ -32,6 +32,7 @@ interface Station {
   originalName?: string;
   level?: string;
   miles?: string;
+  height?: string;
   stationCode?: string;
   line: StationLineInfo[];
   prevStation?: number[] | number;
@@ -97,6 +98,11 @@ export default function StationClient({
           {station.miles && (
             <h3 className="text-xl mb-4">
               <strong>里程:</strong> {station.miles}
+            </h3>
+          )}
+          {station.height && (
+            <h3 className="text-xl mb-4">
+              <strong>海拔高度:</strong> {station.height}
             </h3>
           )}
           {station.stationCode && (
