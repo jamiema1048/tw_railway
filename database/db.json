@@ -1291,7 +1291,7 @@
         }
       ],
       "prevStation": 49,
-      "nextStation": [54, 55],
+      "nextStation": [54, 55, 376],
       "hasDetail": true
     },
     {
@@ -2830,7 +2830,7 @@
         }
       ],
       "prevStation": 142,
-      "nextStation": [149, 144],
+      "nextStation": [149, 144, 369],
       "hasDetail": true
     },
     {
@@ -4168,7 +4168,7 @@
         }
       ],
       "prevStation": [219, 220],
-      "nextStation": [],
+      "nextStation": 352,
       "hasDetail": true
     },
     {
@@ -4262,7 +4262,7 @@
         }
       ],
       "prevStation": 225,
-      "nextStation": [227],
+      "nextStation": [227, 388],
       "hasDetail": true
     },
     {
@@ -5974,7 +5974,7 @@
       "level": "一等站",
       "originalName": "卑南(1992年1月12日改名)、台東新站(2001年12月1日改名)",
       "miles": "花蓮起155.9公里(東改前台東線)、花蓮起150.9公里(台東線)、枋寮起98.2公里(南迴線)",
-      "stationCode": "6010",
+      "stationCode": "6000",
       "line": [
         {
           "lineID": 900,
@@ -5985,8 +5985,991 @@
           "lineDistrict": { "id": 1, "order": 19 }
         }
       ],
-      "prevStation": 326,
-      "nextStation": [323],
+      "prevStation": [326, 368],
+      "nextStation": 323,
+      "hasDetail": true
+    },
+    {
+      "id": 328,
+      "name": "花蓮港",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 6, "order": 1 }
+      },
+      "nextStation": 329,
+      "hasDetail": false
+    },
+    {
+      "id": 329,
+      "name": "荳蘭",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 6, "order": 2 }
+      },
+      "prevStation": 328,
+      "nextStation": 330,
+      "hasDetail": false
+    },
+    {
+      "id": 330,
+      "name": "吳全城",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 6, "order": 3 }
+      },
+      "prevStation": 329,
+      "nextStation": 331,
+      "hasDetail": false
+    },
+    {
+      "id": 331,
+      "name": "鯉魚尾",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": [
+          { "id": 6, "order": 4 },
+          { "id": 7, "order": 1 }
+        ]
+      },
+      "prevStation": 330,
+      "nextStation": 332,
+      "hasDetail": false
+    },
+    {
+      "id": 332,
+      "name": "溪口",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": [
+          { "id": 6, "order": 5 },
+          { "id": 7, "order": 2 }
+        ]
+      },
+      "prevStation": 331,
+      "nextStation": 333,
+      "hasDetail": false
+    },
+    {
+      "id": 333,
+      "name": "鳳林",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": [
+          { "id": 6, "order": 6 },
+          { "id": 7, "order": 3 }
+        ]
+      },
+      "prevStation": 332,
+      "nextStation": 334,
+      "hasDetail": false
+    },
+    {
+      "id": 334,
+      "name": "馬太鞍",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 4 }
+      },
+      "prevStation": 333,
+      "nextStation": 335,
+      "hasDetail": false
+    },
+    {
+      "id": 335,
+      "name": "拔仔庄",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 5 }
+      },
+      "prevStation": 334,
+      "nextStation": 336,
+      "hasDetail": false
+    },
+    {
+      "id": 336,
+      "name": "水尾",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 6 }
+      },
+      "prevStation": 335,
+      "nextStation": 337,
+      "hasDetail": false
+    },
+    {
+      "id": 337,
+      "name": "迪佳",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 7 }
+      },
+      "prevStation": 336,
+      "nextStation": 338,
+      "hasDetail": false
+    },
+    {
+      "id": 338,
+      "name": "針塱",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 8 }
+      },
+      "prevStation": 337,
+      "nextStation": 339,
+      "hasDetail": false
+    },
+    {
+      "id": 339,
+      "name": "璞石閣",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 9 }
+      },
+      "prevStation": 338,
+      "nextStation": 340,
+      "hasDetail": false
+    },
+    {
+      "id": 340,
+      "name": "大庄",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 10 }
+      },
+      "prevStation": 339,
+      "nextStation": 341,
+      "hasDetail": false
+    },
+    {
+      "id": 341,
+      "name": "頭人埔",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 11 }
+      },
+      "prevStation": 340,
+      "nextStation": 342,
+      "hasDetail": false
+    },
+    {
+      "id": 342,
+      "name": "公埔",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 12 }
+      },
+      "prevStation": 341,
+      "nextStation": 343,
+      "hasDetail": false
+    },
+    {
+      "id": 343,
+      "name": "新開園",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 13 }
+      },
+      "prevStation": 342,
+      "nextStation": 344,
+      "hasDetail": false
+    },
+    {
+      "id": 344,
+      "name": "里壠",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 14 }
+      },
+      "prevStation": 343,
+      "nextStation": 345,
+      "hasDetail": false
+    },
+    {
+      "id": 345,
+      "name": "新七脚川",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 15 }
+      },
+      "prevStation": 344,
+      "nextStation": 346,
+      "hasDetail": false
+    },
+    {
+      "id": 346,
+      "name": "咾吧咾吧",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 16 }
+      },
+      "prevStation": 345,
+      "nextStation": 347,
+      "hasDetail": false
+    },
+    {
+      "id": 347,
+      "name": "北絲鬮",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 17 }
+      },
+      "prevStation": 346,
+      "nextStation": 348,
+      "hasDetail": false
+    },
+    {
+      "id": 348,
+      "name": "兵舍前",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 18 }
+      },
+      "prevStation": 347,
+      "nextStation": 349,
+      "hasDetail": false
+    },
+    {
+      "id": 349,
+      "name": "馬蘭",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 19 }
+      },
+      "prevStation": 348,
+      "nextStation": 350,
+      "hasDetail": false
+    },
+    {
+      "id": 350,
+      "name": "卑南",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 20 }
+      },
+      "prevStation": 349,
+      "nextStation": 351,
+      "hasDetail": false
+    },
+    {
+      "id": 351,
+      "name": "卑南海岸",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 7, "order": 21 }
+      },
+      "prevStation": 349,
+      "hasDetail": false
+    },
+    {
+      "id": 352,
+      "name": "加祿站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "三等站",
+      "miles": "枋寮起5.4公里",
+      "stationCode": "5130",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 221,
+      "nextStation": 353,
+      "hasDetail": true
+    },
+    {
+      "id": 353,
+      "name": "內獅站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "招呼站",
+      "miles": "枋寮起8.8公里",
+      "stationCode": "5140",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 352,
+      "nextStation": 354,
+      "hasDetail": true
+    },
+    {
+      "id": 354,
+      "name": "枋山站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "乙種簡易站",
+      "miles": "枋寮起13.7公里",
+      "height": "63公尺",
+      "stationCode": "5160",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 353,
+      "nextStation": [359, 355],
+      "hasDetail": true
+    },
+    {
+      "id": 355,
+      "name": "枋野號誌站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "三等站",
+      "miles": "枋寮起20.4公里",
+      "height": "135公尺",
+      "stationCode": "5170",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 354,
+      "nextStation": 356,
+      "hasDetail": true
+    },
+    {
+      "id": 356,
+      "name": "中央號誌站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "號誌站",
+      "miles": "枋寮起23.6公里",
+      "stationCode": "208",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 355,
+      "nextStation": [358, 357],
+      "hasDetail": true
+    },
+    {
+      "id": 357,
+      "name": "菩安交會站",
+      "status": "disused",
+      "openDate": "未正式設站",
+      "level": "號誌站",
+      "miles": "枋寮起31.9公里",
+      "stationCode": "209",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 356,
+      "nextStation": 358,
+      "hasDetail": true
+    },
+    {
+      "id": 358,
+      "name": "古莊號誌站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "號誌站",
+      "miles": "枋寮起40.6公里",
+      "stationCode": "210",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": [356, 357],
+      "nextStation": 359,
+      "hasDetail": true
+    },
+    {
+      "id": 359,
+      "name": "大武站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "三等站",
+      "miles": "枋寮起43.8公里",
+      "stationCode": "5190",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": [354, 358],
+      "nextStation": [361, 360],
+      "hasDetail": true
+    },
+    {
+      "id": 360,
+      "name": "富山號誌站",
+      "status": "disused",
+      "openDate": "未正式設站",
+      "level": "號誌站",
+      "miles": "枋寮起50.7公里",
+      "stationCode": "212",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 359,
+      "nextStation": 361,
+      "hasDetail": true
+    },
+    {
+      "id": 361,
+      "name": "瀧溪站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "乙種簡易站",
+      "miles": "枋寮起55.5公里",
+      "stationCode": "5200",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": [359, 360],
+      "nextStation": [363, 362],
+      "hasDetail": true
+    },
+    {
+      "id": 362,
+      "name": "多良站",
+      "status": "disused",
+      "openDate": "1992年10月28日",
+      "closeDate": "2006年10月1日",
+      "level": "招呼站",
+      "miles": "枋寮起60.9公里",
+      "stationCode": "214",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 361,
+      "nextStation": 363,
+      "hasDetail": true
+    },
+    {
+      "id": 363,
+      "name": "金崙站",
+      "status": "active",
+      "openDate": "1992年10月5日",
+      "level": "三等站",
+      "miles": "枋寮起63.9公里",
+      "stationCode": "5210",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": [361, 362],
+      "nextStation": [365, 364],
+      "hasDetail": true
+    },
+    {
+      "id": 364,
+      "name": "香蘭站",
+      "status": "disused",
+      "openDate": "1989年7月25日",
+      "closeDate": "1997年2月19日",
+      "level": "三等站",
+      "miles": "枋寮起69.8公里",
+      "stationCode": "216",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "prevStation": 363,
+      "nextStation": 365,
+      "hasDetail": true
+    },
+    {
+      "id": 365,
+      "name": "太麻里站",
+      "status": "active",
+      "openDate": "1988年1月1日",
+      "level": "三等站",
+      "miles": "枋寮起74.9公里",
+      "stationCode": "5220",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 15 }
+      },
+      "prevStation": [363, 364],
+      "nextStation": [367, 366],
+      "hasDetail": true
+    },
+    {
+      "id": 366,
+      "name": "三和站",
+      "status": "disused",
+      "openDate": "1988年1月1日",
+      "closeDate": "1997年10月1日",
+      "level": "三等站",
+      "miles": "枋寮起82.2公里",
+      "stationCode": "218",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "prevStation": 365,
+      "nextStation": 367,
+      "hasDetail": true
+    },
+    {
+      "id": 367,
+      "name": "知本站",
+      "status": "active",
+      "openDate": "1985年7月15日",
+      "level": "三等站",
+      "miles": "枋寮起86.6公里",
+      "stationCode": "5230",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "prevStation": [365, 366],
+      "nextStation": 368,
+      "hasDetail": true
+    },
+    {
+      "id": 368,
+      "name": "康樂站",
+      "status": "active",
+      "openDate": "1985年7月15日",
+      "level": "乙種簡易站",
+      "miles": "枋寮起93.6公里",
+      "stationCode": "5240",
+      "line": {
+        "lineID": 1000,
+        "lineDistrict": { "id": 1, "order": 18 }
+      },
+      "prevStation": 367,
+      "nextStation": 327,
+      "hasDetail": true
+    },
+    {
+      "id": 369,
+      "name": "源泉站",
+      "status": "active",
+      "openDate": "1922年1月14日",
+      "level": "招呼站",
+      "originalName": "鼻子頭(1962年4月1日改名)",
+      "miles": "二水起2.9公里",
+      "stationCode": "3431",
+      "line": {
+        "lineID": 1100,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 143,
+      "nextStation": 370,
+      "hasDetail": true
+    },
+    {
+      "id": 370,
+      "name": "濁水站",
+      "status": "active",
+      "openDate": "1922年1月14日",
+      "level": "丙種簡易站",
+      "originalName": "名間(1922年3月31日改名)",
+      "miles": "二水起10.8公里",
+      "stationCode": "3432",
+      "line": {
+        "lineID": 1100,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 369,
+      "nextStation": 371,
+      "hasDetail": true
+    },
+    {
+      "id": 371,
+      "name": "龍泉站",
+      "status": "active",
+      "openDate": "1922年1月14日",
+      "level": "招呼站",
+      "originalName": "隘寮(1962年4月1日改名)",
+      "miles": "二水起15.7公里",
+      "stationCode": "3433",
+      "line": {
+        "lineID": 1100,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 370,
+      "nextStation": 372,
+      "hasDetail": true
+    },
+    {
+      "id": 372,
+      "name": "集集站",
+      "status": "active",
+      "openDate": "1922年1月14日",
+      "level": "招呼站",
+      "miles": "二水起20.1公里",
+      "stationCode": "3434",
+      "line": {
+        "lineID": 1100,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 371,
+      "nextStation": 373,
+      "hasDetail": true
+    },
+    {
+      "id": 373,
+      "name": "水里站",
+      "status": "active",
+      "openDate": "1922年1月14日",
+      "level": "簡易站",
+      "originalName": "水里坑(1952年12月1日改名)、水裡(1959年8月8日改名)、水裏(1967年10月10日改名)",
+      "miles": "二水起27.4公里",
+      "stationCode": "3435",
+      "line": {
+        "lineID": 1100,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 372,
+      "nextStation": [375, 374],
+      "hasDetail": true
+    },
+    {
+      "id": 374,
+      "name": "黑熊站",
+      "status": "disused",
+      "openDate": "2007年2月3日",
+      "closeDate": "2007年3月11日",
+      "miles": "二水起28.0公里",
+      "line": {
+        "lineID": 1100,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 373,
+      "nextStation": 375,
+      "hasDetail": true
+    },
+    {
+      "id": 375,
+      "name": "車埕站",
+      "status": "active",
+      "openDate": "1922年1月14日",
+      "level": "簡易站",
+      "originalName": "外車埕(1955年3月1日改名)",
+      "miles": "二水起29.7公里",
+      "stationCode": "3436",
+      "line": {
+        "lineID": 1100,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": [373, 374],
+      "hasDetail": true
+    },
+    {
+      "id": 376,
+      "name": "千甲站",
+      "status": "active",
+      "openDate": "2011年11月11日",
+      "level": "簡易站",
+      "originalName": "世博(2013年1月改名)",
+      "miles": "新竹起K3+607+227",
+      "stationCode": "1191",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 53,
+      "nextStation": 377,
+      "hasDetail": true
+    },
+    {
+      "id": 377,
+      "name": "新莊站",
+      "status": "active",
+      "openDate": "2011年11月11日",
+      "level": "簡易站",
+      "originalName": "竹科(2013年1月改名)",
+      "miles": "新竹起K6+573+000",
+      "stationCode": "1192",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 376,
+      "nextStation": 378,
+      "hasDetail": true
+    },
+    {
+      "id": 378,
+      "name": "竹中站",
+      "status": "active",
+      "openDate": "1947年11月15日",
+      "level": "甲種簡易站",
+      "miles": "新竹起K7+902+000",
+      "stationCode": "1193",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": [
+          { "id": 1, "order": 5 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "prevStation": 377,
+      "nextStation": [379, 380],
+      "hasDetail": true
+    },
+    {
+      "id": 379,
+      "name": "六家站",
+      "status": "active",
+      "openDate": "2011年11月11日",
+      "level": "乙種簡易站",
+      "miles": "新竹起11.0公里",
+      "stationCode": "1194",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 378,
+      "hasDetail": true
+    },
+    {
+      "id": 380,
+      "name": "上員站",
+      "status": "active",
+      "openDate": "1970年2月6日",
+      "level": "招呼站",
+      "miles": "新竹起10.5公里",
+      "stationCode": "1201",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 378,
+      "nextStation": 381,
+      "hasDetail": true
+    },
+    {
+      "id": 381,
+      "name": "榮華站",
+      "status": "active",
+      "openDate": "2001年11月24日",
+      "level": "招呼站",
+      "miles": "新竹起15.0公里",
+      "stationCode": "1202",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 380,
+      "nextStation": 382,
+      "hasDetail": true
+    },
+    {
+      "id": 382,
+      "name": "竹東站",
+      "status": "active",
+      "openDate": "1947年11月15日",
+      "level": "二等站",
+      "miles": "新竹起K16+610",
+      "stationCode": "1203",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 381,
+      "nextStation": 383,
+      "hasDetail": true
+    },
+    {
+      "id": 383,
+      "name": "橫山站",
+      "status": "active",
+      "openDate": "1950年12月27日",
+      "level": "招呼站",
+      "miles": "新竹起20.0公里",
+      "stationCode": "1204",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 382,
+      "nextStation": 384,
+      "hasDetail": true
+    },
+    {
+      "id": 384,
+      "name": "九讚頭站",
+      "status": "active",
+      "openDate": "1950年12月27日",
+      "level": "乙種簡易站",
+      "miles": "新竹起22.2公里",
+      "stationCode": "1205",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 383,
+      "nextStation": 385,
+      "hasDetail": true
+    },
+    {
+      "id": 385,
+      "name": "合興站",
+      "status": "active",
+      "openDate": "1950年12月27日",
+      "level": "招呼站",
+      "miles": "新竹起24.4公里",
+      "stationCode": "1206",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 384,
+      "nextStation": 386,
+      "hasDetail": true
+    },
+    {
+      "id": 386,
+      "name": "富貴站",
+      "status": "active",
+      "openDate": "1962年11月28日",
+      "level": "招呼站",
+      "originalName": "南河(2003年10月10日改名)",
+      "miles": "新竹起25.7公里",
+      "stationCode": "1207",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 385,
+      "nextStation": 387,
+      "hasDetail": true
+    },
+    {
+      "id": 387,
+      "name": "內灣站",
+      "status": "active",
+      "openDate": "1951年9月11日",
+      "level": "簡易站",
+      "miles": "新竹起27.9公里",
+      "stationCode": "1208",
+      "line": {
+        "lineID": 1200,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 386,
+      "hasDetail": true
+    },
+    {
+      "id": 388,
+      "name": "大華站",
+      "status": "active",
+      "openDate": "1956年10月21日",
+      "level": "招呼站",
+      "miles": "三貂嶺起3.5公里",
+      "stationCode": "7331",
+      "line": {
+        "lineID": 1300,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 226,
+      "nextStation": 389,
+      "hasDetail": true
+    },
+    {
+      "id": 389,
+      "name": "十分站",
+      "status": "active",
+      "openDate": "1929年10月1日",
+      "level": "丙種簡易站",
+      "originalName": "十分寮(1962年12月15日改名)",
+      "miles": "三貂嶺起6.4公里",
+      "stationCode": "7332",
+      "line": {
+        "lineID": 1300,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 388,
+      "nextStation": 390,
+      "hasDetail": true
+    },
+    {
+      "id": 390,
+      "name": "望古站",
+      "status": "active",
+      "openDate": "1972年7月30日",
+      "level": "招呼站",
+      "originalName": "慶和(1989年4月19日改名)",
+      "miles": "三貂嶺起K8+100",
+      "stationCode": "7333",
+      "line": {
+        "lineID": 1300,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 389,
+      "nextStation": 391,
+      "hasDetail": true
+    },
+    {
+      "id": 391,
+      "name": "嶺腳站",
+      "status": "active",
+      "openDate": "1929年10月1日",
+      "level": "招呼站",
+      "originalName": "嶺腳寮(1962年12月15日改名)",
+      "miles": "三貂嶺起10.2公里",
+      "stationCode": "7334",
+      "line": {
+        "lineID": 1300,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 390,
+      "nextStation": 392,
+      "hasDetail": true
+    },
+    {
+      "id": 392,
+      "name": "平溪站",
+      "status": "active",
+      "openDate": "1929年10月1日",
+      "level": "簡易站",
+      "originalName": "石底(1954年2月1日改名)",
+      "miles": "三貂嶺起11.2公里",
+      "stationCode": "7335",
+      "line": {
+        "lineID": 1300,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 391,
+      "nextStation": 393,
+      "hasDetail": true
+    },
+    {
+      "id": 393,
+      "name": "菁桐站",
+      "status": "active",
+      "openDate": "1929年10月1日",
+      "level": "簡易站",
+      "originalName": "菁桐坑(1962年12月15日)",
+      "miles": "三貂嶺起12.9公里",
+      "stationCode": "7336",
+      "line": {
+        "lineID": 1300,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 392,
       "hasDetail": true
     }
   ]
