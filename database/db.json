@@ -119,18 +119,26 @@
         },
         {
           "districtID": 2,
-          "districtName": "中興改線段"
+          "districtName": "花蓮市區舊線"
         },
         {
           "districtID": 3,
-          "districtName": "台東海岸線"
+          "districtName": "中興改線段"
         },
         {
           "districtID": 4,
-          "districtName": "花蓮港=鳳林間台車"
+          "districtName": "花蓮海岸線"
         },
         {
           "districtID": 5,
+          "districtName": "台東海岸線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "花蓮港=鳳林間台車"
+        },
+        {
+          "districtID": 7,
           "districtName": "台東軌道"
         }
       ]
@@ -316,10 +324,6 @@
         {
           "districtID": 1,
           "districtName": "花蓮臨港線"
-        },
-        {
-          "districtID": 2,
-          "districtName": "花蓮海岸線"
         }
       ]
     },
@@ -441,7 +445,7 @@
         }
       ],
       "prevStation": 2,
-      "nextStation": 4,
+      "nextStation": [4, 222],
       "hasDetail": true
     },
     {
@@ -3742,7 +3746,7 @@
       "status": "active",
       "openDate": "1941年6月22日",
       "level": "特等站",
-      "miles": "基隆起404.5公里(海線)、基隆起406.1公里(舊海線)、高雄港起3.7公里",
+      "miles": "基隆起404.5公里(海線)、基隆起406.1公里(舊海線)、高雄港起3.7公里(屏東線)",
       "stationCode": "4400",
       "line": [
         {
@@ -3752,6 +3756,10 @@
         {
           "lineID": 600,
           "lineDistrict": { "id": 1, "order": 4 }
+        },
+        {
+          "lineID": 2700,
+          "lineDistrict": { "id": 1, "order": 7 }
         }
       ],
       "prevStation": [197],
@@ -3805,6 +3813,2180 @@
       ],
       "prevStation": 199,
       "nextStation": [199],
+      "hasDetail": true
+    },
+    {
+      "id": 201,
+      "name": "民族站",
+      "status": "active",
+      "openDate": "2018年10月14日",
+      "level": "簡易站",
+      "miles": "高雄港起5.1公里",
+      "stationCode": "4410",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 198,
+      "nextStation": 202,
+      "hasDetail": true
+    },
+    {
+      "id": 202,
+      "name": "科工館站",
+      "status": "active",
+      "openDate": "2018年10月14日",
+      "level": "簡易站",
+      "miles": "高雄港起6.1公里",
+      "stationCode": "4420",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 201,
+      "nextStation": 203,
+      "hasDetail": true
+    },
+    {
+      "id": 203,
+      "name": "正義站",
+      "status": "active",
+      "openDate": "2018年10月14日",
+      "level": "簡易站",
+      "miles": "高雄港起7.9公里",
+      "stationCode": "4430",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 202,
+      "nextStation": 204,
+      "hasDetail": true
+    },
+    {
+      "id": 204,
+      "name": "鳳山站",
+      "status": "active",
+      "openDate": "1907年10月1日",
+      "level": "二等站",
+      "miles": "高雄港起9.5公里",
+      "stationCode": "4440",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 203,
+      "nextStation": 205,
+      "hasDetail": true
+    },
+    {
+      "id": 205,
+      "name": "後庄站",
+      "status": "active",
+      "openDate": "1908年6月25日",
+      "level": "簡易站",
+      "miles": "高雄港起13.2公里",
+      "stationCode": "4450",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 204,
+      "nextStation": 206,
+      "hasDetail": true
+    },
+    {
+      "id": 206,
+      "name": "九曲堂站",
+      "status": "active",
+      "openDate": "1907年10月1日",
+      "level": "三等站",
+      "miles": "高雄港起17.5公里",
+      "stationCode": "4460",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 205,
+      "nextStation": 207,
+      "hasDetail": true
+    },
+    {
+      "id": 207,
+      "name": "六塊厝站",
+      "status": "active",
+      "openDate": "1913年12月20日",
+      "level": "招呼站",
+      "miles": "高雄港起22.5公里",
+      "stationCode": "4470",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 206,
+      "nextStation": 208,
+      "hasDetail": true
+    },
+    {
+      "id": 208,
+      "name": "屏東站",
+      "status": "active",
+      "openDate": "1913年12月20日",
+      "level": "一等站",
+      "originalName": "阿緱(1920年10月1日改名)",
+      "miles": "高雄港起24.7公里",
+      "stationCode": "5000",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 207,
+      "nextStation": 209,
+      "hasDetail": true
+    },
+    {
+      "id": 209,
+      "name": "歸來站",
+      "status": "active",
+      "openDate": "1956年5月1日",
+      "level": "招呼站",
+      "miles": "高雄港起27.3公里",
+      "stationCode": "5010",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 208,
+      "nextStation": 210,
+      "hasDetail": true
+    },
+    {
+      "id": 210,
+      "name": "麟洛站",
+      "status": "active",
+      "openDate": "1941年7月1日",
+      "level": "招呼站",
+      "originalName": "隘寮溪(1951年1月1日改名)",
+      "miles": "高雄港起29.6公里",
+      "stationCode": "5020",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "prevStation": 209,
+      "nextStation": 211,
+      "hasDetail": true
+    },
+    {
+      "id": 211,
+      "name": "西勢站",
+      "status": "active",
+      "openDate": "1919年11月16日",
+      "level": "三等站",
+      "miles": "高雄港起32.0公里",
+      "stationCode": "5030",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 15 }
+      },
+      "prevStation": 210,
+      "nextStation": 212,
+      "hasDetail": true
+    },
+    {
+      "id": 212,
+      "name": "竹田站",
+      "status": "active",
+      "openDate": "1919年11月16日",
+      "level": "簡易站",
+      "originalName": "頓物(1920年10月1日改名)",
+      "miles": "高雄港起35.7公里",
+      "stationCode": "5040",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "prevStation": 211,
+      "nextStation": 213,
+      "hasDetail": true
+    },
+    {
+      "id": 213,
+      "name": "潮州站",
+      "status": "active",
+      "openDate": "1920年2月22日",
+      "level": "一等站",
+      "miles": "高雄港起39.8公里",
+      "stationCode": "5050",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "prevStation": 212,
+      "nextStation": 214,
+      "hasDetail": true
+    },
+    {
+      "id": 214,
+      "name": "崁頂站",
+      "status": "active",
+      "openDate": "1952年11月24日",
+      "level": "招呼站",
+      "miles": "高雄港起44.6公里",
+      "stationCode": "5060",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 18 }
+      },
+      "prevStation": 213,
+      "nextStation": 215,
+      "hasDetail": true
+    },
+    {
+      "id": 215,
+      "name": "南州站",
+      "status": "active",
+      "openDate": "1923年10月21日",
+      "level": "三等站",
+      "originalName": "溪州(1958年2月10日改名)",
+      "miles": "高雄港起K46+980",
+      "stationCode": "5070",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 19 }
+      },
+      "prevStation": 214,
+      "nextStation": 216,
+      "hasDetail": true
+    },
+    {
+      "id": 216,
+      "name": "鎮安站",
+      "status": "active",
+      "openDate": "1940年7月19日",
+      "level": "招呼站",
+      "originalName": "社邊(1962年4月1日改名)",
+      "miles": "高雄港起50.6公里(屏東線)、鎮安起0.0公里(東港線)",
+      "stationCode": "5080",
+      "line": [
+        {
+          "lineID": 600,
+          "lineDistrict": { "id": 1, "order": 20 }
+        },
+        {
+          "lineID": 2300,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 215,
+      "nextStation": [217],
+      "hasDetail": true
+    },
+    {
+      "id": 217,
+      "name": "林邊站",
+      "status": "active",
+      "openDate": "1940年1月17日",
+      "level": "三等站",
+      "miles": "高雄港起53.8公里",
+      "stationCode": "5090",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 21 }
+      },
+      "prevStation": 216,
+      "nextStation": 218,
+      "hasDetail": true
+    },
+    {
+      "id": 218,
+      "name": "佳冬站",
+      "status": "active",
+      "openDate": "1940年7月12日",
+      "level": "甲種簡易站",
+      "miles": "高雄港起57.8公里",
+      "stationCode": "5100",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 22 }
+      },
+      "prevStation": 217,
+      "nextStation": 219,
+      "hasDetail": true
+    },
+    {
+      "id": 219,
+      "name": "東海站",
+      "status": "active",
+      "openDate": "1953年1月16日",
+      "level": "招呼站",
+      "originalName": "北旗尾(1966年1月1日改名)",
+      "miles": "高雄港起60.9公里",
+      "stationCode": "5110",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 23 }
+      },
+      "prevStation": 218,
+      "nextStation": [221, 220],
+      "hasDetail": true
+    },
+    {
+      "id": 220,
+      "name": "建興站",
+      "status": "disused",
+      "openDate": "1953年1月16日",
+      "closeDate": "1991年12月1日",
+      "level": "招呼站",
+      "originalName": "水底寮(1966年1月1日改名)",
+      "miles": "高雄港起62.6公里",
+      "stationCode": "202",
+      "line": {
+        "lineID": 600,
+        "lineDistrict": { "id": 1, "order": 24 }
+      },
+      "prevStation": 219,
+      "nextStation": 221,
+      "hasDetail": true
+    },
+    {
+      "id": 221,
+      "name": "枋寮站",
+      "status": "active",
+      "openDate": "1941年12月15日",
+      "level": "二等站",
+      "miles": "高雄港起65.0公里(屏東線) 枋寮起0.0公里(南迴線)",
+      "stationCode": "5120",
+      "line": [
+        {
+          "lineID": 600,
+          "lineDistrict": { "id": 1, "order": 25 }
+        },
+        {
+          "lineID": 1000,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": [219, 220],
+      "nextStation": [],
+      "hasDetail": true
+    },
+    {
+      "id": 222,
+      "name": "暖暖站",
+      "status": "active",
+      "openDate": "1919年5月5日",
+      "level": "招呼站",
+      "originalName": "暖暖街(1920年10月1日改名)",
+      "miles": "八堵起1.6公里",
+      "stationCode": "7390",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 3,
+      "nextStation": 223,
+      "hasDetail": true
+    },
+    {
+      "id": 223,
+      "name": "四腳亭站",
+      "status": "active",
+      "openDate": "1919年5月5日",
+      "level": "三等站",
+      "miles": "八堵起K3+852",
+      "stationCode": "7380",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 222,
+      "nextStation": 224,
+      "hasDetail": true
+    },
+    {
+      "id": 224,
+      "name": "瑞芳站",
+      "status": "active",
+      "openDate": "1919年5月5日",
+      "level": "一等站",
+      "miles": "八堵起K8+936+6(宜蘭線) 瑞芳起0.0公里(深澳線)",
+      "stationCode": "7360",
+      "line": [
+        {
+          "lineID": 700,
+          "lineDistrict": { "id": 1, "order": 4 }
+        },
+        {
+          "lineID": 1400,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 223,
+      "nextStation": [225],
+      "hasDetail": true
+    },
+    {
+      "id": 225,
+      "name": "猴硐站",
+      "status": "active",
+      "openDate": "1920年1月27日",
+      "level": "三等站",
+      "originalName": "猴硐(1962年4月1日改名)、侯硐(2013年12月10日改名)",
+      "miles": "八堵起13.5公里",
+      "stationCode": "7350",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 224,
+      "nextStation": 226,
+      "hasDetail": true
+    },
+    {
+      "id": 226,
+      "name": "三貂嶺站",
+      "status": "active",
+      "openDate": "1922年5月21日",
+      "level": "三等站",
+      "miles": "八堵起K16+023(宜蘭線) 三貂嶺起0.0公里(平溪線)",
+      "stationCode": "7330",
+      "line": [
+        {
+          "lineID": 700,
+          "lineDistrict": { "id": 1, "order": 6 }
+        },
+        {
+          "lineID": 1300,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 225,
+      "nextStation": [227],
+      "hasDetail": true
+    },
+    {
+      "id": 227,
+      "name": "牡丹站",
+      "status": "active",
+      "openDate": "1922年9月21日",
+      "level": "簡易站",
+      "originalName": "武丹坑(1952年12月1日改名)、牡丹坑(1964年12月1日改名)",
+      "miles": "八堵起K19+546",
+      "stationCode": "7320",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 226,
+      "nextStation": 228,
+      "hasDetail": true
+    },
+    {
+      "id": 228,
+      "name": "雙溪站",
+      "status": "active",
+      "openDate": "1923年10月21日",
+      "level": "二等站",
+      "originalName": "雙溪(1924年12月1日改名)、頂雙溪(1952年12月1日改名)",
+      "miles": "八堵起22.9公里",
+      "stationCode": "7310",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 227,
+      "nextStation": 229,
+      "hasDetail": true
+    },
+    {
+      "id": 229,
+      "name": "貢寮站",
+      "status": "active",
+      "openDate": "1924年12月1日",
+      "level": "乙種簡易站",
+      "originalName": "貢寮庄(1952年12月1日改名)",
+      "miles": "八堵起K28+242",
+      "stationCode": "7300",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 228,
+      "nextStation": 230,
+      "hasDetail": true
+    },
+    {
+      "id": 230,
+      "name": "福隆站",
+      "status": "active",
+      "openDate": "1924年12月1日",
+      "level": "三等站",
+      "originalName": "澳底(1952年12月1日改名)",
+      "miles": "八堵起32.0公里",
+      "stationCode": "7290",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 229,
+      "nextStation": 231,
+      "hasDetail": true
+    },
+    {
+      "id": 231,
+      "name": "石城站",
+      "status": "active",
+      "openDate": "1953年2月1日",
+      "level": "招呼站",
+      "miles": "八堵起37.4公里",
+      "stationCode": "7280",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 230,
+      "nextStation": 232,
+      "hasDetail": true
+    },
+    {
+      "id": 232,
+      "name": "大里站",
+      "status": "active",
+      "openDate": "1920年12月10日",
+      "level": "甲種簡易站",
+      "miles": "八堵起K40+089",
+      "stationCode": "7270",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 231,
+      "nextStation": 233,
+      "hasDetail": true
+    },
+    {
+      "id": 233,
+      "name": "大溪站",
+      "status": "active",
+      "openDate": "1920年12月10日",
+      "level": "簡易站",
+      "miles": "八堵起44.8公里",
+      "stationCode": "7260",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 232,
+      "nextStation": 234,
+      "hasDetail": true
+    },
+    {
+      "id": 234,
+      "name": "龜山站",
+      "status": "active",
+      "openDate": "1920年12月10日",
+      "level": "甲種簡易站",
+      "miles": "八堵起49.4公里",
+      "stationCode": "7250",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "prevStation": 233,
+      "nextStation": 235,
+      "hasDetail": true
+    },
+    {
+      "id": 235,
+      "name": "外澳站",
+      "status": "active",
+      "openDate": "1920年12月10日",
+      "level": "招呼站",
+      "miles": "八堵起53.0公里",
+      "stationCode": "7240",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 15 }
+      },
+      "prevStation": 234,
+      "nextStation": 236,
+      "hasDetail": true
+    },
+    {
+      "id": 236,
+      "name": "頭城站",
+      "status": "active",
+      "openDate": "1920年4月25日",
+      "level": "三等站",
+      "originalName": "頭圍(1948年6月16日改名)",
+      "miles": "八堵起56.6公里",
+      "stationCode": "7230",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "prevStation": 235,
+      "nextStation": 237,
+      "hasDetail": true
+    },
+    {
+      "id": 237,
+      "name": "頂埔站",
+      "status": "active",
+      "openDate": "1937年5月1日、1960年5月21日",
+      "closeDate": "1938年7月1日",
+      "level": "招呼站",
+      "miles": "八堵起58.8公里",
+      "stationCode": "7220",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "prevStation": 236,
+      "nextStation": [239, 238],
+      "hasDetail": true
+    },
+    {
+      "id": 238,
+      "name": "二圍停車場",
+      "status": "disused",
+      "openDate": "1937年5月1日",
+      "closeDate": "1938年7月1日",
+      "miles": "八堵起60.7公里",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 18 }
+      },
+      "prevStation": 237,
+      "nextStation": 239,
+      "hasDetail": true
+    },
+    {
+      "id": 239,
+      "name": "礁溪站",
+      "status": "active",
+      "openDate": "1919年11月15日",
+      "level": "三等站",
+      "miles": "八堵起62.9公里",
+      "stationCode": "7210",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 19 }
+      },
+      "prevStation": [237, 238],
+      "nextStation": [241, 240],
+      "hasDetail": true
+    },
+    {
+      "id": 240,
+      "name": "南礁溪停車場",
+      "status": "disused",
+      "openDate": "1937年5月1日",
+      "closeDate": "1938年7月1日",
+      "miles": "八堵起64.2公里",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 20 }
+      },
+      "prevStation": 239,
+      "nextStation": 241,
+      "hasDetail": true
+    },
+    {
+      "id": 241,
+      "name": "四城站",
+      "status": "active",
+      "openDate": "1921年2月25日",
+      "level": "甲種簡易站",
+      "originalName": "四結(1964年11月17日改名)",
+      "miles": "八堵起67.6公里",
+      "stationCode": "7200",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 21 }
+      },
+      "prevStation": [239, 240],
+      "nextStation": 242,
+      "hasDetail": true
+    },
+    {
+      "id": 242,
+      "name": "宜蘭站",
+      "status": "active",
+      "openDate": "1919年3月24日",
+      "level": "一等站",
+      "miles": "八堵起71.3公里",
+      "stationCode": "7190",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 22 }
+      },
+      "prevStation": 241,
+      "nextStation": [244, 243],
+      "hasDetail": true
+    },
+    {
+      "id": 243,
+      "name": "K75號誌站",
+      "status": "disused",
+      "openDate": "2002年7月10日",
+      "closeDate": "2006年3月10日",
+      "level": "號誌站",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 23 }
+      },
+      "prevStation": 242,
+      "nextStation": 244,
+      "hasDetail": true
+    },
+    {
+      "id": 244,
+      "name": "二結站",
+      "status": "active",
+      "openDate": "1919年3月24日",
+      "level": "三等站",
+      "miles": "八堵起77.1公里",
+      "stationCode": "7180",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 24 }
+      },
+      "prevStation": [242, 243],
+      "nextStation": 245,
+      "hasDetail": true
+    },
+    {
+      "id": 245,
+      "name": "中里站",
+      "status": "active",
+      "openDate": "1936年7月20日",
+      "level": "招呼站",
+      "miles": "八堵起78.3公里",
+      "stationCode": "7170",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 25 }
+      },
+      "prevStation": 244,
+      "nextStation": 246,
+      "hasDetail": true
+    },
+    {
+      "id": 246,
+      "name": "羅東站",
+      "status": "active",
+      "openDate": "1919年3月24日",
+      "level": "一等站",
+      "miles": "八堵起80.1公里",
+      "stationCode": "7160",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 26 }
+      },
+      "prevStation": 245,
+      "nextStation": [248, 247],
+      "hasDetail": true
+    },
+    {
+      "id": 247,
+      "name": "武罕停車場",
+      "status": "disused",
+      "openDate": "1937年5月1日",
+      "closeDate": "1938年7月1日",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 27 }
+      },
+      "prevStation": 246,
+      "nextStation": 248,
+      "hasDetail": true
+    },
+    {
+      "id": 248,
+      "name": "冬山站",
+      "status": "active",
+      "openDate": "1919年3月24日",
+      "level": "三等站",
+      "originalName": "冬瓜山(1920年10月1日改名)",
+      "miles": "八堵起85.1公里",
+      "stationCode": "7150",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 28 }
+      },
+      "prevStation": [246, 247],
+      "nextStation": 249,
+      "hasDetail": true
+    },
+    {
+      "id": 249,
+      "name": "新馬站",
+      "status": "active",
+      "openDate": "1920年11月1日",
+      "level": "招呼站",
+      "originalName": "新城(1975年6月1日改名)、聖湖(1983年4月1日改名)",
+      "miles": "八堵起89.3公里",
+      "stationCode": "7140",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 29 }
+      },
+      "prevStation": 248,
+      "nextStation": 250,
+      "hasDetail": true
+    },
+    {
+      "id": 250,
+      "name": "蘇澳新站",
+      "status": "active",
+      "openDate": "1968年4月15日",
+      "level": "一等站",
+      "originalName": "南新城(1975年4月1日改名) 南聖湖(1982年1月1日改名)",
+      "miles": "八堵起90.2公里(宜蘭線) 蘇澳新站起0.0公里(北迴線)",
+      "stationCode": "7130",
+      "line": [
+        {
+          "lineID": 700,
+          "lineDistrict": { "id": 1, "order": 30 }
+        },
+        {
+          "lineID": 800,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 249,
+      "nextStation": [251, 253, 252],
+      "hasDetail": true
+    },
+    {
+      "id": 251,
+      "name": "蘇澳站",
+      "status": "active",
+      "openDate": "1919年3月24日",
+      "level": "二等站",
+      "originalName": "蘇澚(1920年10月1日改名)",
+      "miles": "八堵起93.6公里",
+      "stationCode": "7120",
+      "line": {
+        "lineID": 700,
+        "lineDistrict": { "id": 1, "order": 31 }
+      },
+      "prevStation": 250,
+      "hasDetail": true
+    },
+    {
+      "id": 252,
+      "name": "永春站",
+      "status": "disused",
+      "openDate": "1980年2月1日",
+      "closeDate": "2002年12月18日",
+      "level": "招呼站",
+      "miles": "蘇澳新站起4.0公里",
+      "stationCode": "065",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 250,
+      "nextStation": 253,
+      "hasDetail": true
+    },
+    {
+      "id": 253,
+      "name": "永樂站",
+      "status": "active",
+      "openDate": "1980年2月1日",
+      "level": "三等站",
+      "miles": "蘇澳新站起5.2公里",
+      "stationCode": "7110",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": [250, 252],
+      "nextStation": 254,
+      "hasDetail": true
+    },
+    {
+      "id": 254,
+      "name": "東澳站",
+      "status": "active",
+      "openDate": "1980年2月1日",
+      "level": "二等站",
+      "miles": "蘇澳新站起11.0公里",
+      "stationCode": "7100",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 253,
+      "nextStation": 255,
+      "hasDetail": true
+    },
+    {
+      "id": 255,
+      "name": "南澳站",
+      "status": "active",
+      "openDate": "1980年2月1日",
+      "level": "三等站",
+      "miles": "蘇澳新站起19.0公里",
+      "stationCode": "7090",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 254,
+      "nextStation": 256,
+      "hasDetail": true
+    },
+    {
+      "id": 256,
+      "name": "武塔站",
+      "status": "active",
+      "openDate": "1980年2月1日",
+      "level": "招呼站",
+      "miles": "蘇澳新站起22.7公里",
+      "stationCode": "7080",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 255,
+      "nextStation": [258, 257],
+      "hasDetail": true
+    },
+    {
+      "id": 257,
+      "name": "觀音號誌站",
+      "status": "disused",
+      "openDate": "1975年7月26日、1992年12月29日",
+      "closeDate": "1984年12月27日、2003年6月10日",
+      "level": "號誌站",
+      "miles": "蘇澳新站起28.8公里",
+      "stationCode": "059",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 256,
+      "nextStation": 258,
+      "hasDetail": true
+    },
+    {
+      "id": 258,
+      "name": "漢本站",
+      "status": "active",
+      "openDate": "1980年2月1日",
+      "level": "三等站",
+      "miles": "蘇澳新站起35.6公里",
+      "stationCode": "7070",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": [256, 257],
+      "nextStation": 259,
+      "hasDetail": true
+    },
+    {
+      "id": 259,
+      "name": "和平站",
+      "status": "active",
+      "openDate": "1979年2月8日",
+      "level": "二等站",
+      "miles": "蘇澳新站起39.8公里",
+      "stationCode": "7060",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 258,
+      "nextStation": 260,
+      "hasDetail": true
+    },
+    {
+      "id": 260,
+      "name": "和仁站",
+      "status": "active",
+      "openDate": "1979年2月8日",
+      "level": "三等站",
+      "miles": "蘇澳新站起47.5公里",
+      "stationCode": "7050",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 259,
+      "nextStation": 261,
+      "hasDetail": true
+    },
+    {
+      "id": 261,
+      "name": "崇德站",
+      "status": "active",
+      "openDate": "1979年2月8日",
+      "level": "三等站",
+      "miles": "蘇澳新站起57.6公里",
+      "stationCode": "7040",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 260,
+      "nextStation": 262,
+      "hasDetail": true
+    },
+    {
+      "id": 262,
+      "name": "新城(太魯閣)站",
+      "status": "active",
+      "openDate": "1975年7月26日",
+      "level": "二等站",
+      "originalName": "新城(2007年8月25日改名)",
+      "miles": "蘇澳新站起62.9公里",
+      "stationCode": "7030",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 261,
+      "nextStation": 263,
+      "hasDetail": true
+    },
+    {
+      "id": 263,
+      "name": "景美站",
+      "status": "active",
+      "openDate": "1975年7月26日",
+      "level": "乙種簡易站",
+      "miles": "蘇澳新站起68.2公里",
+      "stationCode": "7020",
+      "line": {
+        "lineID": 800,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 262,
+      "nextStation": 264,
+      "hasDetail": true
+    },
+    {
+      "id": 264,
+      "name": "北埔站",
+      "status": "active",
+      "openDate": "1975年7月26日",
+      "level": "三等站",
+      "miles": "蘇澳新站起74.7公里",
+      "stationCode": "7010",
+      "line": [
+        {
+          "lineID": 800,
+          "lineDistrict": { "id": 1, "order": 14 }
+        },
+        {
+          "lineID": 2500,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 263,
+      "nextStation": [265],
+      "hasDetail": true
+    },
+    {
+      "id": 265,
+      "name": "花蓮站",
+      "status": "active",
+      "openDate": "1979年2月8日",
+      "level": "特等站",
+      "originalName": "花蓮新站(1982年7月1日改名)",
+      "miles": "蘇澳新站起79.2公里(北迴線)、花蓮起0.0公里(台東線)",
+      "stationCode": "7000",
+      "line": [
+        {
+          "lineID": 800,
+          "lineDistrict": { "id": 1, "order": 14 }
+        },
+        {
+          "lineID": 900,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 264,
+      "nextStation": 273,
+      "hasDetail": true
+    },
+    {
+      "id": 266,
+      "name": "花蓮港站",
+      "status": "active",
+      "openDate": "1939年9月20日",
+      "level": "三等站",
+      "originalName": "東花蓮港(1948年1月1日改名)",
+      "miles": "北埔起5.8公里(花蓮臨港線)、花蓮港起0.0公里(台東線)",
+      "line": [
+        {
+          "lineID": 2500,
+          "lineDistrict": { "id": 1, "order": 3 }
+        },
+        {
+          "lineID": 900,
+          "lineDistrict": { "id": 2, "order": 1 }
+        }
+      ],
+      "prevStation": [264],
+      "nextStation": 267,
+      "hasDetail": true
+    },
+    {
+      "id": 267,
+      "name": "美崙站",
+      "status": "disused",
+      "openDate": "1939年9月20日",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "originalName": "米崙(1952年5月1日改名)",
+      "miles": "花蓮港起1.3公里",
+      "stationCode": "050",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 266,
+      "nextStation": 268,
+      "hasDetail": true
+    },
+    {
+      "id": 268,
+      "name": "新村站",
+      "status": "disused",
+      "openDate": "1939年9月20日",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "originalName": "日ノ出(1952年5月1日改名)",
+      "miles": "花蓮港起1.9公里",
+      "stationCode": "049",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "prevStation": 267,
+      "nextStation": 269,
+      "hasDetail": true
+    },
+    {
+      "id": 269,
+      "name": "民立站",
+      "status": "disused",
+      "openDate": "1939年9月20日",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "originalName": "入船(光復後改名)",
+      "miles": "花蓮港起2.3公里",
+      "stationCode": "048",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "prevStation": 268,
+      "nextStation": 270,
+      "hasDetail": true
+    },
+    {
+      "id": 270,
+      "name": "花蓮(舊)站",
+      "status": "disused",
+      "openDate": "1910年12月16日",
+      "closeDate": "1982年6月27日",
+      "level": "一等站",
+      "originalName": "花蓮港(1948年1月1日改名)",
+      "miles": "花蓮港起4.0公里(台東線)、花蓮起0.0公里(花蓮海岸線)",
+      "stationCode": "047",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": [
+          { "id": 2, "order": 5 },
+          { "id": 4, "order": 1 }
+        ]
+      },
+      "prevStation": 269,
+      "nextStation": [272, 271],
+      "hasDetail": true
+    },
+    {
+      "id": 271,
+      "name": "花蓮港海岸驛",
+      "status": "disused",
+      "openDate": "1912年1月14日",
+      "closeDate": "1941年4月19日",
+      "miles": "花蓮起1.1公里(花蓮海岸線)",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "prevStation": 270,
+      "hasDetail": true
+    },
+    {
+      "id": 272,
+      "name": "田浦站",
+      "status": "disused",
+      "openDate": "1910年12月16日",
+      "closeDate": "1982年6月27日",
+      "level": "三等站",
+      "originalName": "荳蘭(1937年11月1日)",
+      "miles": "花蓮港起6.3公里(東拓前)",
+      "stationCode": "046",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "prevStation": 270,
+      "nextStation": [273, 274],
+      "hasDetail": true
+    },
+    {
+      "id": 273,
+      "name": "吉安站",
+      "status": "active",
+      "openDate": "1980年2月1日",
+      "level": "三等站",
+      "miles": "花蓮起3.4公里",
+      "stationCode": "6250",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": [
+          { "id": 1, "order": 2 },
+          { "id": 2, "order": 7 }
+        ]
+      },
+      "prevStation": [265, 272],
+      "nextStation": [277, 275],
+      "hasDetail": true
+    },
+    {
+      "id": 274,
+      "name": "吉安(舊)站",
+      "status": "disused",
+      "openDate": "1910年12月16日",
+      "closeDate": "1980年2月1日",
+      "level": "簡易站",
+      "originalName": "吉野(1947年10月6日)",
+      "miles": "花蓮港起8.6公里(東拓前)",
+      "stationCode": "045",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 272,
+      "nextStation": 275,
+      "hasDetail": true
+    },
+    {
+      "id": 275,
+      "name": "干城站",
+      "status": "disused",
+      "openDate": "1916年11月1日",
+      "closeDate": "1994年4月1日",
+      "level": "三等站",
+      "originalName": "初音(1947年10月6日改名)、初英(1957年1月改名)、南華(1989年3月1日改名)",
+      "miles": "花蓮港起12.1公里(東拓前)、花蓮起8.2公里(東改前)",
+      "stationCode": "044",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": [273, 274],
+      "nextStation": [277, 276],
+      "hasDetail": true
+    },
+    {
+      "id": 276,
+      "name": "木瓜溪",
+      "status": "disused",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 275,
+      "nextStation": 277,
+      "hasDetail": false
+    },
+    {
+      "id": 277,
+      "name": "志學站",
+      "status": "active",
+      "openDate": "1911年9月25日",
+      "level": "三等站",
+      "originalName": "知伯(1918年改名)、賀田(1947年10月6日改名)、豐年(1952年8月1日改名)",
+      "miles": "花蓮港起16.3公里(東拓前)、花蓮起12.4公里",
+      "stationCode": "6240",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": [273, 275, 276],
+      "nextStation": 278,
+      "hasDetail": true
+    },
+    {
+      "id": 278,
+      "name": "平和站",
+      "status": "active",
+      "openDate": "1934年4月20日",
+      "level": "招呼站",
+      "originalName": "池南(1962年4月1日改名)",
+      "miles": "花蓮港起19.2公里(東拓前)、花蓮起15.3公里",
+      "stationCode": "6230",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 277,
+      "nextStation": 279,
+      "hasDetail": true
+    },
+    {
+      "id": 279,
+      "name": "壽豐站",
+      "status": "active",
+      "openDate": "1910年12月16日",
+      "level": "三等站",
+      "originalName": "鯉魚尾(1917年9月26日改名)、壽(1947年5月20日改名)",
+      "miles": "花蓮港起21.0公里(東拓前)、花蓮起17.2公里",
+      "stationCode": "6220",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 278,
+      "nextStation": 280,
+      "hasDetail": true
+    },
+    {
+      "id": 280,
+      "name": "豐田站",
+      "status": "active",
+      "openDate": "1913年5月1日",
+      "level": "簡易站",
+      "miles": "花蓮港起23.7公里(東拓前)、花蓮起19.9公里",
+      "stationCode": "6210",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 279,
+      "nextStation": [283, 281, 282],
+      "hasDetail": true
+    },
+    {
+      "id": 281,
+      "name": "溪口站",
+      "status": "disused",
+      "openDate": "1982年3月31日",
+      "closeDate": "2013年11月14日",
+      "level": "招呼站",
+      "miles": "花蓮起24.0公里",
+      "stationCode": "039",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 280,
+      "nextStation": 285,
+      "hasDetail": true
+    },
+    {
+      "id": 282,
+      "name": "溪口(舊)站",
+      "status": "disused",
+      "openDate": "1911年7月15日",
+      "closeDate": "1982年3月31日",
+      "level": "三等站",
+      "miles": "花蓮港起27.8公里(東拓前)",
+      "stationCode": "039",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 280,
+      "nextStation": 284,
+      "hasDetail": true
+    },
+    {
+      "id": 283,
+      "name": "林榮新光站",
+      "status": "active",
+      "openDate": "2018年7月10日",
+      "level": "簡易站",
+      "miles": "花蓮起26.1公里",
+      "stationCode": "6200",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 280,
+      "nextStation": 285,
+      "hasDetail": true
+    },
+    {
+      "id": 284,
+      "name": "林榮站",
+      "status": "disused",
+      "openDate": "1918年9月16日",
+      "closeDate": "1982年3月31日",
+      "level": "三等站",
+      "originalName": "平林(1962年12月15日改名)",
+      "miles": "花蓮港起31.6公里",
+      "stationCode": "038",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 282,
+      "nextStation": 285,
+      "hasDetail": true
+    },
+    {
+      "id": 285,
+      "name": "南平站",
+      "status": "active",
+      "openDate": "1915年9月16日",
+      "level": "乙種簡易站",
+      "originalName": "林田(1962年12月15日)",
+      "miles": "花蓮港起34.1公里(東拓前)、花蓮起28.4公里(東改前)、花蓮起28.3公里",
+      "stationCode": "6190",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "prevStation": [283, 281, 284],
+      "nextStation": 286,
+      "hasDetail": true
+    },
+    {
+      "id": 286,
+      "name": "鳳林站",
+      "status": "active",
+      "openDate": "1912年1月25日",
+      "level": "三等站",
+      "miles": "花蓮港起38.3公里(東拓前)、花蓮起32.6公里(東改前)、花蓮起32.5公里",
+      "stationCode": "6180",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 15 }
+      },
+      "prevStation": 285,
+      "nextStation": 287,
+      "hasDetail": true
+    },
+    {
+      "id": 287,
+      "name": "萬榮站",
+      "status": "active",
+      "openDate": "1914年3月8日",
+      "level": "三等站",
+      "originalName": "馬里勿(1918年改名)、萬里橋(1951年1月15日)",
+      "miles": "花蓮港起43.3公里(東拓前)、花蓮起37.6公里(東改前)、花蓮起37.3公里",
+      "stationCode": "6170",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "prevStation": 286,
+      "nextStation": 288,
+      "hasDetail": true
+    },
+    {
+      "id": 288,
+      "name": "光復站",
+      "status": "active",
+      "openDate": "1913年11月20日",
+      "level": "三等站",
+      "originalName": "馬太鞍(1937年11月1日改名)、上大和(1947年5月20日改名)、台安(1951年5月1日改名)",
+      "miles": "花蓮港起49.7公里(東拓前)、花蓮起42.9公里",
+      "stationCode": "6160",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "prevStation": 287,
+      "nextStation": [290, 289],
+      "hasDetail": true
+    },
+    {
+      "id": 289,
+      "name": "大興站",
+      "status": "disused",
+      "openDate": "1960年",
+      "closeDate": "1981年1月15日",
+      "level": "招呼站",
+      "miles": "花蓮港起54.0公里(東拓前)",
+      "stationCode": "033",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 18 }
+      },
+      "prevStation": 288,
+      "nextStation": 290,
+      "hasDetail": true
+    },
+    {
+      "id": 290,
+      "name": "大富站",
+      "status": "active",
+      "openDate": "1918年11月1日",
+      "level": "招呼站",
+      "originalName": "大和(1947年5月20日)",
+      "miles": "花蓮港起57.5公里(東拓前)、花蓮起50.6公里",
+      "stationCode": "6150",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 19 }
+      },
+      "prevStation": [288, 289],
+      "nextStation": 291,
+      "hasDetail": true
+    },
+    {
+      "id": 291,
+      "name": "富源站",
+      "status": "active",
+      "openDate": "1914年3月8日",
+      "level": "三等站",
+      "originalName": "拔仔(1921年6月1日改名)、拔子(1937年11月1日改名)、白川(1947年5月20日改名)、百庄(1948年10月1日改名)",
+      "miles": "花蓮港起60.5公里(東拓前)、花蓮起53.9公里(東改前)、花蓮起53.6公里",
+      "stationCode": "6140",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 20 }
+      },
+      "prevStation": 290,
+      "nextStation": [293, 292],
+      "hasDetail": true
+    },
+    {
+      "id": 292,
+      "name": "瑞北站",
+      "status": "disused",
+      "openDate": "1956年",
+      "closeDate": "2003年8月23日",
+      "level": "招呼站",
+      "miles": "花蓮港起66.3公里(東拓前)、花蓮起59.8公里(東改前)",
+      "stationCode": "030",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 21 }
+      },
+      "prevStation": 291,
+      "nextStation": 293,
+      "hasDetail": true
+    },
+    {
+      "id": 293,
+      "name": "瑞穗站",
+      "status": "active",
+      "openDate": "1914年6月",
+      "level": "三等站",
+      "originalName": "水尾(1917年9月22日改名)",
+      "miles": "花蓮港起69.8公里(東拓前)、花蓮起63.2公里(東改前)、花蓮起62.8公里",
+      "stationCode": "6130",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 22 }
+      },
+      "prevStation": [291, 292],
+      "nextStation": [295, 294],
+      "hasDetail": true
+    },
+    {
+      "id": 294,
+      "name": "舞鶴號誌站",
+      "status": "disused",
+      "openDate": "1956年、2005年9月30日",
+      "closeDate": "1982年6月27日、2017年9月26日",
+      "level": "號誌站",
+      "miles": "花蓮港起73.9公里(東拓前)、花蓮起67.2公里(東改前)",
+      "stationCode": "028",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 23 }
+      },
+      "prevStation": 293,
+      "nextStation": 295,
+      "hasDetail": true
+    },
+    {
+      "id": 295,
+      "name": "三民站",
+      "status": "active",
+      "openDate": "1917年11月1日",
+      "level": "乙種簡易站",
+      "originalName": "三笠(1947年10月6日改名)",
+      "miles": "花蓮港起79.6公里(東拓前)、花蓮起72.1公里",
+      "stationCode": "6120",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 24 }
+      },
+      "prevStation": [293, 294],
+      "nextStation": [299, 297, 296],
+      "hasDetail": true
+    },
+    {
+      "id": 296,
+      "name": "太平站",
+      "status": "disused",
+      "openDate": "1957年5月5日",
+      "closeDate": "1958年5月4日",
+      "level": "招呼站",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 25 }
+      },
+      "prevStation": 295,
+      "nextStation": 297,
+      "hasDetail": true
+    },
+    {
+      "id": 297,
+      "name": "大禹站",
+      "status": "disused",
+      "openDate": "1917年11月1日",
+      "closeDate": "1995年3月1日",
+      "level": "三等站",
+      "originalName": "末廣(1947年10月6日改名)",
+      "miles": "花蓮港起85.4公里(東拓前)、花蓮起78.4公里(東改前)",
+      "stationCode": "026",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 26 }
+      },
+      "prevStation": [295, 296],
+      "nextStation": [299, 298],
+      "hasDetail": true
+    },
+    {
+      "id": 298,
+      "name": "泰昌站",
+      "status": "disused",
+      "openDate": "1970年11月15日",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "miles": "花蓮港起89.5公里(東拓前)",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 27 }
+      },
+      "prevStation": 297,
+      "nextStation": 299,
+      "hasDetail": true
+    },
+    {
+      "id": 299,
+      "name": "玉里站",
+      "status": "active",
+      "openDate": "1917年11月1日",
+      "level": "一等站",
+      "miles": "花蓮港起91.1公里(東拓前)、花蓮起84.1公里(東改前)、花蓮起83.1公里",
+      "stationCode": "6110",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 28 }
+      },
+      "prevStation": [295, 297, 298],
+      "nextStation": [302, 301, 300],
+      "hasDetail": true
+    },
+    {
+      "id": 300,
+      "name": "樂合站",
+      "status": "disused",
+      "openDate": "1957年",
+      "closeDate": "1981年1月15日",
+      "level": "招呼站",
+      "miles": "花蓮港起94.3公里(東拓前)",
+      "stationCode": "024",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 29 }
+      },
+      "prevStation": 299,
+      "nextStation": 301,
+      "hasDetail": true
+    },
+    {
+      "id": 301,
+      "name": "安通站",
+      "status": "disused",
+      "openDate": "1924年5月1日",
+      "closeDate": "2007年3月30日",
+      "level": "招呼站",
+      "miles": "花蓮港起96.7公里(東拓前)、花蓮起89.8公里(東改前)",
+      "stationCode": "023",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 30 }
+      },
+      "prevStation": 300,
+      "nextStation": 303,
+      "hasDetail": true
+    },
+    {
+      "id": 302,
+      "name": "東里站",
+      "status": "active",
+      "openDate": "2007年3月30日",
+      "level": "三等站",
+      "miles": "花蓮起90.8公里(東改前)、花蓮起89.8公里",
+      "stationCode": "6100",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 31 }
+      },
+      "prevStation": 299,
+      "nextStation": 305,
+      "hasDetail": true
+    },
+    {
+      "id": 303,
+      "name": "東里(舊)站",
+      "status": "disused",
+      "openDate": "1924年5月1日",
+      "closeDate": "2007年3月30日",
+      "level": "三等站",
+      "originalName": "大庄(1937年11月1日改名)、東部大里(1947年10月6日改名)",
+      "miles": "花蓮港起100.8公里(東拓前)、花蓮起93.9公里(東改前)",
+      "stationCode": "022",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 32 }
+      },
+      "prevStation": 301,
+      "nextStation": [305, 304],
+      "hasDetail": true
+    },
+    {
+      "id": 304,
+      "name": "萬寧站",
+      "status": "disused",
+      "openDate": "1957年",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "miles": "花蓮港起104.9公里(東拓前)",
+      "stationCode": "021",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 33 }
+      },
+      "prevStation": 303,
+      "nextStation": 305,
+      "hasDetail": true
+    },
+    {
+      "id": 305,
+      "name": "東竹站",
+      "status": "active",
+      "openDate": "1924年5月1日",
+      "level": "乙種簡易站",
+      "originalName": "頭人埔(1937年11月1日改名)、東部竹田(1947年10月6日)",
+      "miles": "花蓮港起106.8公里(東拓前)、花蓮起99.9公里(東改前)、花蓮起95.7公里",
+      "stationCode": "6090",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 34 }
+      },
+      "prevStation": [302, 303, 304],
+      "nextStation": [307, 306],
+      "hasDetail": true
+    },
+    {
+      "id": 306,
+      "name": "富北站",
+      "status": "disused",
+      "openDate": "1957年8月1日",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "miles": "花蓮港起110.7公里(東拓前)",
+      "stationCode": "019",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 35 }
+      },
+      "prevStation": 305,
+      "nextStation": 307,
+      "hasDetail": true
+    },
+    {
+      "id": 307,
+      "name": "富里站",
+      "status": "active",
+      "openDate": "1926年1月20日",
+      "level": "三等站",
+      "originalName": "公埔(1937年10月1日改名)",
+      "miles": "花蓮港起113.1公里(東拓前)、花蓮起106.1公里(東改前)、花蓮起101.9公里",
+      "stationCode": "6080",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 36 }
+      },
+      "prevStation": [305, 306],
+      "nextStation": [310, 308],
+      "hasDetail": true
+    },
+    {
+      "id": 308,
+      "name": "富南站",
+      "status": "disused",
+      "openDate": "1959年",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "miles": "花蓮港起115.6公里(東拓前)",
+      "stationCode": "017",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 37 }
+      },
+      "prevStation": 307,
+      "nextStation": 309,
+      "hasDetail": true
+    },
+    {
+      "id": 309,
+      "name": "三台站",
+      "status": "disused",
+      "openDate": "約1961年11月",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "miles": "花蓮港起117.9公里(東拓前)",
+      "stationCode": "016",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 38 }
+      },
+      "prevStation": 308,
+      "nextStation": 310,
+      "hasDetail": true
+    },
+    {
+      "id": 310,
+      "name": "池上站",
+      "status": "active",
+      "openDate": "1924年9月1日",
+      "level": "三等站",
+      "miles": "花蓮港起120.0公里(東拓前)、花蓮起113.0公里(東改前)、花蓮起108.8公里",
+      "stationCode": "6070",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 39 }
+      },
+      "prevStation": [307, 309],
+      "nextStation": 311,
+      "hasDetail": true
+    },
+    {
+      "id": 311,
+      "name": "海端站",
+      "status": "active",
+      "openDate": "1924年9月1日",
+      "level": "乙種簡易站",
+      "originalName": "新武呂(1947年10月6日改名)",
+      "miles": "花蓮港起126.1公里(東拓前)、花蓮起118.6公里(東改前)、花蓮起114.4公里",
+      "stationCode": "6060",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 40 }
+      },
+      "prevStation": 310,
+      "nextStation": [313, 312],
+      "hasDetail": true
+    },
+    {
+      "id": 312,
+      "name": "德高站",
+      "status": "disused",
+      "openDate": "1956年11月15日",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "miles": "花蓮港起129.4公里(東拓前)",
+      "stationCode": "013",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 41 }
+      },
+      "prevStation": 311,
+      "nextStation": 313,
+      "hasDetail": true
+    },
+    {
+      "id": 313,
+      "name": "關山站",
+      "status": "active",
+      "openDate": "1922年4月20日",
+      "level": "三等站",
+      "originalName": "里壠(1937年11月1日改名)",
+      "miles": "花蓮港起132.5公里(東拓前)、花蓮起125.0公里(東改前)、花蓮起120.9公里",
+      "stationCode": "6050",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 42 }
+      },
+      "prevStation": [311, 312],
+      "nextStation": [315, 314],
+      "hasDetail": true
+    },
+    {
+      "id": 314,
+      "name": "月美站",
+      "status": "disused",
+      "openDate": "1922年5月10日",
+      "closeDate": "2013年6月27日",
+      "level": "招呼站",
+      "originalName": "月野(1962年12月15日改名)、月眉(1963年5月1日改名)",
+      "miles": "花蓮港起136.4公里(東拓前)、花蓮起128.7公里(東改前)、花蓮起125.2公里(廢站前)",
+      "stationCode": "011",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 43 }
+      },
+      "prevStation": 313,
+      "nextStation": 315,
+      "hasDetail": true
+    },
+    {
+      "id": 315,
+      "name": "瑞和站",
+      "status": "active",
+      "openDate": "1923年7月14日",
+      "level": "招呼站",
+      "originalName": "大埔(1947年8月15日改名)、瑞豐(1979年1月1日)",
+      "miles": "花蓮港起140.4公里(東拓前)、花蓮起132.9公里(東改前)、花蓮起128.3公里",
+      "stationCode": "6040",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 44 }
+      },
+      "prevStation": [313, 314],
+      "nextStation": 316,
+      "hasDetail": true
+    },
+    {
+      "id": 316,
+      "name": "瑞源站",
+      "status": "active",
+      "openDate": "1922年4月20日",
+      "level": "三等站",
+      "originalName": "大原(1947年8月15日改名)",
+      "miles": "花蓮港起143.3公里(東拓前)、花蓮起135.8公里(東改前)、花蓮起131.1公里",
+      "stationCode": "6030",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 45 }
+      },
+      "prevStation": 315,
+      "nextStation": 317,
+      "hasDetail": true
+    },
+    {
+      "id": 317,
+      "name": "鹿野站",
+      "status": "active",
+      "openDate": "1922年4月20日",
+      "level": "三等站",
+      "miles": "花蓮港起149.0公里(東拓前)、花蓮起141.7公里(東改前)、花蓮起136.6公里",
+      "stationCode": "6020",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": [
+          { "id": 1, "order": 46 },
+          { "id": 3, "order": 1 }
+        ]
+      },
+      "prevStation": 315,
+      "nextStation": [318, 326],
+      "hasDetail": true
+    },
+    {
+      "id": 318,
+      "name": "中興站",
+      "status": "disused",
+      "openDate": "1957年11月1日",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "miles": "花蓮港起152.2公里(東拓前)",
+      "stationCode": "007",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "prevStation": 317,
+      "nextStation": 319,
+      "hasDetail": true
+    },
+    {
+      "id": 319,
+      "name": "嘉豐站",
+      "status": "disused",
+      "openDate": "1922年4月20日",
+      "closeDate": "1982年6月27日",
+      "level": "三等站",
+      "originalName": "稻葉(1954年3月10日改名)",
+      "miles": "花蓮港起153.7公里(東拓前)",
+      "stationCode": "006",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "prevStation": 318,
+      "nextStation": 320,
+      "hasDetail": true
+    },
+    {
+      "id": 320,
+      "name": "初鹿站",
+      "status": "disused",
+      "openDate": "1919年2月1日",
+      "closeDate": "1982年6月27日",
+      "level": "三等站",
+      "originalName": "北絲鬮(1922年改名)、初鹿尾(1937年11月1日改名)",
+      "miles": "花蓮港起159.2公里(東拓前)",
+      "stationCode": "005",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 3, "order": 4 }
+      },
+      "prevStation": 319,
+      "nextStation": 321,
+      "hasDetail": true
+    },
+    {
+      "id": 321,
+      "name": "東成站",
+      "status": "disused",
+      "openDate": "1968年5月1日",
+      "closeDate": "1982年6月27日",
+      "level": "招呼站",
+      "miles": "花蓮港起163.1公里(東拓前)",
+      "stationCode": "004",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 3, "order": 5 }
+      },
+      "prevStation": 320,
+      "nextStation": 322,
+      "hasDetail": true
+    },
+    {
+      "id": 322,
+      "name": "檳榔站",
+      "status": "disused",
+      "openDate": "1922年4月20日",
+      "closeDate": "1982年6月27日",
+      "level": "三等站",
+      "originalName": "日奈敷(1947年10月6日改名)",
+      "miles": "花蓮港起165.7公里(東拓前)",
+      "stationCode": "003",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 3, "order": 6 }
+      },
+      "prevStation": 321,
+      "nextStation": 323,
+      "hasDetail": true
+    },
+    {
+      "id": 323,
+      "name": "馬蘭站",
+      "status": "disused",
+      "openDate": "1922年4月20日",
+      "closeDate": "2001年8月1日",
+      "level": "三等站",
+      "miles": "花蓮起171.9公里(東拓前)、花蓮起160.0公里(東改前)",
+      "stationCode": "002",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": [
+          { "id": 1, "order": 49 },
+          { "id": 3, "order": 7 }
+        ]
+      },
+      "prevStation": [327, 322],
+      "nextStation": 324,
+      "hasDetail": true
+    },
+    {
+      "id": 324,
+      "name": "台東(舊)站",
+      "status": "disused",
+      "openDate": "1919年2月1日",
+      "closeDate": "2001年6月1日",
+      "level": "一等站",
+      "originalName": "卑南(1921年改名)",
+      "miles": "花蓮港起174.4公里(東拓前)、花蓮起162.4公里(東改前)",
+      "stationCode": "001",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": [
+          { "id": 1, "order": 50 },
+          { "id": 5, "order": 1 }
+        ]
+      },
+      "prevStation": 323,
+      "nextStation": 325,
+      "hasDetail": true
+    },
+    {
+      "id": 325,
+      "name": "台東海岸站",
+      "status": "disused",
+      "openDate": "1929年4月1日",
+      "closeDate": "1982年6月27日",
+      "level": "貨運站",
+      "miles": "花蓮港起175.6公里(東拓前)",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 5, "order": 2 }
+      },
+      "prevStation": 324,
+      "hasDetail": true
+    },
+    {
+      "id": 326,
+      "name": "山里站",
+      "status": "active",
+      "openDate": "1982年6月27日",
+      "level": "乙種簡易站",
+      "miles": "花蓮起147.9公里(東改前)、花蓮起142.8公里",
+      "stationCode": "6010",
+      "line": {
+        "lineID": 900,
+        "lineDistrict": { "id": 1, "order": 47 }
+      },
+      "prevStation": 317,
+      "nextStation": 327,
+      "hasDetail": true
+    },
+    {
+      "id": 327,
+      "name": "台東站",
+      "status": "active",
+      "openDate": "1982年6月27日",
+      "level": "一等站",
+      "originalName": "卑南(1992年1月12日改名)、台東新站(2001年12月1日改名)",
+      "miles": "花蓮起155.9公里(東改前台東線)、花蓮起150.9公里(台東線)、枋寮起98.2公里(南迴線)",
+      "stationCode": "6010",
+      "line": [
+        {
+          "lineID": 900,
+          "lineDistrict": { "id": 1, "order": 48 }
+        },
+        {
+          "lineID": 1000,
+          "lineDistrict": { "id": 1, "order": 19 }
+        }
+      ],
+      "prevStation": 326,
+      "nextStation": [323],
       "hasDetail": true
     }
   ]
