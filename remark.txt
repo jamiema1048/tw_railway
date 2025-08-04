@@ -11,4 +11,29 @@ station id :
 352~368 is station of 南迴線，枋寮:221，台東站:327
 369~375 is station of 集集線
 376~387 is station of 內灣線
-388~ is station of 平溪線
+388~393 is station of 平溪線
+394~399 is station of 深澳線
+400~401 is station of 沙崙線
+402 is station of 田中線
+403~417 is station of 淡水線
+418~433 is station of 新店線
+434 is station of 中和線
+435~442 is station of 林口線
+443~446 is station of 東勢線
+447~450 is station of 神岡線
+451~452 is station of 東港線
+453 is station of 基隆臨港線
+454 is station of 花蓮臨港線
+455 is station of 台中港線
+456~462 is station of 高雄臨港線
+463 is station of 松山機場線
+464 is station of 新竹機場線
+465~466 is station of 中油嘉義溶劑廠支線
+467~502 is station of 阿里山林業鐵路
+503~ is station of 羅東林業鐵路
+
+
+railway id:
+100~3000 is line of 台鐵
+3100~3500 is line of 林鐵
+3600~ is line of 糖鐵
