@@ -8,6 +8,8 @@ import { Metadata } from "next";
 interface District {
   districtID: number;
   districtName: string;
+  prevArea?: number;
+  nextArea?: number;
 }
 
 interface Line {

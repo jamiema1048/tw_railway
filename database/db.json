@@ -464,6 +464,602 @@
           "districtName": "觀光台車道"
         }
       ]
+    },
+    {
+      "id": 3600,
+      "name": "台中總廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "中南線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "聚興線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 3700,
+      "name": "虎尾總廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "雲虎線",
+          "prevArea": 5000
+        },
+        {
+          "districtID": 2,
+          "districtName": "西螺線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "西螺溪州線",
+          "nextArea": 4800
+        },
+        {
+          "districtID": 4,
+          "districtName": "虎尾大林線",
+          "nextArea": 5300
+        },
+        {
+          "districtID": 5,
+          "districtName": "北港線",
+          "nextArea": 5100
+        },
+        {
+          "districtID": 6,
+          "districtName": "莿桐線"
+        },
+        {
+          "districtID": 7,
+          "districtName": "崙背線"
+        },
+        {
+          "districtID": 8,
+          "districtName": "貓兒干線"
+        }
+      ]
+    },
+    {
+      "id": 3800,
+      "name": "新營總廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "布袋線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "學甲線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "柳營線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "觀光五分車(八翁線)"
+        },
+        {
+          "districtID": 5,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 3900,
+      "name": "麻豆總廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "隆田線",
+          "nextArea": 5600
+        },
+        {
+          "districtID": 2,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 4000,
+      "name": "屏東總廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "里港線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "東港線(屏東=新園)"
+        },
+        {
+          "districtID": 3,
+          "districtName": "東港線(屏東=鹽埔子)"
+        },
+        {
+          "districtID": 4,
+          "districtName": "東港線(屏東=東港)"
+        },
+        {
+          "districtID": 5,
+          "districtName": "潮州線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 4100,
+      "name": "新竹糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "下山線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "湖口線"
+        }
+      ]
+    },
+    {
+      "id": 4200,
+      "name": "月眉糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "甲后線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "中庄線"
+        }
+      ]
+    },
+    {
+      "id": 4300,
+      "name": "烏日糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 4400,
+      "name": "南投糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "濁水線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "中寮線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "南投線"
+        }
+      ]
+    },
+    {
+      "id": 4500,
+      "name": "埔里糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "大坪頂線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 4600,
+      "name": "彰化糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "員西線",
+          "prevArea": 4700
+        },
+        {
+          "districtID": 2,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 4700,
+      "name": "溪湖糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "田林線",
+          "prevArea": 4800
+        },
+        {
+          "districtID": 2,
+          "districtName": "員西線",
+          "nextArea": 4600
+        },
+        {
+          "districtID": 3,
+          "districtName": "大城線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "二水線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "二林線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "觀光五分車"
+        },
+        {
+          "districtID": 7,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 4800,
+      "name": "溪州糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "田林線",
+          "nextArea": 4700
+        },
+        {
+          "districtID": 2,
+          "districtName": "西螺溪州線",
+          "prevArea": 3700
+        },
+        {
+          "districtID": 3,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 4900,
+      "name": "龍岩糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "龍岩線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5000,
+      "name": "斗六糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "雲虎線",
+          "nextArea": 3700
+        },
+        {
+          "districtID": 2,
+          "districtName": "永光線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5100,
+      "name": "北港糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "嘉義線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "口湖線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "三條崙線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "北港線",
+          "prevArea": 3700
+        },
+        {
+          "districtID": 5,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5200,
+      "name": "蒜頭糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "朴子線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "南靖線",
+          "prevArea": 5400
+        },
+        {
+          "districtID": 3,
+          "districtName": "下楫子寮線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "觀光五分車"
+        }
+      ]
+    },
+    {
+      "id": 5300,
+      "name": "大林糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "虎尾大林線",
+          "prevArea": 3700
+        },
+        {
+          "districtID": 2,
+          "districtName": "小梅線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "新港線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5400,
+      "name": "南靖糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "南靖線",
+          "nextArea": 5200
+        },
+        {
+          "districtID": 2,
+          "districtName": "義線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "仁線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5500,
+      "name": "烏樹林糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "烏樹林線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "白河線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "觀光五分車(新港東線)"
+        },
+        {
+          "districtID": 4,
+          "districtName": "蘭展觀光鐵道(後壁線)"
+        },
+        {
+          "districtID": 5,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5600,
+      "name": "佳里糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "隆田線",
+          "prevArea": 3900
+        },
+        {
+          "districtID": 2,
+          "districtName": "2005佳里糖果節觀光列車"
+        },
+        {
+          "districtID": 3,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5700,
+      "name": "永康糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5800,
+      "name": "善化糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "善化線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "玉善線",
+          "nextArea": 5900
+        },
+        {
+          "districtID": 3,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 5900,
+      "name": "玉井糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "玉善線",
+          "prevArea": 5800
+        }
+      ]
+    },
+    {
+      "id": 6000,
+      "name": "仁德糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "關廟線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 6100,
+      "name": "高雄糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "觀光五分車(仁武線)"
+        },
+        {
+          "districtID": 2,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 6200,
+      "name": "小港糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "港林線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 6300,
+      "name": "旗山糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "磚仔窯線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "旗尾線"
+        }
+      ]
+    },
+    {
+      "id": 6400,
+      "name": "南州糖廠鐵道",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "觀光五分車"
+        },
+        {
+          "districtID": 2,
+          "districtName": "非營業站"
+        }
+      ]
+    },
+    {
+      "id": 6500,
+      "name": "明治製糖蒜頭=媽祖間營業線",
+      "co": 3,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "明治製糖蒜頭=媽祖間營業線"
+        }
+      ]
     }
   ],
   "stations": [
@@ -8757,6 +9353,945 @@
       },
       "prevStation": 501,
       "hasDetail": true
+    },
+    {
+      "id": 503,
+      "name": "羅東站",
+      "status": "disused",
+      "openDate": "1970年",
+      "closeDate": "1979年8月1日",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "nextStation": 504,
+      "hasDetail": true
+    },
+    {
+      "id": 504,
+      "name": "竹林站",
+      "status": "disused",
+      "openDate": "1924年1月17日",
+      "closeDate": "1979年8月1日",
+      "miles": "竹林起0.0公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 503,
+      "nextStation": [506, 505],
+      "hasDetail": true
+    },
+    {
+      "id": 505,
+      "name": "歪仔歪站",
+      "status": "disused",
+      "openDate": "1924年1月27日",
+      "closeDate": "1945年",
+      "miles": "竹林起3.07公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 504,
+      "nextStation": 506,
+      "hasDetail": true
+    },
+    {
+      "id": 506,
+      "name": "大洲站",
+      "status": "disused",
+      "openDate": "1926年5月27日",
+      "closeDate": "1979年8月1日",
+      "miles": "竹林起5.8公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": [504, 505],
+      "nextStation": 507,
+      "hasDetail": true
+    },
+    {
+      "id": 507,
+      "name": "萬富站",
+      "status": "disused",
+      "openDate": "1926年5月18日",
+      "closeDate": "1979年8月1日",
+      "originalName": "二萬五(1954年改名)",
+      "miles": "竹林起10.1公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 506,
+      "nextStation": 508,
+      "hasDetail": true
+    },
+    {
+      "id": 508,
+      "name": "三星站",
+      "status": "disused",
+      "openDate": "1914年",
+      "closeDate": "1979年8月1日",
+      "originalName": "叭哩沙(1920年改名)",
+      "miles": "竹林起14.5公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 507,
+      "nextStation": 509,
+      "hasDetail": true
+    },
+    {
+      "id": 509,
+      "name": "天送埤站",
+      "status": "disused",
+      "openDate": "1926年5月18日",
+      "closeDate": "1979年8月1日",
+      "miles": "竹林起17.9公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 508,
+      "nextStation": 510,
+      "hasDetail": true
+    },
+    {
+      "id": 510,
+      "name": "清水湖站",
+      "status": "disused",
+      "openDate": "1926年5月18日",
+      "closeDate": "1979年8月1日",
+      "originalName": "清水(1953年改名)",
+      "miles": "竹林起21.5公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 509,
+      "nextStation": 511,
+      "hasDetail": true
+    },
+    {
+      "id": 511,
+      "name": "牛鬥站",
+      "status": "disused",
+      "openDate": "1926年5月18日",
+      "closeDate": "1979年8月1日",
+      "miles": "竹林起24.0公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 510,
+      "nextStation": 512,
+      "hasDetail": true
+    },
+    {
+      "id": 512,
+      "name": "樂水站",
+      "status": "disused",
+      "openDate": "1926年5月18日",
+      "closeDate": "1979年8月1日",
+      "originalName": "濁水(1953年2月1日改名)、瑪崙(改名時間不詳)",
+      "miles": "竹林起31.3公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 511,
+      "nextStation": 513,
+      "hasDetail": true
+    },
+    {
+      "id": 513,
+      "name": "土場站",
+      "status": "disused",
+      "openDate": "1926年5月18日",
+      "closeDate": "1979年8月1日",
+      "miles": "竹林起35.8公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 512,
+      "hasDetail": true
+    },
+    {
+      "id": 514,
+      "name": "太平山站",
+      "status": "active",
+      "openDate": "1991年11月",
+      "miles": "太平山起0.0公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "nextStation": 515,
+      "hasDetail": true
+    },
+    {
+      "id": 515,
+      "name": "茂興站",
+      "status": "active",
+      "openDate": "1991年11月",
+      "miles": "太平山起3.2公里",
+      "line": {
+        "lineID": 3200,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 514,
+      "hasDetail": true
+    },
+    {
+      "id": 516,
+      "name": "森榮站",
+      "status": "disused",
+      "line": {
+        "lineID": 3300,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 517,
+      "name": "豐原站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "1959年",
+      "miles": "豐原起0.0公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "nextStation": 518,
+      "hasDetail": true
+    },
+    {
+      "id": 518,
+      "name": "翁子站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "1959年",
+      "miles": "豐原起1.7公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 517,
+      "nextStation": 519,
+      "hasDetail": true
+    },
+    {
+      "id": 519,
+      "name": "半張站",
+      "status": "disused",
+      "openDate": "1933年3月24日",
+      "closeDate": "1959年",
+      "miles": "豐原起2.7公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 518,
+      "nextStation": 520,
+      "hasDetail": true
+    },
+    {
+      "id": 520,
+      "name": "朴子站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "1959年",
+      "miles": "豐原起3.7公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 519,
+      "nextStation": 521,
+      "hasDetail": true
+    },
+    {
+      "id": 521,
+      "name": "埤頭站",
+      "status": "disused",
+      "openDate": "1927年7月9日",
+      "closeDate": "1959年",
+      "miles": "豐原起5.1公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 520,
+      "nextStation": 522,
+      "hasDetail": true
+    },
+    {
+      "id": 522,
+      "name": "石岡站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "1959年",
+      "miles": "豐原起6.8公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 521,
+      "nextStation": [524, 523],
+      "hasDetail": true
+    },
+    {
+      "id": 523,
+      "name": "九房厝站",
+      "status": "disused",
+      "openDate": "1933年3月24日",
+      "closeDate": "1939年",
+      "miles": "豐原起7.4公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 522,
+      "nextStation": 524,
+      "hasDetail": true
+    },
+    {
+      "id": 524,
+      "name": "社寮角站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "1959年",
+      "miles": "豐原起8.4公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": [522, 523],
+      "nextStation": 525,
+      "hasDetail": true
+    },
+    {
+      "id": 525,
+      "name": "林厝站",
+      "status": "disused",
+      "openDate": "1934年3月24日",
+      "closeDate": "1959年",
+      "miles": "豐原起8.9公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 524,
+      "nextStation": 526,
+      "hasDetail": true
+    },
+    {
+      "id": 526,
+      "name": "梅子站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "1959年",
+      "originalName": "梅子樹腳",
+      "miles": "豐原起9.8公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 525,
+      "nextStation": [528, 527],
+      "hasDetail": true
+    },
+    {
+      "id": 527,
+      "name": "學校裏站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "不詳",
+      "miles": "豐原起10.4公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 526,
+      "nextStation": 528,
+      "hasDetail": true
+    },
+    {
+      "id": 528,
+      "name": "土牛站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "1959年",
+      "miles": "豐原起11.7公里(豐原線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": [526, 527],
+      "nextStation": 529,
+      "hasDetail": true
+    },
+    {
+      "id": 529,
+      "name": "和盛站",
+      "status": "disused",
+      "openDate": "1924年8月23日",
+      "closeDate": "1959年",
+      "originalName": "貯木場(戰後改名)",
+      "miles": "豐原起13.1公里(豐原線)、和盛起0.0公里(大甲溪線)",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": [
+          { "id": 1, "order": 13 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "prevStation": 528,
+      "nextStation": 530,
+      "hasDetail": true
+    },
+    {
+      "id": 530,
+      "name": "水底寮站",
+      "status": "disused",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 529,
+      "nextStation": 531,
+      "hasDetail": false
+    },
+    {
+      "id": 531,
+      "name": "馬鞍寮站",
+      "status": "disused",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "prevStation": 530,
+      "nextStation": 532,
+      "hasDetail": false
+    },
+    {
+      "id": 532,
+      "name": "麻竹坑站",
+      "status": "disused",
+      "miles": "和盛起21.4公里",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "prevStation": 531,
+      "nextStation": 533,
+      "hasDetail": true
+    },
+    {
+      "id": 533,
+      "name": "白鹿站",
+      "status": "disused",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "prevStation": 532,
+      "nextStation": 534,
+      "hasDetail": false
+    },
+    {
+      "id": 534,
+      "name": "久良栖站",
+      "status": "disused",
+      "miles": "和盛起39.0公里",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": [
+          { "id": 2, "order": 6 },
+          { "id": 3, "order": 1 }
+        ]
+      },
+      "prevStation": 533,
+      "nextStation": 535,
+      "hasDetail": true
+    },
+    {
+      "id": 535,
+      "name": "佳保台站",
+      "status": "disused",
+      "line": {
+        "lineID": 3400,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "prevStation": 534,
+      "hasDetail": false
+    },
+    {
+      "id": 536,
+      "name": "烏來站",
+      "status": "active",
+      "openDate": "1963年",
+      "miles": "烏來起0.1公里",
+      "line": {
+        "lineID": 3500,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "nextStation": 537,
+      "hasDetail": true
+    },
+    {
+      "id": 537,
+      "name": "瀑布站",
+      "status": "active",
+      "openDate": "1963年",
+      "miles": "烏來起1.5公里",
+      "line": {
+        "lineID": 3500,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 536,
+      "hasDetail": true
+    },
+    {
+      "id": 538,
+      "name": "台中站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1959年",
+      "miles": "台中起0.0公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "nextStation": [542, 539],
+      "hasDetail": true
+    },
+    {
+      "id": 539,
+      "name": "花園站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1954年4月1日",
+      "originalName": "本社前(戰後改名)",
+      "miles": "台中起0.6公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 538,
+      "nextStation": [542, 540],
+      "hasDetail": true
+    },
+    {
+      "id": 540,
+      "name": "第一旱溪信號所",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 539,
+      "nextStation": 541,
+      "hasDetail": false
+    },
+    {
+      "id": 541,
+      "name": "第二旱溪信號所",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": [
+          { "id": 1, "order": 4 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "prevStation": 540,
+      "nextStation": 542,
+      "hasDetail": false
+    },
+    {
+      "id": 542,
+      "name": "太平站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1959年",
+      "originalName": "太平庄(1920年改名)、大平(戰後改名)",
+      "miles": "台中起3.5公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": [538, 539, 541],
+      "nextStation": 543,
+      "hasDetail": true
+    },
+    {
+      "id": 543,
+      "name": "光隆站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1959年",
+      "originalName": "車籠埔(1956年4月1日改名)",
+      "miles": "台中起5.8公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 542,
+      "nextStation": 544,
+      "hasDetail": true
+    },
+    {
+      "id": 544,
+      "name": "番子寮站",
+      "status": "disused",
+      "openDate": "1923年4月12日",
+      "closeDate": "1959年",
+      "miles": "台中起7.4公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 543,
+      "nextStation": 545,
+      "hasDetail": true
+    },
+    {
+      "id": 545,
+      "name": "塗城站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1959年",
+      "miles": "台中起8.4公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 544,
+      "nextStation": 546,
+      "hasDetail": true
+    },
+    {
+      "id": 546,
+      "name": "北溝站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1959年",
+      "miles": "台中起9.7公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 545,
+      "nextStation": [548, 547],
+      "hasDetail": true
+    },
+    {
+      "id": 547,
+      "name": "變電所站",
+      "status": "disused",
+      "openDate": "1935年2月5日",
+      "closeDate": "戰後",
+      "miles": "台中起10.3公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 546,
+      "nextStation": 548,
+      "hasDetail": true
+    },
+    {
+      "id": 548,
+      "name": "霧峰站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1959年",
+      "originalName": "阿罩霧(1920年改名)",
+      "miles": "台中起11.4公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": [546, 547],
+      "nextStation": 549,
+      "hasDetail": true
+    },
+    {
+      "id": 549,
+      "name": "六股站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1959年",
+      "miles": "台中起14.2公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 548,
+      "nextStation": 550,
+      "hasDetail": true
+    },
+    {
+      "id": 550,
+      "name": "萬斗六站",
+      "status": "disused",
+      "openDate": "1916年4月11日",
+      "closeDate": "1959年",
+      "miles": "台中起15.0公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 549,
+      "nextStation": 551,
+      "hasDetail": true
+    },
+    {
+      "id": 551,
+      "name": "舊社站",
+      "status": "disused",
+      "openDate": "1918年6月29日",
+      "closeDate": "1959年",
+      "miles": "台中起17.0公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "prevStation": 550,
+      "nextStation": [553, 552],
+      "hasDetail": true
+    },
+    {
+      "id": 552,
+      "name": "烏溪南岸站",
+      "status": "disused",
+      "openDate": "1931年4月15日",
+      "closeDate": "戰後",
+      "miles": "台中起18.3公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 15 }
+      },
+      "prevStation": 551,
+      "nextStation": 553,
+      "hasDetail": true
+    },
+    {
+      "id": 553,
+      "name": "新豐站",
+      "status": "disused",
+      "openDate": "1918年6月29日",
+      "closeDate": "1959年",
+      "originalName": "新庄(1953年10月1日改名)",
+      "miles": "台中起19.8公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "prevStation": [551, 552],
+      "nextStation": 554,
+      "hasDetail": true
+    },
+    {
+      "id": 554,
+      "name": "草屯站",
+      "status": "disused",
+      "openDate": "1918年6月29日",
+      "closeDate": "1959年",
+      "originalName": "草鞋墩(1920年改名)",
+      "miles": "台中起21.5公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "prevStation": [551, 552],
+      "nextStation": [556, 555],
+      "hasDetail": true
+    },
+    {
+      "id": 555,
+      "name": "林子頭站",
+      "status": "disused",
+      "openDate": "1923年11月17日",
+      "closeDate": "1957年9月15日",
+      "miles": "台中起23.1公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 18 }
+      },
+      "prevStation": 554,
+      "nextStation": 556,
+      "hasDetail": true
+    },
+    {
+      "id": 556,
+      "name": "省府前站",
+      "status": "disused",
+      "openDate": "1957年7月4日",
+      "closeDate": "1959年",
+      "miles": "台中起24.2公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 19 }
+      },
+      "prevStation": [554, 555],
+      "nextStation": 557,
+      "hasDetail": true
+    },
+    {
+      "id": 557,
+      "name": "營盤口站",
+      "status": "disused",
+      "openDate": "1918年6月29日",
+      "closeDate": "1959年",
+      "miles": "台中起25.7公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 20 }
+      },
+      "prevStation": 556,
+      "nextStation": [560, 558],
+      "hasDetail": true
+    },
+    {
+      "id": 558,
+      "name": "林庄站",
+      "status": "disused",
+      "openDate": "1924年8月20日",
+      "closeDate": "戰後",
+      "miles": "台中起27.1公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 21 }
+      },
+      "prevStation": 557,
+      "nextStation": 559,
+      "hasDetail": true
+    },
+    {
+      "id": 559,
+      "name": "半山站",
+      "status": "disused",
+      "openDate": "1918年6月29日",
+      "closeDate": "戰後",
+      "miles": "台中起28.1公里",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 1, "order": 22 }
+      },
+      "prevStation": 558,
+      "nextStation": 560,
+      "hasDetail": true
+    },
+    {
+      "id": 560,
+      "name": "南投站",
+      "status": "disused",
+      "openDate": "1918年6月29日",
+      "closeDate": "1959年",
+      "miles": "台中起30.0公里",
+      "line": [
+        {
+          "lineID": 3600,
+          "lineDistrict": { "id": 1, "order": 23 }
+        },
+        {
+          "lineID": 4400,
+          "lineDistrict": [
+            { "id": 1, "order": 2 },
+            { "id": 2, "order": 1 },
+            { "id": 3, "order": 1 }
+          ]
+        }
+      ],
+      "prevStation": [557, 559],
+      "nextStation": [],
+      "hasDetail": true
+    },
+    {
+      "id": 561,
+      "name": "番子路站",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 541,
+      "nextStation": 562,
+      "hasDetail": false
+    },
+    {
+      "id": 562,
+      "name": "水景頭站",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "prevStation": 561,
+      "nextStation": 563,
+      "hasDetail": false
+    },
+    {
+      "id": 563,
+      "name": "軍功寮站",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "prevStation": 562,
+      "nextStation": 564,
+      "hasDetail": false
+    },
+    {
+      "id": 564,
+      "name": "公館站",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "prevStation": 563,
+      "nextStation": 565,
+      "hasDetail": false
+    },
+    {
+      "id": 565,
+      "name": "聚興站",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "prevStation": 564,
+      "hasDetail": false
+    },
+    {
+      "id": 566,
+      "name": "南屯分歧",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 3, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 567,
+      "name": "涼傘樹橋站",
+      "status": "disused",
+      "line": {
+        "lineID": 3600,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": false
     }
   ]
 }

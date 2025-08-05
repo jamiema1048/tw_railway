@@ -11,6 +11,8 @@ interface Props {
 interface District {
   districtID: number;
   districtName: string;
+  prevArea?: number;
+  nextArea?: number;
 }
 
 interface Line {
@@ -117,6 +119,13 @@ const DistrictGroupedStations: React.FC<Props> = ({
       {lineData.district.map((district) => (
         <div key={district.districtID} className="mb-6">
           <h2 className="text-xl font-bold mb-2">{district.districtName}</h2>
+          {district.prevArea ? (
+            <div>
+              <Link href={`/railways/${district.prevArea}`}>以上</Link>
+            </div>
+          ) : (
+            <></>
+          )}
           <ul className="list-disc pl-5">
             {districtMap[district.districtID].length > 0 ? (
               districtMap[district.districtID].map((station) => (
@@ -145,6 +154,13 @@ const DistrictGroupedStations: React.FC<Props> = ({
               ))
             ) : (
               <li className="text-gray-500">（無車站）</li>
+            )}
+            {district.nextArea ? (
+              <div>
+                <Link href={`/railways/${district.nextArea}`}>以下</Link>
+              </div>
+            ) : (
+              <></>
             )}
           </ul>
         </div>

@@ -10,6 +10,8 @@ import Footer from "../../footer/footer";
 interface District {
   districtID: number;
   districtName: string;
+  prevArea?: number;
+  nextArea?: number;
 }
 
 interface Line {

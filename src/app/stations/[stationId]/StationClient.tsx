@@ -9,6 +9,8 @@ import Link from "next/link";
 interface District {
   districtID: number;
   districtName: string;
+  prevArea?: number;
+  nextArea?: number;
 }
 
 interface Line {
@@ -137,7 +139,9 @@ export default function StationClient({
             上一站：
             {Array.isArray(station.prevStation)
               ? station.prevStation.map((id) => {
-                  const match = adjacentStations.find((s) => s.id === id);
+                  const match = adjacentStations.find(
+                    (s) => String(s.id) === String(id)
+                  );
                   console.log("prevStation match:", match);
                   return match ? (
                     match.hasDetail ? (
@@ -157,7 +161,7 @@ export default function StationClient({
                 })
               : (() => {
                   const match = adjacentStations.find(
-                    (s) => s.id === station.prevStation
+                    (s) => String(s.id) === String(station.prevStation)
                   );
                   console.log("prevStation single match:", match);
                   return match ? (
@@ -183,7 +187,9 @@ export default function StationClient({
             下一站：
             {Array.isArray(station.nextStation)
               ? station.nextStation.map((id) => {
-                  const match = adjacentStations.find((s) => s.id === id);
+                  const match = adjacentStations.find(
+                    (s) => String(s.id) === String(id)
+                  );
                   console.log("nextStation match:", match);
                   return match ? (
                     match.hasDetail ? (
@@ -205,7 +211,7 @@ export default function StationClient({
                 })
               : (() => {
                   const match = adjacentStations.find(
-                    (s) => s.id === station.nextStation
+                    (s) => String(s.id) === String(station.nextStation)
                   );
                   console.log("nextStation single match:", match);
                   return match ? (

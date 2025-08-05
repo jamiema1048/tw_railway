@@ -20,6 +20,8 @@ interface Line {
   district: {
     districtID: number;
     districtName: string;
+    prevArea?: number;
+    nextArea?: number;
   }[];
   // 你可以依照實際資料補上更多欄位
 }
