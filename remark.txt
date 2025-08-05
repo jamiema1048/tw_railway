@@ -34,6 +34,9 @@ station id :
 516 is station of 林田山森林鐵路
 517~537 is station of 八仙山森林鐵路
 538~567 is station of 台中總廠鐵道，南投站:560
+568~617 is station of 虎尾總廠鐵道，斗南站:568，工場站:571，虎尾站:572，南岸站:583，柳樹腳站:588
+618~653 is station of 新營總廠鐵道，新營站:618
+654~ is station of 麻豆總廠鐵道
 
 
 railway id:
