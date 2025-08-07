@@ -48,7 +48,9 @@ station id :
 850~864 is station of 溪州糖廠鐵道，坑厝站:859
 865~877 is station of 龍岩糖廠鐵道
 878~891 is station of 斗六糖廠鐵道，大崙站:880
-892~ is station of 北港糖廠鐵道，嘉義站:892，牛斗山站:899，新港站:904，北港站:908
+892~930 is station of 北港糖廠鐵道，嘉義站:892，牛斗山站:899，新港站:904，北港站:908
+931~955 is station of 蒜頭糖廠鐵道，蒜頭站:938，後潭站:943，中庄站:946
+956~ is station of 大林糖廠鐵道
 
 
 railway id:
