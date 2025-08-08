@@ -10653,7 +10653,7 @@
         "lineDistrict": { "id": 4, "order": 7 }
       },
       "prevStation": 587,
-      "nextStation": [],
+      "nextStation": 956,
       "hasDetail": true
     },
     {
@@ -11088,7 +11088,7 @@
           { "id": 4, "order": 1 }
         ]
       },
-      "nextStation": [619, 646, 647],
+      "nextStation": [619, 646, 647, 1009],
       "hasDetail": true
     },
     {
@@ -11254,7 +11254,7 @@
           "lineDistrict": { "id": 2, "order": 10 }
         }
       ],
-      "prevStation": [627],
+      "prevStation": [627, 991],
       "nextStation": 629,
       "hasDetail": true
     },
@@ -11761,7 +11761,7 @@
         }
       ],
       "prevStation": 662,
-      "nextStation": [],
+      "nextStation": 1025,
       "hasDetail": true
     },
     {
@@ -15279,7 +15279,7 @@
           "lineDistrict": { "id": 3, "order": 12 }
         }
       ],
-      "prevStation": [901],
+      "prevStation": [901, 975],
       "nextStation": [905, 907],
       "hasDetail": true
     },
@@ -15874,7 +15874,7 @@
         "lineID": 5200,
         "lineDistrict": { "id": 2, "order": 1 }
       },
-      "prevStation": [],
+      "prevStation": 983,
       "nextStation": 944,
       "hasDetail": true
     },
@@ -16056,6 +16056,2417 @@
       },
       "prevStation": 938,
       "hasDetail": true
+    },
+    {
+      "id": 956,
+      "name": "湖北里站",
+      "status": "disused",
+      "openDate": "1915年8月12日",
+      "closeDate": "1958年10月1日",
+      "originalName": "大湖(1952年9月1日改名)",
+      "miles": "小梅起7.7英哩(小梅線)、虎尾起10.7公里(虎尾大林線)",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 2, "order": 4 }
+        ]
+      },
+      "prevStation": [588, 957],
+      "nextStation": [957, 960],
+      "hasDetail": true
+    },
+    {
+      "id": 957,
+      "name": "大糖站",
+      "status": "disused",
+      "openDate": "1915年8月12日",
+      "closeDate": "1970年停辦客運",
+      "originalName": "工場(1920年10月1日改名)、會社前(1935年改名)、大林工場前(戰後改名)",
+      "miles": "小梅起8.3英哩(小梅線)、虎尾起11.7公里(虎尾大林線)、大林起1.9公里(新港線)",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": [
+          { "id": 1, "order": 2 },
+          { "id": 2, "order": 3 },
+          { "id": 3, "order": 4 }
+        ]
+      },
+      "prevStation": [956, 958, 968],
+      "nextStation": [969, 958, 956],
+      "hasDetail": true
+    },
+    {
+      "id": 958,
+      "name": "大林站",
+      "status": "disused",
+      "openDate": "1913年12月19日",
+      "closeDate": "1970年停辦客運",
+      "originalName": "大莆林(1920年10月1日改名)、新高大林(1934年改名)",
+      "miles": "小梅起10.0英哩(小梅線)、大林起0.0公里(新港線)、虎尾起13.6公里(虎尾大林線)",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": [
+          { "id": 1, "order": 3 },
+          { "id": 2, "order": 1 },
+          { "id": 3, "order": 1 }
+        ]
+      },
+      "prevStation": 957,
+      "nextStation": [957, 967, 959],
+      "hasDetail": true
+    },
+    {
+      "id": 959,
+      "name": "中林停車場",
+      "status": "disused",
+      "openDate": "1913年12月19日",
+      "closeDate": "1915年8月12日",
+      "miles": "小梅起7.5英哩",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 958,
+      "nextStation": 962,
+      "hasDetail": true
+    },
+    {
+      "id": 960,
+      "name": "潭墘站",
+      "status": "disused",
+      "openDate": "1915年8月12日",
+      "closeDate": "1954年6月1日改為不定期營運",
+      "miles": "小梅起5.9英哩",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "prevStation": 956,
+      "nextStation": 961,
+      "hasDetail": true
+    },
+    {
+      "id": 961,
+      "name": "上潭墘站",
+      "status": "disused",
+      "openDate": "不詳，1953年9月5日在時刻表初見",
+      "closeDate": "1954年6月1日改為不定期營運",
+      "originalName": "橋子頭(1953年改名)",
+      "miles": "小梅起9.8公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "prevStation": 960,
+      "nextStation": 962,
+      "hasDetail": true
+    },
+    {
+      "id": 962,
+      "name": "溝背站",
+      "status": "disused",
+      "openDate": "1913年12月19日",
+      "closeDate": "1954年6月1日改為不定期營業",
+      "originalName": "北勢(1952年9月1日改名)",
+      "miles": "小梅起4.8英哩",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 2, "order": 7 }
+      },
+      "prevStation": [961, 959],
+      "nextStation": 963,
+      "hasDetail": true
+    },
+    {
+      "id": 963,
+      "name": "三角站",
+      "status": "disused",
+      "openDate": "不詳，1953年9月5日的時刻表上初見",
+      "closeDate": "1954年6月1日改為不定期營業",
+      "miles": "小梅起7.0公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 2, "order": 8 }
+      },
+      "prevStation": 962,
+      "nextStation": 964,
+      "hasDetail": true
+    },
+    {
+      "id": 964,
+      "name": "大埔站",
+      "status": "disused",
+      "openDate": "1913年12月19日",
+      "closeDate": "1954年6月1日改為不定期營業",
+      "originalName": "大埔美(1920年10月1日改名)",
+      "miles": "小梅起2.8英哩",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 2, "order": 9 }
+      },
+      "prevStation": 963,
+      "nextStation": 965,
+      "hasDetail": true
+    },
+    {
+      "id": 965,
+      "name": "過山站",
+      "status": "disused",
+      "openDate": "不詳，1953年9月5日的時刻表上初見",
+      "closeDate": "1954年6月1日改為不定期營業",
+      "miles": "小梅起2.5公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 2, "order": 10 }
+      },
+      "prevStation": 964,
+      "nextStation": 966,
+      "hasDetail": true
+    },
+    {
+      "id": 966,
+      "name": "小梅站",
+      "status": "disused",
+      "openDate": "1913年12月19日",
+      "closeDate": "1954年6月1日改為不定期營業",
+      "originalName": "梅仔坑(1920年10月1日改名)",
+      "miles": "小梅起0.0公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 2, "order": 11 }
+      },
+      "prevStation": 965,
+      "hasDetail": true
+    },
+    {
+      "id": 967,
+      "name": "小梅平交道站",
+      "status": "disused",
+      "openDate": "見1970年1月1日時刻表",
+      "closeDate": "1970年",
+      "miles": "大林起0.5公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "prevStation": 958,
+      "nextStation": 968,
+      "hasDetail": true
+    },
+    {
+      "id": 968,
+      "name": "湖子平交道站",
+      "status": "disused",
+      "openDate": "見1970年1月1日時刻表",
+      "closeDate": "1970年",
+      "miles": "大林起1.2公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "prevStation": 967,
+      "nextStation": 957,
+      "hasDetail": true
+    },
+    {
+      "id": 969,
+      "name": "甘蔗崙站",
+      "status": "disused",
+      "openDate": "不詳，1920年4月1日出現在「台灣旅客運賃表」上",
+      "closeDate": "1970年停辦客運",
+      "miles": "大林起3.2公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 5 }
+      },
+      "prevStation": 957,
+      "nextStation": 970,
+      "hasDetail": true
+    },
+    {
+      "id": 970,
+      "name": "排子路站",
+      "status": "disused",
+      "openDate": "1914年5月17日",
+      "closeDate": "1970年停辦客運",
+      "miles": "大林起5.4公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 6 }
+      },
+      "prevStation": 969,
+      "nextStation": 971,
+      "hasDetail": true
+    },
+    {
+      "id": 971,
+      "name": "頂坪站",
+      "status": "disused",
+      "openDate": "1914年5月17日",
+      "closeDate": "1970年停辦客運",
+      "originalName": "頂平(1920年改名)",
+      "miles": "大林起6.9公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 7 }
+      },
+      "prevStation": 970,
+      "nextStation": 972,
+      "hasDetail": true
+    },
+    {
+      "id": 972,
+      "name": "溪口站",
+      "status": "disused",
+      "openDate": "1914年5月17日",
+      "closeDate": "1970年停辦客運",
+      "originalName": "雙溪口(1920年改名)",
+      "miles": "大林起9.9公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 8 }
+      },
+      "prevStation": 971,
+      "nextStation": 973,
+      "hasDetail": true
+    },
+    {
+      "id": 973,
+      "name": "崙尾站",
+      "status": "disused",
+      "openDate": "1952年10月24日",
+      "closeDate": "1970年停辦客運",
+      "miles": "大林起11.4公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 9 }
+      },
+      "prevStation": 972,
+      "nextStation": 974,
+      "hasDetail": true
+    },
+    {
+      "id": 974,
+      "name": "埤子頭站",
+      "status": "disused",
+      "openDate": "1914年5月17日",
+      "closeDate": "1970年停辦客運",
+      "miles": "大林起12.4公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 10 }
+      },
+      "prevStation": 973,
+      "nextStation": 975,
+      "hasDetail": true
+    },
+    {
+      "id": 975,
+      "name": "海豐站",
+      "status": "disused",
+      "openDate": "1950年",
+      "closeDate": "1970年停辦客運",
+      "miles": "大林起14.1公里",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 3, "order": 11 }
+      },
+      "prevStation": 974,
+      "nextStation": 904,
+      "hasDetail": true
+    },
+    {
+      "id": 976,
+      "name": "信號所",
+      "status": "disused",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 4, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 977,
+      "name": "機務旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 978,
+      "name": "湖北里旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 4, "order": 3 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 979,
+      "name": "牛稠旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5300,
+        "lineDistrict": { "id": 4, "order": 4 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 980,
+      "name": "南靖站",
+      "status": "disused",
+      "openDate": "1934年10月9日",
+      "closeDate": "不詳",
+      "originalName": "水上(戰後改名)",
+      "miles": "南靖起0.0公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 2, "order": 1 },
+          { "id": 3, "order": 1 }
+        ]
+      },
+      "nextStation": [982, 981, 984, 992],
+      "hasDetail": true
+    },
+    {
+      "id": 981,
+      "name": "南靖(舊)站",
+      "status": "disused",
+      "openDate": "1930年7月21日",
+      "closeDate": "戰後",
+      "miles": "南靖起0.3公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 980,
+      "nextStation": 982,
+      "hasDetail": true
+    },
+    {
+      "id": 982,
+      "name": "頂過溝站",
+      "status": "disused",
+      "openDate": "1930年7月21日",
+      "closeDate": "不詳",
+      "miles": "南靖起3.2公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": [980, 981],
+      "nextStation": 983,
+      "hasDetail": true
+    },
+    {
+      "id": 983,
+      "name": "崙溝站",
+      "status": "disused",
+      "openDate": "1930年7月21日",
+      "closeDate": "不詳",
+      "originalName": "大崙(1952年9月1日改名)",
+      "miles": "南靖起4.7公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 982,
+      "nextStation": 943,
+      "hasDetail": true
+    },
+    {
+      "id": 984,
+      "name": "下半天站",
+      "status": "disused",
+      "openDate": "1951年5月1日",
+      "closeDate": "不詳",
+      "miles": "南靖起3.8公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 980,
+      "nextStation": 985,
+      "hasDetail": true
+    },
+    {
+      "id": 985,
+      "name": "後堀站",
+      "status": "disused",
+      "openDate": "1951年5月1日",
+      "closeDate": "不詳",
+      "miles": "南靖起6.1公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "prevStation": 984,
+      "nextStation": 986,
+      "hasDetail": true
+    },
+    {
+      "id": 986,
+      "name": "鹿草站",
+      "status": "disused",
+      "openDate": "1951年5月1日",
+      "closeDate": "不詳",
+      "miles": "南靖起8.0公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "prevStation": 985,
+      "nextStation": 987,
+      "hasDetail": true
+    },
+    {
+      "id": 987,
+      "name": "施厝寮站",
+      "status": "disused",
+      "openDate": "1951年5月1日",
+      "closeDate": "不詳",
+      "miles": "南靖起8.8公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "prevStation": 986,
+      "nextStation": 988,
+      "hasDetail": true
+    },
+    {
+      "id": 988,
+      "name": "竹子腳站",
+      "status": "disused",
+      "openDate": "1951年5月1日",
+      "closeDate": "不詳",
+      "miles": "南靖起10.7公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "prevStation": 987,
+      "nextStation": 989,
+      "hasDetail": true
+    },
+    {
+      "id": 989,
+      "name": "頂潭站",
+      "status": "disused",
+      "openDate": "1951年5月1日",
+      "closeDate": "不詳",
+      "miles": "南靖起12.5公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 2, "order": 7 }
+      },
+      "prevStation": 988,
+      "nextStation": 990,
+      "hasDetail": true
+    },
+    {
+      "id": 990,
+      "name": "下潭站",
+      "status": "disused",
+      "openDate": "1951年5月1日",
+      "closeDate": "不詳",
+      "miles": "南靖起13.1公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 2, "order": 8 }
+      },
+      "prevStation": 989,
+      "nextStation": 991,
+      "hasDetail": true
+    },
+    {
+      "id": 991,
+      "name": "五間厝站",
+      "status": "disused",
+      "openDate": "1951年5月1日",
+      "closeDate": "不詳",
+      "originalName": "田尾(1952年9月18日改名)",
+      "miles": "南靖起15.1公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 2, "order": 9 }
+      },
+      "prevStation": 990,
+      "nextStation": 628,
+      "hasDetail": true
+    },
+    {
+      "id": 992,
+      "name": "外溪州站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起1.3公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "prevStation": 980,
+      "nextStation": 993,
+      "hasDetail": true
+    },
+    {
+      "id": 993,
+      "name": "吳竹腳站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起4.1公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "prevStation": 992,
+      "nextStation": 994,
+      "hasDetail": true
+    },
+    {
+      "id": 994,
+      "name": "柳子林站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起5.2公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 4 }
+      },
+      "prevStation": 993,
+      "nextStation": 995,
+      "hasDetail": true
+    },
+    {
+      "id": 995,
+      "name": "湖子內站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起7.5公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 5 }
+      },
+      "prevStation": 994,
+      "nextStation": 996,
+      "hasDetail": true
+    },
+    {
+      "id": 996,
+      "name": "公館農站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起8.5公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 6 }
+      },
+      "prevStation": 995,
+      "nextStation": 997,
+      "hasDetail": true
+    },
+    {
+      "id": 997,
+      "name": "公館站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起9.7公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 7 }
+      },
+      "prevStation": 996,
+      "nextStation": 998,
+      "hasDetail": true
+    },
+    {
+      "id": 998,
+      "name": "興化廍站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起10.9公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 8 }
+      },
+      "prevStation": 997,
+      "nextStation": 999,
+      "hasDetail": true
+    },
+    {
+      "id": 999,
+      "name": "好收站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起13.2公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 9 }
+      },
+      "prevStation": 998,
+      "nextStation": 1000,
+      "hasDetail": true
+    },
+    {
+      "id": 1000,
+      "name": "石頭厝站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起14.3公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 10 }
+      },
+      "prevStation": 999,
+      "nextStation": 1001,
+      "hasDetail": true
+    },
+    {
+      "id": 1001,
+      "name": "下白芒埔站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起16.6公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 11 }
+      },
+      "prevStation": 1000,
+      "nextStation": 1002,
+      "hasDetail": true
+    },
+    {
+      "id": 1002,
+      "name": "同仁站",
+      "status": "disused",
+      "openDate": "1952年2月15日",
+      "closeDate": "不詳",
+      "miles": "南靖起17.4公里",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 3, "order": 12 }
+      },
+      "prevStation": 1001,
+      "hasDetail": true
+    },
+    {
+      "id": 1003,
+      "name": "白鴿厝旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 4, "order": 1 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1004,
+      "name": "施厝寮旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1005,
+      "name": "南農旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 4, "order": 3 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1006,
+      "name": "菁寮旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 4, "order": 4 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1007,
+      "name": "長短樹信號所",
+      "status": "disused",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 4, "order": 5 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1008,
+      "name": "義竹調配室",
+      "status": "disused",
+      "line": {
+        "lineID": 5400,
+        "lineDistrict": { "id": 4, "order": 6 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1009,
+      "name": "北新站",
+      "status": "disused",
+      "openDate": "戰後",
+      "closeDate": "1979年9月1日",
+      "miles": "北新起0.0公里(烏樹林線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "prevStation": 618,
+      "nextStation": 1010,
+      "hasDetail": true
+    },
+    {
+      "id": 1010,
+      "name": "土庫里站",
+      "status": "disused",
+      "openDate": "戰後",
+      "closeDate": "1979年9月1日",
+      "originalName": "土庫(1952年9月1日改名)",
+      "miles": "北新起2.7公里(烏樹林線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 1009,
+      "nextStation": 1011,
+      "hasDetail": true
+    },
+    {
+      "id": 1011,
+      "name": "福安站",
+      "status": "disused",
+      "openDate": "戰後",
+      "closeDate": "1979年9月1日",
+      "originalName": "安溪寮(1953年5月1日改名)",
+      "miles": "北新起4.3公里(烏樹林線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 1010,
+      "nextStation": 1012,
+      "hasDetail": true
+    },
+    {
+      "id": 1012,
+      "name": "烏樹林站",
+      "status": "active",
+      "openDate": "戰後、2001年12月29日",
+      "closeDate": "1979年9月1日",
+      "miles": "北新起6.2公里(烏樹林線)、烏樹林起0.0公里(白河線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": [
+          { "id": 1, "order": 4 },
+          { "id": 2, "order": 1 },
+          { "id": 3, "order": 1 },
+          { "id": 4, "order": 1 }
+        ]
+      },
+      "prevStation": [1011, 1018],
+      "nextStation": [1013, 1015, 1019, 1020, 1021],
+      "hasDetail": true
+    },
+    {
+      "id": 1013,
+      "name": "下寮子站",
+      "status": "disused",
+      "openDate": "戰後",
+      "closeDate": "1979年9月1日",
+      "miles": "北新起9.5公里(烏樹林線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 1012,
+      "nextStation": 1014,
+      "hasDetail": true
+    },
+    {
+      "id": 1014,
+      "name": "東山站",
+      "status": "disused",
+      "openDate": "戰後",
+      "closeDate": "1979年9月1日",
+      "originalName": "番社(1948年9月25日改名)",
+      "miles": "北新起11.1公里(烏樹林線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 1013,
+      "hasDetail": true
+    },
+    {
+      "id": 1015,
+      "name": "東農站",
+      "status": "disused",
+      "openDate": "1951年10月1日",
+      "closeDate": "1974年",
+      "miles": "烏樹林起3.1公里(白河線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 1012,
+      "nextStation": 1016,
+      "hasDetail": true
+    },
+    {
+      "id": 1016,
+      "name": "頂秀祐站",
+      "status": "disused",
+      "openDate": "戰後",
+      "closeDate": "1974年",
+      "miles": "烏樹林起4.4公里(白河線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "prevStation": 1015,
+      "nextStation": 1017,
+      "hasDetail": true
+    },
+    {
+      "id": 1017,
+      "name": "白河站",
+      "status": "disused",
+      "openDate": "戰後",
+      "closeDate": "1974年",
+      "miles": "烏樹林起5.6公里(白河線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "prevStation": 1016,
+      "hasDetail": true
+    },
+    {
+      "id": 1018,
+      "name": "內埕站",
+      "status": "active",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "nextStation": 1012,
+      "hasDetail": true
+    },
+    {
+      "id": 1019,
+      "name": "頂寮站",
+      "status": "active",
+      "openDate": "2006年",
+      "miles": "烏樹林起2.7公里(新港東線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "prevStation": 1012,
+      "hasDetail": true
+    },
+    {
+      "id": 1020,
+      "name": "新頂埤站",
+      "status": "disused",
+      "openDate": "2001年12月29日",
+      "closeDate": "2006年",
+      "miles": "烏樹林起3.2公里(新港東線)",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 3, "order": 4 }
+      },
+      "prevStation": 1012,
+      "hasDetail": true
+    },
+    {
+      "id": 1021,
+      "name": "蘭展月台",
+      "status": "disused",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "prevStation": 1012,
+      "hasDetail": true
+    },
+    {
+      "id": 1022,
+      "name": "分歧旗站信號所",
+      "status": "disused",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 5, "order": 1 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1023,
+      "name": "白河分歧",
+      "status": "disused",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 5, "order": 2 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1024,
+      "name": "下寮旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5500,
+        "lineDistrict": { "id": 5, "order": 3 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1025,
+      "name": "後庄站",
+      "status": "disused",
+      "openDate": "見1950年11月20日時刻表",
+      "closeDate": "1980年7月15日",
+      "miles": "隆田起15.0公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 663,
+      "nextStation": 1026,
+      "hasDetail": true
+    },
+    {
+      "id": 1026,
+      "name": "蕭壠站",
+      "status": "disused",
+      "openDate": "1909年6月1日",
+      "closeDate": "1980年7月15日",
+      "originalName": "蕭壠(1920年10月改名)、佳里(1952年7月15日改名)",
+      "miles": "隆田起17.6公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": [
+          { "id": 1, "order": 3 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "prevStation": 1025,
+      "nextStation": [1027, 1028, 1036],
+      "hasDetail": true
+    },
+    {
+      "id": 1027,
+      "name": "佳里站",
+      "status": "disused",
+      "openDate": "1952年7月15日",
+      "closeDate": "1980年7月15日",
+      "miles": "隆田起19.0公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 1026,
+      "hasDetail": true
+    },
+    {
+      "id": 1028,
+      "name": "佳里興站",
+      "status": "disused",
+      "openDate": "1932年10月1日",
+      "closeDate": "1980年7月15日",
+      "miles": "隆田起19.8公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 1026,
+      "nextStation": 1029,
+      "hasDetail": true
+    },
+    {
+      "id": 1029,
+      "name": "營頂站",
+      "status": "disused",
+      "openDate": "1915年2月11日",
+      "closeDate": "最後一次於1968年5月30日出現在時刻表",
+      "miles": "隆田起20.9公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 1028,
+      "nextStation": 1030,
+      "hasDetail": true
+    },
+    {
+      "id": 1030,
+      "name": "大灣站",
+      "status": "disused",
+      "openDate": "1932年10月1日",
+      "closeDate": "1972年2月",
+      "miles": "隆田起22.5公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 1029,
+      "nextStation": 1031,
+      "hasDetail": true
+    },
+    {
+      "id": 1031,
+      "name": "東寮站",
+      "status": "disused",
+      "openDate": "1953年6月20日",
+      "closeDate": "1972年2月",
+      "miles": "隆田起23.8公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 1030,
+      "nextStation": 1032,
+      "hasDetail": true
+    },
+    {
+      "id": 1032,
+      "name": "舊學甲站",
+      "status": "disused",
+      "openDate": "1915年2月11日",
+      "closeDate": "1972年2月",
+      "originalName": "學甲(1955年5月7日改名)",
+      "miles": "隆田起25.4公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 1031,
+      "nextStation": 1033,
+      "hasDetail": true
+    },
+    {
+      "id": 1033,
+      "name": "光華站",
+      "status": "disused",
+      "openDate": "1958年8月1日時刻表增列",
+      "closeDate": "1972年2月",
+      "miles": "隆田起27.4公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 1032,
+      "nextStation": 1034,
+      "hasDetail": true
+    },
+    {
+      "id": 1034,
+      "name": "中浯站",
+      "status": "disused",
+      "openDate": "1915年2月11日",
+      "closeDate": "1972年2月",
+      "originalName": "中洲(1953年5月20日改名)",
+      "miles": "隆田起28.2公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 1033,
+      "nextStation": 1035,
+      "hasDetail": true
+    },
+    {
+      "id": 1035,
+      "name": "二重港站",
+      "status": "disused",
+      "openDate": "1915年2月11日",
+      "closeDate": "1972年2月",
+      "miles": "隆田起29.9公里(隆田線)",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 1034,
+      "hasDetail": true
+    },
+    {
+      "id": 1036,
+      "name": "新宅農場站",
+      "status": "disused",
+      "openDate": "2005年1月15日",
+      "closeDate": "2005年2月28日",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 1026,
+      "hasDetail": true
+    },
+    {
+      "id": 1037,
+      "name": "佳糖旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 3, "order": 1 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1038,
+      "name": "北門旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1039,
+      "name": "53號分歧",
+      "status": "disused",
+      "line": {
+        "lineID": 5600,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1040,
+      "name": "海寮旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1041,
+      "name": "六塊寮旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1042,
+      "name": "和順旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1043,
+      "name": "安順旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1044,
+      "name": "永康旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1045,
+      "name": "九連旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1046,
+      "name": "三車旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1047,
+      "name": "道爺旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1048,
+      "name": "三舍旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 5700,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1049,
+      "name": "善化站",
+      "status": "disused",
+      "openDate": "1932年12月21日",
+      "closeDate": "1975年停辦客運",
+      "miles": "善化起0.0公里(善化線)、善化幹線K3+411+00、玉井起29.8公里(玉善線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "nextStation": [1051, 1050, 1058],
+      "hasDetail": true
+    },
+    {
+      "id": 1050,
+      "name": "六分寮站",
+      "status": "disused",
+      "openDate": "1932年12月21日",
+      "closeDate": "戰後資料中消失",
+      "miles": "善化起2.2公里(善化線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 1049,
+      "nextStation": 1052,
+      "hasDetail": true
+    },
+    {
+      "id": 1051,
+      "name": "六德站",
+      "status": "disused",
+      "openDate": "見1948年6月1日時刻表",
+      "closeDate": "1975年",
+      "originalName": "六德里(1958年6月11日改名)",
+      "miles": "善化起2.6公里(善化線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 1049,
+      "nextStation": [1053, 1052],
+      "hasDetail": true
+    },
+    {
+      "id": 1052,
+      "name": "灣裡站",
+      "status": "disused",
+      "openDate": "1932年12月21日",
+      "closeDate": "1967年9月25日",
+      "originalName": "工場(戰後改名)",
+      "miles": "善化起3.2公里(善化線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": [1051, 1050],
+      "nextStation": 1053,
+      "hasDetail": true
+    },
+    {
+      "id": 1053,
+      "name": "善糖站",
+      "status": "disused",
+      "openDate": "1961年1月1日-1962年5月1日間",
+      "closeDate": "1975年",
+      "miles": "善化起3.5公里(善化線)、善化線K0+000+00",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": [1051, 1052],
+      "nextStation": [1056, 1054, 1055],
+      "hasDetail": true
+    },
+    {
+      "id": 1054,
+      "name": "公誠村站",
+      "status": "disused",
+      "openDate": "戰後",
+      "closeDate": "1967年9月25日",
+      "miles": "善化起3.6公里(善化線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 1053,
+      "hasDetail": true
+    },
+    {
+      "id": 1055,
+      "name": "神社前站",
+      "status": "disused",
+      "openDate": "1932年12月21日",
+      "closeDate": "戰後",
+      "miles": "善化起3.8公里(善化線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 1053,
+      "hasDetail": true
+    },
+    {
+      "id": 1056,
+      "name": "新厝站",
+      "status": "disused",
+      "openDate": "1954年",
+      "closeDate": "1975年",
+      "originalName": "新厝仔(1958年6月11日改名)",
+      "miles": "善化起4.2公里(善化線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 1053,
+      "nextStation": 1057,
+      "hasDetail": true
+    },
+    {
+      "id": 1057,
+      "name": "善化街站",
+      "status": "disused",
+      "openDate": "1954年",
+      "closeDate": "1975年",
+      "miles": "善化起6.3公里(善化線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 1056,
+      "hasDetail": true
+    },
+    {
+      "id": 1058,
+      "name": "北子店站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1975年停辦客運",
+      "miles": "玉井起27.5公里(玉善線)、左鎮幹線K1+376+55",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 1049,
+      "nextStation": 1059,
+      "hasDetail": true
+    },
+    {
+      "id": 1059,
+      "name": "小新營站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1975年停辦客運",
+      "miles": "玉井起26.7公里(玉善線)、左鎮幹線K2+193+97",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "prevStation": 1058,
+      "nextStation": 1060,
+      "hasDetail": true
+    },
+    {
+      "id": 1060,
+      "name": "茄拔站",
+      "status": "disused",
+      "openDate": "1954年2月、1958年9月1日",
+      "closeDate": "1958年6月1日、1975年",
+      "miles": "玉井起24.8公里(玉善線)、左鎮幹線K3+773+32",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "prevStation": 1059,
+      "nextStation": [1062, 1061],
+      "hasDetail": true
+    },
+    {
+      "id": 1061,
+      "name": "仁德站",
+      "status": "disused",
+      "openDate": "1954年2月",
+      "closeDate": "1958年6月1日",
+      "miles": "玉井起23.7公里(玉善線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "prevStation": 1060,
+      "nextStation": 1063,
+      "hasDetail": true
+    },
+    {
+      "id": 1062,
+      "name": "大社站",
+      "status": "disused",
+      "openDate": "見1967年9月25日時刻表",
+      "closeDate": "1975年",
+      "miles": "玉井起23.0公里(玉善線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "prevStation": 1060,
+      "nextStation": 1064,
+      "hasDetail": true
+    },
+    {
+      "id": 1063,
+      "name": "明和站",
+      "status": "disused",
+      "openDate": "1954年2月",
+      "closeDate": "1958年6月1日",
+      "miles": "玉井起20.3公里(玉善線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 7 }
+      },
+      "prevStation": 1061,
+      "nextStation": 1064,
+      "hasDetail": true
+    },
+    {
+      "id": 1064,
+      "name": "山上站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1975年停辦客運",
+      "miles": "玉井起19.7公里(玉善線)、左鎮幹線K8+589+05",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 8 }
+      },
+      "prevStation": [1062, 1063],
+      "nextStation": [1066, 1065],
+      "hasDetail": true
+    },
+    {
+      "id": 1065,
+      "name": "新庄站",
+      "status": "disused",
+      "openDate": "1954年2月",
+      "closeDate": "1958年6月1日",
+      "miles": "玉井起18.8公里(玉善線)、左鎮幹線K10+142+15",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 9 }
+      },
+      "prevStation": 1064,
+      "nextStation": 1066,
+      "hasDetail": true
+    },
+    {
+      "id": 1066,
+      "name": "玉峰站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1975年停辦客運",
+      "miles": "玉井起17.6公里(玉善線)、左鎮幹線K11+291+17",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 10 }
+      },
+      "prevStation": [1064, 1065],
+      "nextStation": 1067,
+      "hasDetail": true
+    },
+    {
+      "id": 1067,
+      "name": "平陽站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1975年停辦客運",
+      "miles": "玉井起16.8公里(玉善線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 11 }
+      },
+      "prevStation": 1066,
+      "nextStation": [1069, 1068],
+      "hasDetail": true
+    },
+    {
+      "id": 1068,
+      "name": "卓猿站",
+      "status": "disused",
+      "openDate": "1954年2月",
+      "closeDate": "1958年6月1日",
+      "miles": "玉井起16.1公里(玉善線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 12 }
+      },
+      "prevStation": 1067,
+      "nextStation": 1069,
+      "hasDetail": true
+    },
+    {
+      "id": 1069,
+      "name": "頂店站",
+      "status": "disused",
+      "openDate": "1957年7月時刻表有列",
+      "closeDate": "1975年停辦客運",
+      "miles": "玉井起15.0公里(玉善線)、左鎮幹線K13+925+35",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 13 }
+      },
+      "prevStation": [1067, 1068],
+      "nextStation": 1070,
+      "hasDetail": true
+    },
+    {
+      "id": 1070,
+      "name": "松子頂站",
+      "status": "disused",
+      "openDate": "1954年2月、1958年9月1日",
+      "closeDate": "1958年6月1日、1975年停辦客運",
+      "miles": "玉井起14.6公里(玉善線)",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 14 }
+      },
+      "prevStation": 1069,
+      "nextStation": 1071,
+      "hasDetail": true
+    },
+    {
+      "id": 1071,
+      "name": "菜寮站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1975年停辦客運",
+      "miles": "玉井起13.2公里(玉善線)、左鎮幹線K15+738+65",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 2, "order": 15 }
+      },
+      "prevStation": 1070,
+      "nextStation": 1072,
+      "hasDetail": true
+    },
+    {
+      "id": 1072,
+      "name": "左鎮站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1975年停辦客運",
+      "miles": "玉井起10.4公里(玉善線)",
+      "line": [
+        {
+          "lineID": 5800,
+          "lineDistrict": { "id": 2, "order": 16 }
+        },
+        {
+          "lineID": 5900,
+          "lineDistrict": { "id": 1, "order": 1 }
+        }
+      ],
+      "prevStation": 1071,
+      "nextStation": 1075,
+      "hasDetail": true
+    },
+    {
+      "id": 1073,
+      "name": "茄拔旗站",
+      "status": "disused",
+      "miles": "善化幹線K2+297+55",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 3, "order": 1 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1074,
+      "name": "山上分歧",
+      "status": "disused",
+      "miles": "左鎮幹線K6+375+74",
+      "line": {
+        "lineID": 5800,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1075,
+      "name": "𦬬萊坑站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1973年9月",
+      "miles": "玉井起8.9公里(玉善線)",
+      "line": {
+        "lineID": 5900,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 1072,
+      "nextStation": 1076,
+      "hasDetail": true
+    },
+    {
+      "id": 1076,
+      "name": "後坑站",
+      "status": "disused",
+      "openDate": "1955年5月1日",
+      "closeDate": "1973年9月",
+      "miles": "玉井起7.4公里(玉善線)",
+      "line": {
+        "lineID": 5900,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 1075,
+      "nextStation": 1077,
+      "hasDetail": true
+    },
+    {
+      "id": 1077,
+      "name": "九層林站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1973年9月",
+      "miles": "玉井起6.5公里(玉善線)、玉左線K6+448+19",
+      "line": {
+        "lineID": 5900,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 1076,
+      "nextStation": 1078,
+      "hasDetail": true
+    },
+    {
+      "id": 1078,
+      "name": "大松站",
+      "status": "disused",
+      "openDate": "1955年5月1日",
+      "closeDate": "1973年9月",
+      "miles": "玉井起4.4公里(玉善線)、玉左線K4+347+32",
+      "line": {
+        "lineID": 5900,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 1077,
+      "nextStation": 1079,
+      "hasDetail": true
+    },
+    {
+      "id": 1079,
+      "name": "望明站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1973年9月",
+      "miles": "玉井起1.6公里(玉善線)",
+      "line": {
+        "lineID": 5900,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 1078,
+      "nextStation": 1080,
+      "hasDetail": true
+    },
+    {
+      "id": 1080,
+      "name": "玉井站",
+      "status": "disused",
+      "openDate": "1953年1月11日",
+      "closeDate": "1973年9月",
+      "miles": "玉井起0.0公里(玉善線)",
+      "line": {
+        "lineID": 5900,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 1079,
+      "hasDetail": true
+    },
+    {
+      "id": 1081,
+      "name": "台南(舊)站",
+      "status": "disused",
+      "openDate": "1948年10月10日",
+      "closeDate": "1954年6月6日",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "nextStation": 1085,
+      "hasDetail": true
+    },
+    {
+      "id": 1082,
+      "name": "台南站",
+      "status": "disused",
+      "openDate": "1954年6月6日",
+      "closeDate": "1969年5月20日",
+      "miles": "台南起0.0公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "nextStation": 1083,
+      "hasDetail": true
+    },
+    {
+      "id": 1083,
+      "name": "東門站",
+      "status": "disused",
+      "openDate": "1954年6月6日、1969年5月20日",
+      "closeDate": "1958年7月1日、1972年8月1日",
+      "miles": "台南起0.6公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 1082,
+      "nextStation": 1084,
+      "hasDetail": true
+    },
+    {
+      "id": 1084,
+      "name": "德光中學站",
+      "status": "disused",
+      "openDate": "1969年5月20日",
+      "closeDate": "1972年8月1日",
+      "miles": "台南起2.3公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 1083,
+      "nextStation": 1085,
+      "hasDetail": true
+    },
+    {
+      "id": 1085,
+      "name": "竹篙厝站",
+      "status": "disused",
+      "openDate": "1948年11月6日",
+      "closeDate": "1972年8月1日",
+      "miles": "台南起3.9公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": [1084, 1081],
+      "nextStation": 1086,
+      "hasDetail": true
+    },
+    {
+      "id": 1086,
+      "name": "車路墘站",
+      "status": "disused",
+      "openDate": "1948年10月10日",
+      "closeDate": "1972年8月1日",
+      "miles": "台南起7.3公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": 1085,
+      "nextStation": 1087,
+      "hasDetail": true
+    },
+    {
+      "id": 1087,
+      "name": "後壁厝站",
+      "status": "disused",
+      "openDate": "1948年10月10日",
+      "closeDate": "1972年8月1日",
+      "miles": "台南起9.7公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 1086,
+      "nextStation": 1088,
+      "hasDetail": true
+    },
+    {
+      "id": 1088,
+      "name": "新田站",
+      "status": "disused",
+      "openDate": "1954年6月6日",
+      "closeDate": "1972年8月1日",
+      "miles": "台南起11.2公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 1087,
+      "nextStation": 1089,
+      "hasDetail": true
+    },
+    {
+      "id": 1089,
+      "name": "六甲站",
+      "status": "disused",
+      "openDate": "1948年10月10日",
+      "closeDate": "1972年8月1日",
+      "miles": "台南起12.7公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 1088,
+      "nextStation": 1090,
+      "hasDetail": true
+    },
+    {
+      "id": 1090,
+      "name": "歸仁站",
+      "status": "disused",
+      "openDate": "1948年10月10日",
+      "closeDate": "1972年8月1日",
+      "miles": "台南起14.8公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 1089,
+      "nextStation": 1091,
+      "hasDetail": true
+    },
+    {
+      "id": 1091,
+      "name": "關廟站",
+      "status": "disused",
+      "openDate": "1948年10月10日",
+      "closeDate": "1972年8月1日",
+      "miles": "台南起17.8公里",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 1090,
+      "hasDetail": true
+    },
+    {
+      "id": 1092,
+      "name": "仁德站",
+      "status": "disused",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1093,
+      "name": "太爺站",
+      "status": "disused",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1094,
+      "name": "水車旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1095,
+      "name": "路竹站",
+      "status": "disused",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1096,
+      "name": "石案分歧",
+      "status": "disused",
+      "line": {
+        "lineID": 6000,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1097,
+      "name": "橋頭糖廠站",
+      "status": "active",
+      "openDate": "2009年7月5日",
+      "miles": "橋頭糖廠起0公里(仁武線)",
+      "line": {
+        "lineID": 6100,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "nextStation": 1099,
+      "hasDetail": true
+    },
+    {
+      "id": 1098,
+      "name": "興糖站",
+      "status": "disused",
+      "openDate": "2003年8月",
+      "closeDate": "2009年7月5日",
+      "miles": "橋頭糖廠起0.3公里(仁武線)",
+      "line": {
+        "lineID": 6100,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "nextStation": 1099,
+      "hasDetail": true
+    },
+    {
+      "id": 1099,
+      "name": "精農站",
+      "status": "active",
+      "openDate": "2003年8月",
+      "miles": "橋頭糖廠起1.5公里(仁武線)",
+      "line": {
+        "lineID": 6100,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": [1097, 1098],
+      "hasDetail": true
+    },
+    {
+      "id": 1100,
+      "name": "本洲站",
+      "status": "disused",
+      "line": {
+        "lineID": 6100,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1101,
+      "name": "後協站",
+      "status": "disused",
+      "line": {
+        "lineID": 6100,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1102,
+      "name": "橋頭站",
+      "status": "disused",
+      "line": {
+        "lineID": 6100,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1103,
+      "name": "鳳山厝岔歧站",
+      "status": "disused",
+      "line": {
+        "lineID": 6100,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1104,
+      "name": "仁武站",
+      "status": "disused",
+      "line": {
+        "lineID": 6100,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1105,
+      "name": "小港站",
+      "status": "disused",
+      "openDate": "1909年10月5日",
+      "closeDate": "不詳",
+      "originalName": "工場(1950年11月1日改名)",
+      "miles": "小港起0.0公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "nextStation": 1106,
+      "hasDetail": true
+    },
+    {
+      "id": 1106,
+      "name": "二苓站",
+      "status": "disused",
+      "openDate": "1940年11月20日",
+      "closeDate": "不詳",
+      "miles": "小港起0.7公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 1105,
+      "nextStation": 1107,
+      "hasDetail": true
+    },
+    {
+      "id": 1107,
+      "name": "佛公站",
+      "status": "disused",
+      "openDate": "1952年1月15日時刻表增列",
+      "closeDate": "不詳",
+      "originalName": "佛公分歧(1955年9月10日改名)",
+      "miles": "小港起2.3公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "prevStation": 1106,
+      "nextStation": 1108,
+      "hasDetail": true
+    },
+    {
+      "id": 1108,
+      "name": "牛寮站",
+      "status": "disused",
+      "openDate": "1950年11月20日",
+      "closeDate": "不詳",
+      "miles": "小港起3.8公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "prevStation": 1107,
+      "nextStation": [1110, 1109],
+      "hasDetail": true
+    },
+    {
+      "id": 1109,
+      "name": "七老爺站",
+      "status": "disused",
+      "openDate": "1909年10月5日",
+      "closeDate": "日治時期",
+      "miles": "小港起5.0公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "prevStation": 1108,
+      "nextStation": 1110,
+      "hasDetail": true
+    },
+    {
+      "id": 1110,
+      "name": "西門站",
+      "status": "disused",
+      "openDate": "1909年10月5日",
+      "closeDate": "日治時期",
+      "miles": "小港起8.0公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "prevStation": [1108, 1109],
+      "nextStation": 1111,
+      "hasDetail": true
+    },
+    {
+      "id": 1111,
+      "name": "鳳山西站",
+      "status": "disused",
+      "openDate": "1909年10月5日",
+      "closeDate": "1954年4月15日",
+      "originalName": "鳳山(1949年7月15日改名)",
+      "miles": "小港起8.9公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "prevStation": 1110,
+      "nextStation": 1112,
+      "hasDetail": true
+    },
+    {
+      "id": 1112,
+      "name": "鳳山站",
+      "status": "disused",
+      "openDate": "1909年6月5日",
+      "closeDate": "1990年代",
+      "originalName": "鳳山(1949年7月25日改名)、鳳山東站(1954年4月15日改名)",
+      "miles": "小港起9.1公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "prevStation": 1111,
+      "nextStation": 1113,
+      "hasDetail": true
+    },
+    {
+      "id": 1113,
+      "name": "電信所站",
+      "status": "disused",
+      "openDate": "1916年9月2日",
+      "closeDate": "不詳",
+      "miles": "小港起11.0公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "prevStation": 1112,
+      "nextStation": 1114,
+      "hasDetail": true
+    },
+    {
+      "id": 1114,
+      "name": "山子頂站",
+      "status": "disused",
+      "openDate": "1909年6月5日",
+      "closeDate": "不詳",
+      "miles": "小港起13.6公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "prevStation": 1113,
+      "nextStation": 1115,
+      "hasDetail": true
+    },
+    {
+      "id": 1115,
+      "name": "大寮站",
+      "status": "disused",
+      "openDate": "1909年6月5日",
+      "closeDate": "不詳",
+      "originalName": "會社(光復前改名)、工場(戰後改名)、芎蕉腳(1956年7月1日改名)",
+      "miles": "小港起14.7公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "prevStation": 1114,
+      "nextStation": 1116,
+      "hasDetail": true
+    },
+    {
+      "id": 1116,
+      "name": "後壁寮站",
+      "status": "disused",
+      "openDate": "1956年7月1日",
+      "closeDate": "不詳",
+      "miles": "小港起16.1公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 12 }
+      },
+      "prevStation": 1115,
+      "nextStation": 1117,
+      "hasDetail": true
+    },
+    {
+      "id": 1117,
+      "name": "下大寮站",
+      "status": "disused",
+      "openDate": "不詳",
+      "closeDate": "不詳",
+      "originalName": "大寮(1956年7月1日改名)",
+      "miles": "小港起17.3公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "prevStation": 1116,
+      "nextStation": 1118,
+      "hasDetail": true
+    },
+    {
+      "id": 1118,
+      "name": "過溪站",
+      "status": "disused",
+      "openDate": "1952年1月15日時刻表增列",
+      "closeDate": "不詳",
+      "miles": "小港起19.0公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "prevStation": 1117,
+      "nextStation": 1119,
+      "hasDetail": true
+    },
+    {
+      "id": 1119,
+      "name": "潮州寮站",
+      "status": "disused",
+      "openDate": "1909年6月5日",
+      "closeDate": "不詳",
+      "miles": "小港起19.9公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 15 }
+      },
+      "prevStation": 1118,
+      "nextStation": 1120,
+      "hasDetail": true
+    },
+    {
+      "id": 1120,
+      "name": "新厝站",
+      "status": "disused",
+      "openDate": "1955年9月10日",
+      "closeDate": "不詳",
+      "miles": "小港起20.8公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "prevStation": 1119,
+      "nextStation": 1121,
+      "hasDetail": true
+    },
+    {
+      "id": 1121,
+      "name": "昭明站",
+      "status": "disused",
+      "openDate": "1909年6月5日",
+      "closeDate": "不詳",
+      "miles": "小港起23.4公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "prevStation": 1120,
+      "nextStation": 1122,
+      "hasDetail": true
+    },
+    {
+      "id": 1122,
+      "name": "潭頭站",
+      "status": "disused",
+      "openDate": "1909年6月5日",
+      "closeDate": "不詳",
+      "miles": "小港起25.5公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 18 }
+      },
+      "prevStation": 1121,
+      "nextStation": 1123,
+      "hasDetail": true
+    },
+    {
+      "id": 1123,
+      "name": "林園站",
+      "status": "disused",
+      "openDate": "1909年6月5日",
+      "closeDate": "不詳",
+      "originalName": "林子邊(1956年7月1日改名)",
+      "miles": "小港起27.6公里",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 1, "order": 19 }
+      },
+      "prevStation": 1122,
+      "hasDetail": true
+    },
+    {
+      "id": 1124,
+      "name": "大寮旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1125,
+      "name": "牛寮旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1126,
+      "name": "調配室",
+      "status": "disused",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1127,
+      "name": "夢裡站",
+      "status": "disused",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1128,
+      "name": "籬子內站",
+      "status": "disused",
+      "line": {
+        "lineID": 6200,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
     }
   ]
 }

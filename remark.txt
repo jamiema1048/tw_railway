@@ -50,7 +50,17 @@ station id :
 878~891 is station of 斗六糖廠鐵道，大崙站:880
 892~930 is station of 北港糖廠鐵道，嘉義站:892，牛斗山站:899，新港站:904，北港站:908
 931~955 is station of 蒜頭糖廠鐵道，蒜頭站:938，後潭站:943，中庄站:946
-956~ is station of 大林糖廠鐵道
+956~979 is station of 大林糖廠鐵道，大糖站:957
+980~1008 is station of 南靖糖廠鐵道，南靖站:981
+1009~1024 is station of 烏樹林糖廠鐵道，烏樹林站:1012
+1025~1039 is station of 佳里糖廠鐵道
+1040~1048 is station of 永康糖廠鐵道
+1049~1074 is station of 善化糖廠鐵道，善化站:1049，左鎮站:1072
+1075~1080 is station of 玉井糖廠鐵道
+1081~1096 is station of 仁德糖廠鐵道
+1097~1104 is station of 高雄糖廠鐵道
+1105~1128 is station of 小港糖廠鐵道
+1129~ is station of 旗山糖廠鐵道
 
 
 railway id:
