@@ -1060,6 +1060,1623 @@
           "districtName": "崙子線"
         }
       ]
+    },
+    {
+      "id": 6600,
+      "name": "台灣製糖手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "外車埕線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "埔里線"
+        }
+      ]
+    },
+    {
+      "id": 6700,
+      "name": "基隆輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "金瓜石線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "金山線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "三爪子線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "瑞芳線"
+        }
+      ]
+    },
+    {
+      "id": 6800,
+      "name": "彰南線",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "彰南線"
+        }
+      ]
+    },
+    {
+      "id": 6900,
+      "name": "臺北輕鐵炭礦手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "深坑線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "十五分線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "新店線(舊線)"
+        },
+        {
+          "districtID": 4,
+          "districtName": "南門屈尺線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "大稻埕線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "錫口線"
+        }
+      ]
+    },
+    {
+      "id": 7000,
+      "name": "振成興產手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "水碓子線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "淡水線"
+        }
+      ]
+    },
+    {
+      "id": 7100,
+      "name": "三合振興合營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "鹿寮線"
+        }
+      ]
+    },
+    {
+      "id": 7200,
+      "name": "景美輕鐵公司手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "景美輕鐵公司手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 7300,
+      "name": "台大校園輕便軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "台大校園輕便軌道"
+        }
+      ]
+    },
+    {
+      "id": 7400,
+      "name": "錫口養生院手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "錫口養生院手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 7500,
+      "name": "台北起業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "萬華線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "中和線"
+        }
+      ]
+    },
+    {
+      "id": 7600,
+      "name": "台北製糖手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "鷺洲新莊線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "山腳線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "林口線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "綠町頂埔線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "萬華頂埔線"
+        }
+      ]
+    },
+    {
+      "id": 7700,
+      "name": "蔡學韜手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "蔡學韜手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 7800,
+      "name": "海山煤礦炭礦用台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "海山煤礦炭礦用台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 7900,
+      "name": "新樹輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新樹輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 8000,
+      "name": "海山輕鐵",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "海山線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "成福線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "大湖線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "貨物線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "二甲乙線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "中庄線"
+        }
+      ]
+    },
+    {
+      "id": 8100,
+      "name": "桃園軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新莊線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "桃園站前線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "南崁線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "大園線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "竹圍線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "大溪線"
+        },
+        {
+          "districtID": 7,
+          "districtName": "內柵線"
+        },
+        {
+          "districtID": 8,
+          "districtName": "角板山線"
+        },
+        {
+          "districtID": 9,
+          "districtName": "龍潭線"
+        },
+        {
+          "districtID": 10,
+          "districtName": "青埔線"
+        }
+      ]
+    },
+    {
+      "id": 8200,
+      "name": "中龍輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "中龍線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "坑子線"
+        }
+      ]
+    },
+    {
+      "id": 8300,
+      "name": "中壢軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "中壢線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "草漯線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "東勢線"
+        }
+      ]
+    },
+    {
+      "id": 8400,
+      "name": "楊梅壢輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新屋線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "崁頭厝線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "老飯店線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "伯公岡線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "大陂線"
+        }
+      ]
+    },
+    {
+      "id": 8500,
+      "name": "范姜萍實業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "范姜萍實業手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 8600,
+      "name": "安咸輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "安咸線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "咸石線"
+        }
+      ]
+    },
+    {
+      "id": 8700,
+      "name": "東成公司手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "東成公司手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 8800,
+      "name": "紅咸鐵道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "紅咸線"
+        }
+      ]
+    },
+    {
+      "id": 8900,
+      "name": "新竹軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新竹軌道手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 9000,
+      "name": "新竹拓殖手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "北埔線"
+        }
+      ]
+    },
+    {
+      "id": 9100,
+      "name": "新竹製腦營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "南寮線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "舊港線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "竹北線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "竹東線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "上坪線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "內灣線"
+        }
+      ]
+    },
+    {
+      "id": 9200,
+      "name": "南日本製糖營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "南油車港線"
+        }
+      ]
+    },
+    {
+      "id": 9300,
+      "name": "陸軍補給場手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新竹線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "台中線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "台南線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "安平線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "打狗線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "鳳山線"
+        },
+        {
+          "districtID": 7,
+          "districtName": "塗葛窟線"
+        }
+      ]
+    },
+    {
+      "id": 9400,
+      "name": "展南拓殖手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "展南拓殖手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 9500,
+      "name": "錦成軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "錦成軌道手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 9600,
+      "name": "日本石油手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "錦水線"
+        }
+      ]
+    },
+    {
+      "id": 9700,
+      "name": "大日本製糖營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "公司寮線"
+        }
+      ]
+    },
+    {
+      "id": 9800,
+      "name": "苗栗輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "頭屋線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "新港線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "大山腳線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "大湖線"
+        }
+      ]
+    },
+    {
+      "id": 9900,
+      "name": "銅鑼灣輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "銅鑼灣輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 10000,
+      "name": "日南企業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "五里牌線"
+        }
+      ]
+    },
+    {
+      "id": 10100,
+      "name": "大安輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "大安輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 10200,
+      "name": "台中輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "葫蘆墩線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "東勢線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "橫流溪線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "牛欄坑線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "中坑坪線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "大雅線"
+        },
+        {
+          "districtID": 7,
+          "districtName": "台中線"
+        },
+        {
+          "districtID": 8,
+          "districtName": "頭汴坑線"
+        },
+        {
+          "districtID": 9,
+          "districtName": "國姓線"
+        },
+        {
+          "districtID": 10,
+          "districtName": "三界埔線"
+        },
+        {
+          "districtID": 11,
+          "districtName": "觸口線"
+        },
+        {
+          "districtID": 12,
+          "districtName": "番路線"
+        }
+      ]
+    },
+    {
+      "id": 10300,
+      "name": "葫蘆墩輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "東勢角線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "神崗線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "埧雅線"
+        }
+      ]
+    },
+    {
+      "id": 10400,
+      "name": "新社庄手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "水底寮線"
+        }
+      ]
+    },
+    {
+      "id": 10500,
+      "name": "大南第二蔗園苗圃用台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "大南第二蔗園苗圃用台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 10600,
+      "name": "台灣軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "西屯線"
+        }
+      ]
+    },
+    {
+      "id": 10700,
+      "name": "牛罵頭輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "神崗線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "梧棲線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "甲南線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "高美線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "大肚線"
+        }
+      ]
+    },
+    {
+      "id": 10800,
+      "name": "龍井軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "龍井軌道手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 10900,
+      "name": "霧峯宏業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "霧峯線"
+        }
+      ]
+    },
+    {
+      "id": 11000,
+      "name": "大平軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "大平線"
+        }
+      ]
+    },
+    {
+      "id": 11100,
+      "name": "日月潭水力發電工事電氣化鐵道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "日月潭水力發電工事電氣化鐵道"
+        }
+      ]
+    },
+    {
+      "id": 11200,
+      "name": "下見口產業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "下見口產業手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 11300,
+      "name": "埔里興業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "埔里興業手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 11400,
+      "name": "帝國製糖營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "西屯線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "烏日線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "南屯線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "大里線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "六股線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "南投線"
+        }
+      ]
+    },
+    {
+      "id": 11500,
+      "name": "彰化輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "八卦山線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "彰草線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "芬園線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "土城線"
+        }
+      ]
+    },
+    {
+      "id": 11600,
+      "name": "台灣中部運輸手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "彰化鹿港線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "秀水茄苳腳線"
+        }
+      ]
+    },
+    {
+      "id": 11700,
+      "name": "員林輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "湳雅線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "東山線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "控仔線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "田尾線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "鹿港線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "二林線"
+        }
+      ]
+    },
+    {
+      "id": 11800,
+      "name": "辜顯榮營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "辜顯榮營手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 11900,
+      "name": "埔南公司手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "南投線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "二八水線"
+        }
+      ]
+    },
+    {
+      "id": 12000,
+      "name": "南投輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "龍眼林線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "集南線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "番子吧線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "暗坑線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "中寮線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "粗坑線"
+        }
+      ]
+    },
+    {
+      "id": 12100,
+      "name": "新高拓殖手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新高拓殖手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 12200,
+      "name": "雲林拓殖手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "竹山線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "社寮線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "鹿谷線"
+        }
+      ]
+    },
+    {
+      "id": 12300,
+      "name": "斗六製糖營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "斗六製糖營手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 12400,
+      "name": "斗六輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "林內線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "西螺線"
+        }
+      ]
+    },
+    {
+      "id": 12500,
+      "name": "打北春龍手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "打北春龍手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 12600,
+      "name": "洪炳手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新港線"
+        }
+      ]
+    },
+    {
+      "id": 12700,
+      "name": "嘉義軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "嘉義軌道手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 12800,
+      "name": "江匡國手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "江匡國手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 12900,
+      "name": "嘉義廳營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "嘉義廳營手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 13000,
+      "name": "內外食品手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "內外食品手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 13100,
+      "name": "中埔輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "中埔線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "沄水線"
+        }
+      ]
+    },
+    {
+      "id": 13200,
+      "name": "內埔輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "鹿麻產線"
+        }
+      ]
+    },
+    {
+      "id": 13300,
+      "name": "關仔嶺軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "菁寮線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "關仔嶺線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "番社線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "六重溪線"
+        }
+      ]
+    },
+    {
+      "id": 13400,
+      "name": "嘉義青果拓殖手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "前大埔線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "崎子頭線"
+        }
+      ]
+    },
+    {
+      "id": 13500,
+      "name": "岩本正志手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "岸內鹽水線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "鹽水站聯絡線"
+        }
+      ]
+    },
+    {
+      "id": 13600,
+      "name": "北門輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "北門輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 13700,
+      "name": "下營六姓合名手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "下營六姓合名手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 13800,
+      "name": "烏山頭輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "烏山頭輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 13900,
+      "name": "台灣製糖營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "番子田線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "善化線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "大內線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "大內北勢洲線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "善化二重港線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "山仔頂線"
+        },
+        {
+          "districtID": 7,
+          "districtName": "大目降線"
+        }
+      ]
+    },
+    {
+      "id": 14000,
+      "name": "台灣輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "蕭壠線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "麻豆線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "直加弄六塊厝藔線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "三崁店線"
+        }
+      ]
+    },
+    {
+      "id": 14100,
+      "name": "台南輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "安平線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "灣裡線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "關廟線"
+        }
+      ]
+    },
+    {
+      "id": 14200,
+      "name": "新化輕軌手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "新化線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "玉井線"
+        }
+      ]
+    },
+    {
+      "id": 14300,
+      "name": "南日本製鹽用台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "南日本製鹽用台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 14400,
+      "name": "烏樹林支局製鹽用台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "烏樹林支局製鹽用台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 14500,
+      "name": "燕巢軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "燕巢軌道手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 14600,
+      "name": "阿公店興產手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "阿蓮線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "超峯寺線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "彌陀線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "赤崁線"
+        }
+      ]
+    },
+    {
+      "id": 14700,
+      "name": "蕃楠輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "蕃楠輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 14800,
+      "name": "土壠灣水力發電工事手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "土壠灣水力發電工事手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 14900,
+      "name": "臺灣鳳梨營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "臺灣鳳梨營手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 15000,
+      "name": "大和興業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "大和興業手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 15100,
+      "name": "阿緱製糖營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "阿緱製糖營手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 15200,
+      "name": "阿緱輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "阿緱輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 15300,
+      "name": "南麟輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "南麟輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 15400,
+      "name": "華麟軌道手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "華麟軌道手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 15500,
+      "name": "台灣興業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "阿緱東港線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "西勢線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "潮州新埤頭線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "打鐵新埤頭線"
+        }
+      ]
+    },
+    {
+      "id": 15600,
+      "name": "台灣海陸產業手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "磘仔口竹仔腳線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "東港枋寮線"
+        }
+      ]
+    },
+    {
+      "id": 15700,
+      "name": "宜蘭殖產手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "頭圍蘇澳線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "員山線"
+        },
+        {
+          "districtID": 3,
+          "districtName": "員山溫泉線"
+        },
+        {
+          "districtID": 4,
+          "districtName": "水源地線"
+        },
+        {
+          "districtID": 5,
+          "districtName": "深溝線"
+        },
+        {
+          "districtID": 6,
+          "districtName": "羅東停車場線"
+        },
+        {
+          "districtID": 7,
+          "districtName": "竹林貯木場線"
+        },
+        {
+          "districtID": 8,
+          "districtName": "利澤簡線"
+        },
+        {
+          "districtID": 9,
+          "districtName": "一百甲線"
+        },
+        {
+          "districtID": 10,
+          "districtName": "叭羅沙線"
+        },
+        {
+          "districtID": 11,
+          "districtName": "大洲線"
+        },
+        {
+          "districtID": 12,
+          "districtName": "小南澳線"
+        },
+        {
+          "districtID": 13,
+          "districtName": "阿兼城線"
+        },
+        {
+          "districtID": 14,
+          "districtName": "蘇澳海岸線"
+        },
+        {
+          "districtID": 15,
+          "districtName": "南方澳線"
+        }
+      ]
+    },
+    {
+      "id": 15800,
+      "name": "昭和製糖營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "二結線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "功勞線"
+        }
+      ]
+    },
+    {
+      "id": 15900,
+      "name": "蕃務課營手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "蕃務課營手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 16000,
+      "name": "銅文蘭輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "銅文蘭輕鐵手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 16100,
+      "name": "瑞穗溫泉手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "瑞穗溫泉手押台車軌道"
+        }
+      ]
+    },
+    {
+      "id": 16200,
+      "name": "花蓮港民會手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "水尾站線"
+        },
+        {
+          "districtID": 2,
+          "districtName": "璞石閣站線"
+        }
+      ]
+    },
+    {
+      "id": 16300,
+      "name": "台灣拓殖手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "恆春海口線"
+        }
+      ]
+    },
+    {
+      "id": 16400,
+      "name": "恆春輕鐵手押台車軌道",
+      "co": 4,
+      "district": [
+        {
+          "districtID": 1,
+          "districtName": "恆春輕鐵手押台車軌道"
+        }
+      ]
     }
   ],
   "stations": [
@@ -15331,7 +16948,8 @@
           "lineDistrict": { "id": 1, "order": 1 }
         }
       ],
-      "prevStation": [904],
+      "prevStation": 904,
+      "nextStation": 1162,
       "hasDetail": true
     },
     {
@@ -15926,7 +17544,7 @@
           "lineDistrict": { "id": 1, "order": 3 }
         }
       ],
-      "prevStation": [938],
+      "prevStation": [938, 1162],
       "nextStation": [947, 938],
       "hasDetail": true
     },
@@ -18465,6 +20083,1383 @@
       "line": {
         "lineID": 6200,
         "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1129,
+      "name": "磚仔窯站",
+      "status": "disused",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "nextStation": 1130,
+      "hasDetail": false
+    },
+    {
+      "id": 1130,
+      "name": "九曲堂分歧",
+      "status": "disused",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 1129,
+      "nextStation": 1131,
+      "hasDetail": false
+    },
+    {
+      "id": 1131,
+      "name": "九曲堂站",
+      "status": "disused",
+      "openDate": "1910年8月20日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起0.0公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": [
+          { "id": 1, "order": 3 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "prevStation": 1130,
+      "nextStation": [1133, 1132],
+      "hasDetail": true
+    },
+    {
+      "id": 1132,
+      "name": "公館站",
+      "status": "disused",
+      "openDate": "1928年10月4日",
+      "closeDate": "約1941年",
+      "miles": "九曲堂起1.7公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "prevStation": 1131,
+      "nextStation": 1133,
+      "hasDetail": true
+    },
+    {
+      "id": 1133,
+      "name": "龍目站",
+      "status": "disused",
+      "openDate": "1928年6月30日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起3.7公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "prevStation": [1131, 1132],
+      "nextStation": 1134,
+      "hasDetail": true
+    },
+    {
+      "id": 1134,
+      "name": "大樹站",
+      "status": "disused",
+      "openDate": "1910年8月20日",
+      "closeDate": "1978年",
+      "originalName": "大樹腳(1920年改名)",
+      "miles": "九曲堂起6.0公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "prevStation": 1133,
+      "nextStation": 1135,
+      "hasDetail": true
+    },
+    {
+      "id": 1135,
+      "name": "洲子站",
+      "status": "disused",
+      "openDate": "1928年10月4日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起8.4公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "prevStation": 1134,
+      "nextStation": 1136,
+      "hasDetail": true
+    },
+    {
+      "id": 1136,
+      "name": "溪埔站",
+      "status": "disused",
+      "openDate": "1910年8月20日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起10.0公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "prevStation": 1135,
+      "nextStation": [1139, 1137],
+      "hasDetail": true
+    },
+    {
+      "id": 1137,
+      "name": "田寮站",
+      "status": "disused",
+      "openDate": "1928年10月4日",
+      "closeDate": "1957年12月20日",
+      "originalName": "麻竹(約1940年改名)",
+      "miles": "九曲堂起11.4公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 7 }
+      },
+      "prevStation": 1136,
+      "nextStation": [1139, 1138],
+      "hasDetail": true
+    },
+    {
+      "id": 1138,
+      "name": "佛光山站",
+      "status": "disused",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 8 }
+      },
+      "prevStation": 1137,
+      "nextStation": 1139,
+      "hasDetail": false
+    },
+    {
+      "id": 1139,
+      "name": "麻竹站",
+      "status": "disused",
+      "openDate": "1954年5月10日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起12.0公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 9 }
+      },
+      "prevStation": [1136, 1137, 1138],
+      "nextStation": 1140,
+      "hasDetail": true
+    },
+    {
+      "id": 1140,
+      "name": "統嶺坑站",
+      "status": "disused",
+      "openDate": "1932年5月19日",
+      "closeDate": "1978年",
+      "originalName": "統嶺口(戰後改名)",
+      "miles": "九曲堂起13.2公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 10 }
+      },
+      "prevStation": 1139,
+      "nextStation": 1141,
+      "hasDetail": true
+    },
+    {
+      "id": 1141,
+      "name": "嶺口站",
+      "status": "disused",
+      "openDate": "1910年8月20日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起15.3公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 11 }
+      },
+      "prevStation": 1140,
+      "nextStation": [1143, 1142],
+      "hasDetail": true
+    },
+    {
+      "id": 1142,
+      "name": "大陸林場站",
+      "status": "disused",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 12 }
+      },
+      "prevStation": 1141,
+      "nextStation": 1143,
+      "hasDetail": false
+    },
+    {
+      "id": 1143,
+      "name": "南勝站",
+      "status": "disused",
+      "openDate": "1928年6月30日",
+      "closeDate": "1978年",
+      "originalName": "和尚(1968年3月改名)",
+      "miles": "九曲堂起18.4公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 13 }
+      },
+      "prevStation": [1141, 1142],
+      "nextStation": 1144,
+      "hasDetail": true
+    },
+    {
+      "id": 1144,
+      "name": "尚和站",
+      "status": "disused",
+      "openDate": "1954年5月10日",
+      "closeDate": "1978年",
+      "originalName": "上和尚(1968年3月改名)",
+      "miles": "九曲堂起19.9公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 14 }
+      },
+      "prevStation": 1143,
+      "nextStation": 1145,
+      "hasDetail": true
+    },
+    {
+      "id": 1145,
+      "name": "新光站",
+      "status": "disused",
+      "openDate": "1954年5月10日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起22.0公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 15 }
+      },
+      "prevStation": 1144,
+      "nextStation": [1147, 1146],
+      "hasDetail": true
+    },
+    {
+      "id": 1146,
+      "name": "磱碡坑站",
+      "status": "disused",
+      "openDate": "1928年10月4日",
+      "closeDate": "日治時期",
+      "originalName": "大竹(1932年5月19日改名)",
+      "miles": "九曲堂起22.3公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 16 }
+      },
+      "prevStation": 1145,
+      "nextStation": 1147,
+      "hasDetail": true
+    },
+    {
+      "id": 1147,
+      "name": "大州站",
+      "status": "disused",
+      "openDate": "1910年8月20日",
+      "closeDate": "1978年",
+      "originalName": "溪洲(改名時間不詳)、旗糖溪州(1952年9月1日改名)",
+      "miles": "九曲堂起23.2公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 17 }
+      },
+      "prevStation": [1145, 1146],
+      "nextStation": 1148,
+      "hasDetail": true
+    },
+    {
+      "id": 1148,
+      "name": "大山站",
+      "status": "disused",
+      "openDate": "1928年10月4日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起24.3公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 18 }
+      },
+      "prevStation": 1147,
+      "nextStation": [1152, 1151, 1149],
+      "hasDetail": true
+    },
+    {
+      "id": 1149,
+      "name": "武鹿站",
+      "status": "disused",
+      "openDate": "1928年6月30日",
+      "closeDate": "日治時期",
+      "miles": "九曲堂起25.4公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 19 }
+      },
+      "prevStation": 1148,
+      "nextStation": 1150,
+      "hasDetail": true
+    },
+    {
+      "id": 1150,
+      "name": "北勢站",
+      "status": "disused",
+      "openDate": "1928年10月4日",
+      "closeDate": "日治時期",
+      "miles": "九曲堂起26.1公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 20 }
+      },
+      "prevStation": 1149,
+      "nextStation": 1152,
+      "hasDetail": true
+    },
+    {
+      "id": 1151,
+      "name": "三協站",
+      "status": "disused",
+      "openDate": "1954年5月10日",
+      "closeDate": "1956年4月20日",
+      "miles": "九曲堂起26.8公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 21 }
+      },
+      "prevStation": 1148,
+      "nextStation": 1152,
+      "hasDetail": true
+    },
+    {
+      "id": 1152,
+      "name": "旗山站",
+      "status": "disused",
+      "openDate": "1910年8月20日",
+      "closeDate": "1978年",
+      "originalName": "蕃薯藔(1920年10月1日改名)",
+      "miles": "九曲堂起28.5公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 22 }
+      },
+      "prevStation": [1148, 1151, 1150],
+      "nextStation": 1153,
+      "hasDetail": true
+    },
+    {
+      "id": 1153,
+      "name": "旗尾站",
+      "status": "disused",
+      "openDate": "1910年8月20日",
+      "closeDate": "1978年",
+      "miles": "九曲堂起30.2公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 23 }
+      },
+      "prevStation": 1152,
+      "nextStation": 1154,
+      "hasDetail": true
+    },
+    {
+      "id": 1154,
+      "name": "調配室站",
+      "status": "disused",
+      "openDate": "1962年5月1日-1963年7月1日間",
+      "closeDate": "1978年",
+      "miles": "九曲堂起30.6公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 24 }
+      },
+      "prevStation": 1153,
+      "nextStation": 1155,
+      "hasDetail": true
+    },
+    {
+      "id": 1155,
+      "name": "中壇站",
+      "status": "disused",
+      "openDate": "1912年12月4日",
+      "closeDate": "1968年3月",
+      "miles": "九曲堂起32.6公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 25 }
+      },
+      "prevStation": 1154,
+      "nextStation": 1156,
+      "hasDetail": true
+    },
+    {
+      "id": 1156,
+      "name": "牛埔站",
+      "status": "disused",
+      "openDate": "1912年12月4日",
+      "closeDate": "1968年3月",
+      "miles": "九曲堂起34.0公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 26 }
+      },
+      "prevStation": 1155,
+      "nextStation": 1157,
+      "hasDetail": true
+    },
+    {
+      "id": 1157,
+      "name": "美濃站",
+      "status": "disused",
+      "openDate": "1912年12月4日",
+      "closeDate": "1968年3月",
+      "originalName": "彌濃(1920年改名)",
+      "miles": "九曲堂起36.2公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 27 }
+      },
+      "prevStation": 1156,
+      "nextStation": 1158,
+      "hasDetail": true
+    },
+    {
+      "id": 1158,
+      "name": "埤頭站",
+      "status": "disused",
+      "openDate": "1932年5月19日",
+      "closeDate": "1968年3月",
+      "miles": "九曲堂起37.4公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 28 }
+      },
+      "prevStation": 1157,
+      "nextStation": 1159,
+      "hasDetail": true
+    },
+    {
+      "id": 1159,
+      "name": "竹頭角站",
+      "status": "disused",
+      "openDate": "1912年12月4日",
+      "closeDate": "1968年3月",
+      "miles": "九曲堂起39.4公里",
+      "line": {
+        "lineID": 6300,
+        "lineDistrict": { "id": 2, "order": 29 }
+      },
+      "prevStation": 1158,
+      "hasDetail": true
+    },
+    {
+      "id": 1160,
+      "name": "南州糖廠月台",
+      "status": "disused",
+      "line": {
+        "lineID": 6400,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1161,
+      "name": "南州旗站",
+      "status": "disused",
+      "line": {
+        "lineID": 6400,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": true
+    },
+    {
+      "id": 1162,
+      "name": "港尾藔停車場",
+      "status": "disused",
+      "openDate": "1911年3月25日",
+      "closeDate": "1919年5月20日",
+      "originalName": "口尾藔(1912年5月31日改名)",
+      "miles": "蒜頭起3.8英哩",
+      "line": {
+        "lineID": 6500,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "prevStation": 907,
+      "nextStation": 946,
+      "hasDetail": true
+    },
+    {
+      "id": 1163,
+      "name": "埔里",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1164,
+      "name": "大林",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1165,
+      "name": "魚池",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1166,
+      "name": "槌子寮",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1167,
+      "name": "五城",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1168,
+      "name": "門牌潭",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1169,
+      "name": "外車埕",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": [
+          { "id": 1, "order": 7 },
+          { "id": 2, "order": 4 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1170,
+      "name": "湳仔",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1171,
+      "name": "集集",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1172,
+      "name": "水裡坑",
+      "status": "disused",
+      "line": {
+        "lineID": 6600,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1173,
+      "name": "八尺門",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1174,
+      "name": "八斗子",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1175,
+      "name": "深澳",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1176,
+      "name": "焿子寮",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1177,
+      "name": "水湳洞",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1178,
+      "name": "基隆(金山線)",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1179,
+      "name": "牛稠港",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1180,
+      "name": "內木山",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1181,
+      "name": "大武嶺",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1182,
+      "name": "瑪鋉",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1183,
+      "name": "野柳",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1184,
+      "name": "八斗子",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1185,
+      "name": "頂寮",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1186,
+      "name": "金包里",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 2, "order": 9 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1187,
+      "name": "基隆站前",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 3, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1188,
+      "name": "基隆(三爪子線)",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1189,
+      "name": "圓嶺窗",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1190,
+      "name": "深澳坑",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 3, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1191,
+      "name": "瑞芳",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 3, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1192,
+      "name": "瑞芳站前",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 3, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1193,
+      "name": "柑子瀨",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": [
+          { "id": 3, "order": 7 },
+          { "id": 4, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1194,
+      "name": "三爪子",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 3, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1195,
+      "name": "九芎橋",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 3, "order": 9 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1196,
+      "name": "九份",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1197,
+      "name": "金瓜石",
+      "status": "disused",
+      "line": {
+        "lineID": 6700,
+        "lineDistrict": { "id": 4, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1198,
+      "name": "彰化站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1199,
+      "name": "市仔尾站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1200,
+      "name": "渡船頭站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1201,
+      "name": "快官站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1202,
+      "name": "社口站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1203,
+      "name": "縣莊站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1204,
+      "name": "石頭埔站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1205,
+      "name": "月眉厝站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1206,
+      "name": "下溪州站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1207,
+      "name": "營盤口站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1208,
+      "name": "南投站",
+      "status": "disused",
+      "line": {
+        "lineID": 6800,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1209,
+      "name": "景尾",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 4, "order": 4 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1210,
+      "name": "木柵",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1211,
+      "name": "坡內坑",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1212,
+      "name": "象頭埔",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1213,
+      "name": "萬順寮",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1214,
+      "name": "深坑",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1215,
+      "name": "土庫",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1216,
+      "name": "雙溪",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1217,
+      "name": "石碇",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1218,
+      "name": "公館(十五分線)",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1219,
+      "name": "萬盛",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": [
+          { "id": 2, "order": 2 },
+          { "id": 4, "order": 3 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1220,
+      "name": "十五分",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1221,
+      "name": "南門（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 3, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1222,
+      "name": "古亭（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1223,
+      "name": "公館",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": [
+          { "id": 3, "order": 3 },
+          { "id": 4, "order": 2 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1224,
+      "name": "南門",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 4, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1225,
+      "name": "新店",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 4, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1226,
+      "name": "小粗坑",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 4, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1227,
+      "name": "屈尺",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 4, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1228,
+      "name": "大稻埕",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 5, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1229,
+      "name": "錫口",
+      "status": "disused",
+      "line": {
+        "lineID": 6900,
+        "lineDistrict": { "id": 6, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1230,
+      "name": "淡水",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1231,
+      "name": "分歧點",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": [
+          { "id": 1, "order": 2 },
+          { "id": 2, "order": 2 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1232,
+      "name": "淡水街",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1233,
+      "name": "北投仔",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1234,
+      "name": "林仔街",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1235,
+      "name": "下奎柔街",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1236,
+      "name": "興化店",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1237,
+      "name": "灰窯仔",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1238,
+      "name": "大片頭",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1239,
+      "name": "錫板",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 9 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1240,
+      "name": "小基隆",
+      "status": "disused",
+      "line": {
+        "lineID": 7000,
+        "lineDistrict": { "id": 2, "order": 10 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1241,
+      "name": "五堵",
+      "status": "disused",
+      "line": {
+        "lineID": 7100,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1242,
+      "name": "鹿寮坑",
+      "status": "disused",
+      "line": {
+        "lineID": 7100,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1243,
+      "name": "木柵",
+      "status": "disused",
+      "line": {
+        "lineID": 7200,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1244,
+      "name": "仙公廟",
+      "status": "disused",
+      "line": {
+        "lineID": 7200,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1245,
+      "name": "農產品展示中心",
+      "status": "disused",
+      "line": {
+        "lineID": 7300,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1246,
+      "name": "台大農場",
+      "status": "disused",
+      "line": {
+        "lineID": 7300,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1247,
+      "name": "錫口",
+      "status": "disused",
+      "line": {
+        "lineID": 7400,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1248,
+      "name": "錫口養身院",
+      "status": "disused",
+      "line": {
+        "lineID": 7400,
+        "lineDistrict": { "id": 1, "order": 2 }
       },
       "hasDetail": false
     }
