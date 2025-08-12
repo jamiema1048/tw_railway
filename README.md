@@ -25,6 +25,11 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 2. stations.line.lineDistrict.id decide what district in a line
 3. stations.line.lineDistrict.order decide order to display
 
+## To-Do
+1. Add photo & describtion
+2. Testing
+3. If UI/UX can be better, fix it
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
