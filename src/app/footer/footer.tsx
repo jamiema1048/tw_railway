@@ -19,14 +19,14 @@ const Footer: React.FC = () => {
           <div className="container mx-auto mt-4 flex flex-row place-content-center">
             <button
               onClick={handleToHomeClick}
-              className="text-lg m-4 bg-green-500 text-white hover:text-yellow-300 active:text-yellow-600 p-4 rounded hover:bg-green-600 active:bg-green-800 active:shadow-green-400 active:shadow-md flex flex-row"
+              className="text-lg m-4 cursor-pointer bg-green-500 text-white hover:text-yellow-300 active:text-yellow-600 p-4 rounded hover:bg-green-600 active:bg-green-800 active:shadow-green-400 active:shadow-md active:scale-95 hover:scale-[1.02] flex flex-row transition-colors"
             >
               <span>首頁</span>
             </button>
             {pathname !== "/railways" && (
               <button
                 onClick={handleToLineClick}
-                className="text-lg m-4 bg-green-500 text-white hover:text-yellow-300 active:text-yellow-600 p-4 rounded hover:bg-green-600 active:bg-green-800 active:shadow-green-400 active:shadow-md flex flex-row"
+                className="text-lg m-4 cursor-pointer bg-green-500 text-white hover:text-yellow-300 active:text-yellow-600 p-4 rounded hover:bg-green-600 active:bg-green-800 active:shadow-green-400 active:shadow-md active:scale-95 hover:scale-[1.02] flex flex-row transition-colors"
               >
                 <span>路線一覽</span>
               </button>

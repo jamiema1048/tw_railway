@@ -44,6 +44,8 @@ export default function LinePage({ lineID }: { lineID: number }) {
         setLines(data);
         setLoading(false);
         console.log(lines);
+        setTitle("鐵路總覽");
+        document.title = "鐵路總覽";
       } catch (err) {
         console.error(err);
       }
@@ -51,6 +53,21 @@ export default function LinePage({ lineID }: { lineID: number }) {
 
     fetchData();
   }, []);
+
+  // 根據 co 分組
+  const groupedByCo = lines.reduce<Record<number, Line[]>>((acc, line) => {
+    if (!acc[line.co]) acc[line.co] = [];
+    acc[line.co].push(line);
+    return acc;
+  }, {});
+
+  // 這裡可以設定公司名稱
+  const companyMap: Record<number, string> = {
+    1: "台鐵",
+    2: "林業鐵路",
+    3: "糖業鐵路",
+    4: "其他鐵路",
+  };
 
   useEffect(() => {
     console.log("lines changed:", lines);
@@ -79,19 +96,31 @@ export default function LinePage({ lineID }: { lineID: number }) {
       ) : (
         <div className="min-h-screen bg-[#0f0f0f] text-gray-200 p-6">
           <h1 className="text-3xl font-bold mb-8 text-center text-white">
-            🚉 車站一覽
+            🚉 鐵路總覽
           </h1>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {lines.map((l) => (
-              <Link
-                href={`railways/${l.id}`}
-                key={l.id}
-                className="bg-[#1a1a1a] border border-gray-700 rounded-xl shadow-md p-5 hover:bg-[#2a2a2a] transition-colors"
-              >
-                <h2 className="text-xl font-semibold text-white">{l.name}</h2>
-              </Link>
-            ))}
-          </div>
+          {Object.entries(groupedByCo).map(([co, lineList]) => (
+            <div key={co} className="mb-12">
+              <h2 className="text-2xl font-semibold mb-4 text-yellow-400">
+                {companyMap[Number(co)] || `公司 ${co}`}
+              </h2>
+              <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                {lineList.map((l) => (
+                  <Link
+                    href={`railways/${l.id}`}
+                    key={l.id}
+                    className="bg-[#1a1a1a] border border-gray-700 rounded-xl shadow-md p-5 
+               hover:bg-[#2a2a2a] active:bg-[#333] 
+               active:scale-95 hover:scale-[1.02]
+               transition-all duration-150 ease-in-out block"
+                  >
+                    <h3 className="text-xl font-semibold text-white">
+                      {l.name}
+                    </h3>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       )}
       <div className="mt-12">

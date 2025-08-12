@@ -118,7 +118,7 @@ const DistrictGroupedStations: React.FC<Props> = ({
     <div>
       {lineData.district.map((district) => (
         <div key={district.districtID} className="mb-6">
-          <h2 className="text-xl font-bold mb-2">{district.districtName}</h2>
+          <h2 className="text-2xl font-bold mb-2">{district.districtName}</h2>
           {district.prevArea ? (
             <div>
               <Link href={`/railways/${district.prevArea}`}>以上</Link>
@@ -131,22 +131,18 @@ const DistrictGroupedStations: React.FC<Props> = ({
               districtMap[district.districtID].map((station) => (
                 <li
                   key={station.id}
-                  className={`ml-2 list-disc ${
+                  className={`ml-2 list-disc text-xl active:scale-95 hover:scale-[1.02] ${
                     station.status === "active"
                       ? "text-white"
                       : station.status === "disused"
-                      ? "text-red-500 line-through"
+                      ? "text-gray-400" // 灰色 + 斜體，避免過於顯眼
                       : station.status === "planned"
-                      ? "text-blue-500 italic"
-                      : "text-gray-500"
+                      ? "text-blue-400 italic"
+                      : "text-gray-500 italic"
                   }`}
                 >
                   {station.hasDetail ? (
-                    <>
-                      <Link href={`/stations/${station.id}`}>
-                        {station.name}
-                      </Link>
-                    </>
+                    <Link href={`/stations/${station.id}`}>{station.name}</Link>
                   ) : (
                     <>{station.name}</>
                   )}

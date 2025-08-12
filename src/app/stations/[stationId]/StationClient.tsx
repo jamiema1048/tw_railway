@@ -55,6 +55,7 @@ export default function StationClient({
 
   useEffect(() => {
     setTitle(station.name);
+    document.title = `${station.name}`;
   }, [station.name, setTitle]);
   console.log(station);
 
@@ -114,119 +115,131 @@ export default function StationClient({
           )}
         </section>
 
-        <h2 className="text-xl mt-6 mb-2 font-semibold">所屬路線：</h2>
-        <ul className="list-disc pl-5">
-          {(Array.isArray(station.line) ? station.line : [station.line]).map(
-            (line) => {
-              const matchedRailway = railways.find(
-                (r) => Number(r.id) === Number(line.lineID)
-              );
-              return (
-                <Link
-                  key={line.lineID}
-                  href={`/railways/${line.lineID}`}
-                  className="text-blue-500 hover:underline mr-2"
-                >
-                  {matchedRailway ? matchedRailway.name : `ID: ${line.lineID}`}
-                </Link>
-              );
-            }
-          )}
-        </ul>
+        <div className="my-9">
+          <h2 className="text-xl mt-6 mb-5 font-semibold">所屬路線：</h2>
+          <ul className="list-disc pl-5">
+            {(Array.isArray(station.line) ? station.line : [station.line]).map(
+              (line) => {
+                const matchedRailway = railways.find(
+                  (r) => Number(r.id) === Number(line.lineID)
+                );
+                return (
+                  <Link
+                    key={line.lineID}
+                    href={`/railways/${line.lineID}`}
+                    className="bg-green-500 text-white hover:text-yellow-300 active:text-yellow-600 hover:bg-green-600 active:bg-green-800 active:shadow-green-400 active:scale-75 hover:scale-[1.05] p-4 rounded active:shadow-md mx-4 transition-all duration-200 ease-in-out"
+                  >
+                    {matchedRailway
+                      ? matchedRailway.name
+                      : `ID: ${line.lineID}`}
+                  </Link>
+                );
+              }
+            )}
+          </ul>
+        </div>
 
         {station.prevStation && (
-          <div className="mt-4">
-            上一站：
+          <div className="my-4 flex items-center gap-2 flex-wrap">
+            <span className="text-lg font-semibold">上一站：</span>
             {Array.isArray(station.prevStation)
               ? station.prevStation.map((id) => {
                   const match = adjacentStations.find(
                     (s) => String(s.id) === String(id)
                   );
-                  console.log("prevStation match:", match);
                   return match ? (
                     match.hasDetail ? (
                       <Link
                         key={id}
                         href={`/stations/${id}`}
-                        className="text-blue-500 hover:underline mr-2"
+                        className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white hover:text-yellow-300 active:text-yellow-600 active:scale-90 hover:scale-[1.05] px-4 py-2 rounded-lg transition-all duration-200 ease-in-out"
                       >
                         {match.name}
                       </Link>
                     ) : (
-                      <div className="text-white mr-2">{match.name}</div>
+                      <div
+                        key={id}
+                        className="bg-gray-600 text-gray-200 px-4 py-2 rounded-lg opacity-70 cursor-not-allowed active:bg-gray-700"
+                      >
+                        {match.name}
+                      </div>
                     )
                   ) : (
-                    `ID: ${id}`
+                    <span key={id}>ID: {id}</span>
                   );
                 })
               : (() => {
                   const match = adjacentStations.find(
                     (s) => String(s.id) === String(station.prevStation)
                   );
-                  console.log("prevStation single match:", match);
                   return match ? (
                     match.hasDetail ? (
                       <Link
                         href={`/stations/${station.prevStation}`}
-                        className="text-blue-500 hover:underline"
+                        className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white hover:text-yellow-300 active:text-yellow-600 active:scale-90 hover:scale-[1.05] px-4 py-2 rounded-lg transition-all duration-200 ease-in-out"
                       >
                         {match.name}
                       </Link>
                     ) : (
-                      <div className="text-white mr-2">{match.name}</div>
+                      <div className="bg-gray-600 text-gray-200 px-4 py-2 rounded-lg opacity-70 cursor-not-allowed active:bg-gray-700">
+                        {match.name}
+                      </div>
                     )
                   ) : (
-                    `ID: ${station.prevStation}`
+                    <span>ID: {station.prevStation}</span>
                   );
                 })()}
           </div>
         )}
 
         {station.nextStation && (
-          <div className="mt-4">
-            下一站：
+          <div className="my-4 flex items-center gap-2 flex-wrap">
+            <span className="text-lg font-semibold">下一站：</span>
             {Array.isArray(station.nextStation)
               ? station.nextStation.map((id) => {
                   const match = adjacentStations.find(
                     (s) => String(s.id) === String(id)
                   );
-                  console.log("nextStation match:", match);
                   return match ? (
                     match.hasDetail ? (
                       <Link
                         key={id}
                         href={`/stations/${id}`}
-                        className="text-blue-500 hover:underline mr-2"
+                        className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white hover:text-yellow-300 active:text-yellow-600 active:scale-90 hover:scale-[1.05] px-4 py-2 rounded-lg transition-all duration-200 ease-in-out"
                       >
                         {match.name}
                       </Link>
                     ) : (
-                      <div key={id} className="text-white mr-2">
+                      <div
+                        key={id}
+                        className="bg-gray-600 text-gray-200 px-4 py-2 rounded-lg opacity-70 cursor-not-allowed active:bg-gray-700"
+                      >
                         {match.name}
                       </div>
                     )
                   ) : (
-                    `ID: ${id}`
+                    <span key={id}>ID: {id}</span>
                   );
                 })
               : (() => {
                   const match = adjacentStations.find(
                     (s) => String(s.id) === String(station.nextStation)
                   );
-                  console.log("nextStation single match:", match);
                   return match ? (
                     match.hasDetail ? (
                       <Link
                         href={`/stations/${station.nextStation}`}
-                        className="text-blue-500 hover:underline mr-2"
+                        className="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white hover:text-yellow-300 active:text-yellow-600 active:scale-90 hover:scale-[1.05] px-4 py-2 rounded-lg transition-all duration-200 ease-in-out"
                       >
                         {match.name}
                       </Link>
                     ) : (
-                      <div className="text-white mr-2">{match.name}</div>
+                      <div className="bg-gray-600 text-gray-200 px-4 py-2 rounded-lg opacity-70 cursor-not-allowed active:bg-gray-700">
+                        {match.name}
+                      </div>
                     )
                   ) : (
-                    `ID: ${station.nextStation}`
+                    <span>ID: {station.nextStation}</span>
                   );
                 })()}
           </div>
