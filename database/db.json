@@ -26138,6 +26138,2416 @@
         "lineDistrict": { "id": 1, "order": 2 }
       },
       "hasDetail": false
+    },
+    {
+      "id": 1708,
+      "name": "嘉義",
+      "status": "disused",
+      "line": {
+        "lineID": 12700,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1709,
+      "name": "牛稠溪",
+      "status": "disused",
+      "line": {
+        "lineID": 12700,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1710,
+      "name": "林子尾",
+      "status": "disused",
+      "line": {
+        "lineID": 12700,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1711,
+      "name": "獅子頭",
+      "status": "disused",
+      "line": {
+        "lineID": 12700,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1712,
+      "name": "沙坑",
+      "status": "disused",
+      "line": {
+        "lineID": 12700,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1713,
+      "name": "南勢坑",
+      "status": "disused",
+      "line": {
+        "lineID": 12700,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1714,
+      "name": "大草埔",
+      "status": "disused",
+      "line": {
+        "lineID": 12700,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1715,
+      "name": "梅山",
+      "status": "disused",
+      "line": {
+        "lineID": 12700,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1716,
+      "name": "梅仔坑市街",
+      "status": "disused",
+      "line": {
+        "lineID": 12800,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1717,
+      "name": "梅仔坑",
+      "status": "disused",
+      "line": {
+        "lineID": 12800,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1718,
+      "name": "嘉義站後",
+      "status": "disused",
+      "line": {
+        "lineID": 12900,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1719,
+      "name": "嘉義公園",
+      "status": "disused",
+      "line": {
+        "lineID": 12900,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1720,
+      "name": "嘉義",
+      "status": "disused",
+      "line": {
+        "lineID": 13000,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1721,
+      "name": "嘉義站後",
+      "status": "disused",
+      "line": {
+        "lineID": 13100,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1722,
+      "name": "南門",
+      "status": "disused",
+      "line": {
+        "lineID": 13100,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1723,
+      "name": "六頂",
+      "status": "disused",
+      "line": {
+        "lineID": 13100,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1724,
+      "name": "中埔",
+      "status": "disused",
+      "line": {
+        "lineID": 13100,
+        "lineDistrict": [
+          { "id": 1, "order": 4 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1725,
+      "name": "石硦",
+      "status": "disused",
+      "line": {
+        "lineID": 13100,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1726,
+      "name": "沄水",
+      "status": "disused",
+      "line": {
+        "lineID": 13100,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1727,
+      "name": "番路",
+      "status": "disused",
+      "line": {
+        "lineID": 13200,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1728,
+      "name": "內埔子",
+      "status": "disused",
+      "line": {
+        "lineID": 13200,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1729,
+      "name": "鹿麻產",
+      "status": "disused",
+      "line": {
+        "lineID": 13200,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1730,
+      "name": "鹿麻產站",
+      "status": "disused",
+      "line": {
+        "lineID": 13200,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1731,
+      "name": "後壁",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1732,
+      "name": "菁寮",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1733,
+      "name": "白河",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": [
+          { "id": 2, "order": 2 },
+          { "id": 3, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1734,
+      "name": "糞箕湖",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": [
+          { "id": 2, "order": 3 },
+          { "id": 4, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1735,
+      "name": "木屐寮",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1736,
+      "name": "仙草埔",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1737,
+      "name": "關仔嶺",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1738,
+      "name": "番社",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1739,
+      "name": "六重溪",
+      "status": "disused",
+      "line": {
+        "lineID": 13300,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1740,
+      "name": "番社",
+      "status": "disused",
+      "line": {
+        "lineID": 13400,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1741,
+      "name": "凹子腳",
+      "status": "disused",
+      "line": {
+        "lineID": 13400,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1742,
+      "name": "大坑",
+      "status": "disused",
+      "line": {
+        "lineID": 13400,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1743,
+      "name": "竹圍埔",
+      "status": "disused",
+      "line": {
+        "lineID": 13400,
+        "lineDistrict": [
+          { "id": 1, "order": 4 },
+          { "id": 2, "order": 2 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1744,
+      "name": "前大埔",
+      "status": "disused",
+      "line": {
+        "lineID": 13400,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1745,
+      "name": "下南勢",
+      "status": "disused",
+      "line": {
+        "lineID": 13400,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1746,
+      "name": "崎子頭",
+      "status": "disused",
+      "line": {
+        "lineID": 13400,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1747,
+      "name": "鹽水",
+      "status": "disused",
+      "line": {
+        "lineID": 13500,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1748,
+      "name": "岸內",
+      "status": "disused",
+      "line": {
+        "lineID": 13500,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1749,
+      "name": "鹽水站",
+      "status": "disused",
+      "line": {
+        "lineID": 13500,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1750,
+      "name": "二重港",
+      "status": "disused",
+      "line": {
+        "lineID": 13600,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1751,
+      "name": "北門",
+      "status": "disused",
+      "line": {
+        "lineID": 13600,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1752,
+      "name": "林鳳營",
+      "status": "disused",
+      "line": {
+        "lineID": 13700,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1753,
+      "name": "下營",
+      "status": "disused",
+      "line": {
+        "lineID": 13700,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1754,
+      "name": "林鳳營",
+      "status": "disused",
+      "line": {
+        "lineID": 13800,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1755,
+      "name": "六甲",
+      "status": "disused",
+      "line": {
+        "lineID": 13800,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1756,
+      "name": "烏山頭",
+      "status": "disused",
+      "line": {
+        "lineID": 13800,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1757,
+      "name": "番子田",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1758,
+      "name": "官田",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1759,
+      "name": "番子渡頭",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1760,
+      "name": "石子瀨",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1761,
+      "name": "善化站前",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1762,
+      "name": "善化",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": [
+          { "id": 2, "order": 2 },
+          { "id": 3, "order": 1 },
+          { "id": 5, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1763,
+      "name": "北勢洲（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1764,
+      "name": "大內",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": [
+          { "id": 3, "order": 3 },
+          { "id": 4, "order": 1 },
+          { "id": 5, "order": 2 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1765,
+      "name": "北勢洲",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1766,
+      "name": "二重港",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 5, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1767,
+      "name": "新市站前",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": [
+          { "id": 6, "order": 1 },
+          { "id": 7, "order": 2 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1768,
+      "name": "水道事務所",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 6, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1769,
+      "name": "新市",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 7, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1770,
+      "name": "大目降",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 7, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1771,
+      "name": "中央研究所糖業科",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 7, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1772,
+      "name": "虎頭埤",
+      "status": "disused",
+      "line": {
+        "lineID": 13900,
+        "lineDistrict": { "id": 7, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1773,
+      "name": "台南",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1774,
+      "name": "六甲頂",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": [
+          { "id": 1, "order": 2 },
+          { "id": 4, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1775,
+      "name": "中州寮",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1776,
+      "name": "海寮",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1777,
+      "name": "溪岸（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1778,
+      "name": "西港",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": [
+          { "id": 1, "order": 6 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1779,
+      "name": "蕭壟",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1780,
+      "name": "蕭壟製糖所",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1781,
+      "name": "蕃仔寮",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1782,
+      "name": "後營",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1783,
+      "name": "謝厝寮",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1784,
+      "name": "麻豆",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1785,
+      "name": "明治製糖",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1786,
+      "name": "六塊厝藔",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 3, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1787,
+      "name": "港口",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1788,
+      "name": "直加弄",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1789,
+      "name": "鹽水港（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1790,
+      "name": "三崁店",
+      "status": "disused",
+      "line": {
+        "lineID": 14000,
+        "lineDistrict": { "id": 4, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1791,
+      "name": "台南站",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 3, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1792,
+      "name": "台南",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": [
+          { "id": 1, "order": 2 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1793,
+      "name": "安平",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1794,
+      "name": "西市場",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1795,
+      "name": "西門町（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1796,
+      "name": "鹽埕",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1797,
+      "name": "喜樹",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1798,
+      "name": "大東門",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1799,
+      "name": "塗庫",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1800,
+      "name": "紅瓦厝",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 3, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1801,
+      "name": "關帝廟",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 3, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1802,
+      "name": "關帝廟市場",
+      "status": "disused",
+      "line": {
+        "lineID": 14100,
+        "lineDistrict": { "id": 3, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1803,
+      "name": "台南",
+      "status": "disused",
+      "line": {
+        "lineID": 14200,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1804,
+      "name": "三分子",
+      "status": "disused",
+      "line": {
+        "lineID": 14200,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1805,
+      "name": "永康",
+      "status": "disused",
+      "line": {
+        "lineID": 14200,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1806,
+      "name": "大目降",
+      "status": "disused",
+      "line": {
+        "lineID": 14200,
+        "lineDistrict": [
+          { "id": 1, "order": 4 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1807,
+      "name": "左鎮",
+      "status": "disused",
+      "line": {
+        "lineID": 14200,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1808,
+      "name": "芊匏",
+      "status": "disused",
+      "line": {
+        "lineID": 14200,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1809,
+      "name": "玉井",
+      "status": "disused",
+      "line": {
+        "lineID": 14200,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1810,
+      "name": "路竹",
+      "status": "disused",
+      "line": {
+        "lineID": 14300,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1811,
+      "name": "竹滬",
+      "status": "disused",
+      "line": {
+        "lineID": 14300,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1812,
+      "name": "南日本製鹽事務所",
+      "status": "disused",
+      "line": {
+        "lineID": 14300,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1813,
+      "name": "路竹站前",
+      "status": "disused",
+      "line": {
+        "lineID": 14400,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1814,
+      "name": "路竹",
+      "status": "disused",
+      "line": {
+        "lineID": 14400,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1815,
+      "name": "後鄉",
+      "status": "disused",
+      "line": {
+        "lineID": 14400,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1816,
+      "name": "烏樹林",
+      "status": "disused",
+      "line": {
+        "lineID": 14400,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1817,
+      "name": "鹽田",
+      "status": "disused",
+      "line": {
+        "lineID": 14400,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1818,
+      "name": "岡山",
+      "status": "disused",
+      "line": {
+        "lineID": 14500,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1819,
+      "name": "援巢右",
+      "status": "disused",
+      "line": {
+        "lineID": 14500,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1820,
+      "name": "燕巢中",
+      "status": "disused",
+      "line": {
+        "lineID": 14500,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1821,
+      "name": "岡山站後",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1822,
+      "name": "九闕",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1823,
+      "name": "五甲尾",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1824,
+      "name": "阿蓮",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1825,
+      "name": "超峯寺",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1826,
+      "name": "岡山站前",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": [
+          { "id": 3, "order": 1 },
+          { "id": 4, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1827,
+      "name": "軍舍",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": [
+          { "id": 3, "order": 2 },
+          { "id": 4, "order": 2 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1828,
+      "name": "彌陀",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1829,
+      "name": "後協",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 4, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1830,
+      "name": "梓官",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 4, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1831,
+      "name": "大舍甲",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 4, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1832,
+      "name": "赤崁",
+      "status": "disused",
+      "line": {
+        "lineID": 14600,
+        "lineDistrict": { "id": 4, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1833,
+      "name": "楠仔坑",
+      "status": "disused",
+      "line": {
+        "lineID": 14700,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1834,
+      "name": "鳳山厝",
+      "status": "disused",
+      "line": {
+        "lineID": 14700,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1835,
+      "name": "嶺口",
+      "status": "disused",
+      "line": {
+        "lineID": 14700,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1836,
+      "name": "蕃薯寮",
+      "status": "disused",
+      "line": {
+        "lineID": 14700,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1837,
+      "name": "旗尾",
+      "status": "disused",
+      "line": {
+        "lineID": 14700,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1838,
+      "name": "中壇",
+      "status": "disused",
+      "line": {
+        "lineID": 14700,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1839,
+      "name": "竹仔門",
+      "status": "disused",
+      "line": {
+        "lineID": 14700,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1840,
+      "name": "橫山出張所",
+      "status": "disused",
+      "line": {
+        "lineID": 14800,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1841,
+      "name": "竹仔門",
+      "status": "disused",
+      "line": {
+        "lineID": 14800,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1842,
+      "name": "六龜",
+      "status": "disused",
+      "line": {
+        "lineID": 14800,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1843,
+      "name": "土壠灣",
+      "status": "disused",
+      "line": {
+        "lineID": 14800,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1844,
+      "name": "鳳山",
+      "status": "disused",
+      "line": {
+        "lineID": 14900,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1845,
+      "name": "過田子",
+      "status": "disused",
+      "line": {
+        "lineID": 14900,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1846,
+      "name": "苓雅寮",
+      "status": "disused",
+      "line": {
+        "lineID": 14900,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1847,
+      "name": "里港",
+      "status": "disused",
+      "line": {
+        "lineID": 15000,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1848,
+      "name": "舊寮",
+      "status": "disused",
+      "line": {
+        "lineID": 15000,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1849,
+      "name": "舊寮",
+      "status": "disused",
+      "line": {
+        "lineID": 15100,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1850,
+      "name": "中庄",
+      "status": "disused",
+      "line": {
+        "lineID": 15100,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1851,
+      "name": "九曲堂",
+      "status": "disused",
+      "line": {
+        "lineID": 15200,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1852,
+      "name": "屏東",
+      "status": "disused",
+      "line": {
+        "lineID": 15200,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1853,
+      "name": "屏東",
+      "status": "disused",
+      "line": {
+        "lineID": 15300,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1854,
+      "name": "麟洛",
+      "status": "disused",
+      "line": {
+        "lineID": 15300,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1855,
+      "name": "內埔",
+      "status": "disused",
+      "line": {
+        "lineID": 15400,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1856,
+      "name": "老埤",
+      "status": "disused",
+      "line": {
+        "lineID": 15400,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1857,
+      "name": "屏東",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1858,
+      "name": "麟洛",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1859,
+      "name": "內埔",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": [
+          { "id": 1, "order": 3 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1860,
+      "name": "泗溝水",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1861,
+      "name": "萬巒",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1862,
+      "name": "潮州",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": [
+          { "id": 1, "order": 6 },
+          { "id": 3, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1863,
+      "name": "東港",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1864,
+      "name": "西勢",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1865,
+      "name": "打鐵",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": [
+          { "id": 3, "order": 2 },
+          { "id": 4, "order": 3 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1866,
+      "name": "新埤頭",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": [
+          { "id": 3, "order": 3 },
+          { "id": 4, "order": 4 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1867,
+      "name": "三西和",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": { "id": 4, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1868,
+      "name": "溪州",
+      "status": "disused",
+      "line": {
+        "lineID": 15500,
+        "lineDistrict": { "id": 4, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1869,
+      "name": "磘仔口",
+      "status": "disused",
+      "line": {
+        "lineID": 15600,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 2, "order": 2 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1870,
+      "name": "竹仔腳",
+      "status": "disused",
+      "line": {
+        "lineID": 15600,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1871,
+      "name": "東港",
+      "status": "disused",
+      "line": {
+        "lineID": 15600,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1872,
+      "name": "林邊",
+      "status": "disused",
+      "line": {
+        "lineID": 15600,
+        "lineDistrict": { "id": 2, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1873,
+      "name": "佳冬",
+      "status": "disused",
+      "line": {
+        "lineID": 15600,
+        "lineDistrict": { "id": 2, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1874,
+      "name": "北旗尾",
+      "status": "disused",
+      "line": {
+        "lineID": 15600,
+        "lineDistrict": { "id": 2, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1875,
+      "name": "水底寮",
+      "status": "disused",
+      "line": {
+        "lineID": 15600,
+        "lineDistrict": { "id": 2, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1876,
+      "name": "枋寮",
+      "status": "disused",
+      "line": {
+        "lineID": 15600,
+        "lineDistrict": { "id": 2, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1877,
+      "name": "大里簡",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1878,
+      "name": "大溪",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1879,
+      "name": "梗枋",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1880,
+      "name": "外澳",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1881,
+      "name": "頭圍",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1882,
+      "name": "二圍",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1883,
+      "name": "礁溪溫泉",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 7 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1884,
+      "name": "礁溪",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 8 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1885,
+      "name": "四結",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 9 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1886,
+      "name": "宜蘭川",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 10 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1887,
+      "name": "宜蘭（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 11 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1888,
+      "name": "宜蘭",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 1, "order": 12 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1889,
+      "name": "濁水溪（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 13 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1890,
+      "name": "羅東（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 14 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1891,
+      "name": "羅東",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 1, "order": 15 },
+          { "id": 6, "order": 2 },
+          { "id": 7, "order": 1 },
+          { "id": 10, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1892,
+      "name": "冬瓜山（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 16 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1893,
+      "name": "蘇澳（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 1, "order": 17 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1894,
+      "name": "外員山",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 2, "order": 2 },
+          { "id": 3, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1895,
+      "name": "三鬮",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 2, "order": 3 },
+          { "id": 4, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1896,
+      "name": "神社前",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 3, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1897,
+      "name": "內員山",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 3, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1895,
+      "name": "水源地",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 4, "order": 2 },
+          { "id": 5, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1896,
+      "name": "深溝",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 5, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1897,
+      "name": "羅東站",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 6, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1898,
+      "name": "竹林",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 7, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1899,
+      "name": "十八埒",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 7, "order": 3 },
+          { "id": 8, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1900,
+      "name": "鐤橄社",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 8, "order": 2 },
+          { "id": 9, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1901,
+      "name": "利澤簡",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 8, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1902,
+      "name": "五結",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 9, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1903,
+      "name": "四百名",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 9, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1904,
+      "name": "浮崙",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 10, "order": 2 },
+          { "id": 11, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1905,
+      "name": "廣興",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 10, "order": 3 },
+          { "id": 12, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1906,
+      "name": "阿里史",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 10, "order": 4 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1907,
+      "name": "三星",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 10, "order": 5 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1908,
+      "name": "天送埤",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 10, "order": 6 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1909,
+      "name": "大洲",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 11, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1910,
+      "name": "茅埔圍",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 12, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1911,
+      "name": "小南澳",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 12, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1912,
+      "name": "冬山站前",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 13, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1913,
+      "name": "阿兼城",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 13, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1914,
+      "name": "蘇澳",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": [
+          { "id": 14, "order": 1 },
+          { "id": 15, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1915,
+      "name": "蘇澳海岸",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 14, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1916,
+      "name": "南方澳",
+      "status": "disused",
+      "line": {
+        "lineID": 15700,
+        "lineDistrict": { "id": 15, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1917,
+      "name": "一結",
+      "status": "disused",
+      "line": {
+        "lineID": 15800,
+        "lineDistrict": [
+          { "id": 1, "order": 1 },
+          { "id": 2, "order": 1 }
+        ]
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1918,
+      "name": "二結",
+      "status": "disused",
+      "line": {
+        "lineID": 15800,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1919,
+      "name": "十三股",
+      "status": "disused",
+      "line": {
+        "lineID": 15800,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1920,
+      "name": "花蓮港（蕃務課）",
+      "status": "disused",
+      "line": {
+        "lineID": 15900,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1921,
+      "name": "新城",
+      "status": "disused",
+      "line": {
+        "lineID": 15900,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1922,
+      "name": "ブセガン",
+      "status": "disused",
+      "line": {
+        "lineID": 15900,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1923,
+      "name": "吉野村（舊站）",
+      "status": "disused",
+      "line": {
+        "lineID": 16000,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1924,
+      "name": "初音",
+      "status": "disused",
+      "line": {
+        "lineID": 16000,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1925,
+      "name": "銅文蘭",
+      "status": "disused",
+      "line": {
+        "lineID": 16000,
+        "lineDistrict": { "id": 1, "order": 3 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1926,
+      "name": "瑞穗",
+      "status": "disused",
+      "line": {
+        "lineID": 16100,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1927,
+      "name": "瑞穗溫泉",
+      "status": "disused",
+      "line": {
+        "lineID": 16100,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1928,
+      "name": "水尾",
+      "status": "disused",
+      "line": {
+        "lineID": 16200,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1929,
+      "name": "新水尾",
+      "status": "disused",
+      "line": {
+        "lineID": 16200,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1930,
+      "name": "璞石閣",
+      "status": "disused",
+      "line": {
+        "lineID": 16200,
+        "lineDistrict": { "id": 2, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1931,
+      "name": "璞石閣站",
+      "status": "disused",
+      "line": {
+        "lineID": 16200,
+        "lineDistrict": { "id": 2, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1932,
+      "name": "海口",
+      "status": "disused",
+      "line": {
+        "lineID": 16300,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1933,
+      "name": "恆春",
+      "status": "disused",
+      "line": {
+        "lineID": 16300,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1934,
+      "name": "恆春",
+      "status": "disused",
+      "line": {
+        "lineID": 16400,
+        "lineDistrict": { "id": 1, "order": 1 }
+      },
+      "hasDetail": false
+    },
+    {
+      "id": 1935,
+      "name": "南灣",
+      "status": "disused",
+      "line": {
+        "lineID": 16400,
+        "lineDistrict": { "id": 1, "order": 2 }
+      },
+      "hasDetail": false
     }
   ]
 }
