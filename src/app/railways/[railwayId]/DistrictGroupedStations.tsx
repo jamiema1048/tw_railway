@@ -131,7 +131,7 @@ const DistrictGroupedStations: React.FC<Props> = ({
               districtMap[district.districtID].map((station) => (
                 <li
                   key={station.id}
-                  className={`ml-2 list-disc text-xl active:scale-95 hover:scale-[1.02] ${
+                  className={`ml-2 list-disc text-xl ${
                     station.status === "active"
                       ? "text-white"
                       : station.status === "disused"
@@ -139,6 +139,10 @@ const DistrictGroupedStations: React.FC<Props> = ({
                       : station.status === "planned"
                       ? "text-blue-400 italic"
                       : "text-gray-500 italic"
+                  } ${
+                    station.hasDetail
+                      ? "active:scale-95 hover:scale-[1.02]"
+                      : ""
                   }`}
                 >
                   {station.hasDetail ? (

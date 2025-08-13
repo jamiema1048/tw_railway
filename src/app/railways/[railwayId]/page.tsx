@@ -29,7 +29,7 @@ interface StationLineInfo {
 interface Station {
   id: number;
   name: string;
-  line: StationLineInfo[];
+  status: "active" | "disused" | "planned";
   openDate?: string;
   closeDate?: string;
   originalName?: string;
@@ -37,6 +37,10 @@ interface Station {
   miles?: string;
   height?: string;
   stationCode?: string;
+  line: StationLineInfo[];
+  prevStation?: number[] | number;
+  nextStation?: number[] | number;
+  hasDetail?: boolean;
 }
 
 interface RailwayParams {

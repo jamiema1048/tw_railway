@@ -5,6 +5,7 @@ import { TitleContext } from "../../context/TitleContext";
 import Footer from "../../footer/footer";
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 
 interface District {
   districtID: number;
@@ -40,6 +41,8 @@ interface Station {
   prevStation?: number[] | number;
   nextStation?: number[] | number;
   hasDetail?: boolean;
+  images?: string[];
+  descriptions?: string[];
 }
 
 export default function StationClient({
@@ -112,6 +115,47 @@ export default function StationClient({
             <h3 className="text-xl mb-4">
               <strong>代碼:</strong> {station.stationCode}
             </h3>
+          )}
+        </section>
+
+        <section className="media-gallery mt-12">
+          <h2 className="text-2xl font-semibold mb-4 auto-rows-auto">
+            Images and Descriptions
+          </h2>
+          {station.images && station.descriptions && (
+            <div className="columns-1 sm:columns-2 md:columns-3 gap-4 m-2">
+              {station.images.map((image, index) => (
+                <div key={index} className="media-item inline-block p-4">
+                  <div className="image-container overflow-hidden rounded-lg">
+                    <Image
+                      src={image}
+                      alt={`${station.name} - ${index}`}
+                      width={800}
+                      height={600}
+                      layout="intrinsic"
+                      className="w-full object-cover rounded-lg"
+                    />
+                  </div>
+                  {station.descriptions[index] && (
+                    <p className="mt-2 text-sm sm:text-lg">
+                      {station.descriptions[index]}
+                    </p>
+                  )}
+                </div>
+              ))}
+
+              {station.descriptions.length > station.images.length &&
+                station.descriptions
+                  .slice(station.images.length)
+                  .map((desc, index) => (
+                    <p
+                      key={`desc-${index}`}
+                      className="mt-2 sm:mt-4 text-sm sm:text-lg"
+                    >
+                      {desc}
+                    </p>
+                  ))}
+            </div>
           )}
         </section>
 

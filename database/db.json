@@ -2698,7 +2698,6 @@
           "lineDistrict": { "id": 1, "order": 1 }
         }
       ],
-      "prevStation": 0,
       "nextStation": [2, 453],
       "hasDetail": true
     },
@@ -3133,7 +3132,7 @@
       "name": "山佳站",
       "status": "active",
       "openDate": "1903年10月7日",
-      "originalName": "山仔腳(1920年10月1日改名) 山子腳(1962年4月1日改名)",
+      "originalName": "山仔腳(1920年10月1日改名)、山子腳(1962年4月1日改名)",
       "level": "三等站",
       "miles": "基隆起44.8公里",
       "stationCode": "1060",
