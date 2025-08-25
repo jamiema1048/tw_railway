@@ -23114,7 +23114,7 @@
         "lineID": 9100,
         "lineDistrict": { "id": 5, "order": 2 }
       },
-      "hasDetail": false
+      "hasDetail": true
     },
     {
       "id": 1416,
