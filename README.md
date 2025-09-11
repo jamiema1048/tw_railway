@@ -44,3 +44,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Require
+
+npm install -g json-server  
+npm install eslint@latest postcss@latest tailwindcss@latest  
+npm install -D vitest  
+npm install @testing-library/react @testing-library/jest-dom --save-dev  
+npm install @vitejs/plugin-react  
+npm install vite-plugin-magical-svg  
+npm install --save-dev @testing-library/user-event  
+npm install --save-dev typescript @types/react @types/node tailwindcss-language-server ts-node typescript @types/node  
+npm install --save-dev @testing-library/user-event  
