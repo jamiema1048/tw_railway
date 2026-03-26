@@ -1,4 +1,4 @@
-import RailwayContentClient from "./RailwayContentClient";
+import RailwayContentClient from "@/app/(client)/(railways)/(railway)/RailwayContentClient";
 
 interface District {
   districtID: number;
@@ -69,7 +69,7 @@ export default async function RailwayContentServer({ params }: Props) {
     const stations: Station[] = await stationRes.json();
 
     const railway = allRailways.find(
-      (rwy) => Number(rwy.id) === Number(railwayId)
+      (rwy) => Number(rwy.id) === Number(railwayId),
     );
 
     if (!railway) return { notFound: true };
@@ -80,7 +80,7 @@ export default async function RailwayContentServer({ params }: Props) {
     }));
 
     const filteredStations = fixedStations.filter((s) =>
-      s.line.some((l) => Number(l.lineID) === Number(railwayId))
+      s.line.some((l) => Number(l.lineID) === Number(railwayId)),
     );
 
     return <RailwayContentClient data={railway} stations={filteredStations} />;

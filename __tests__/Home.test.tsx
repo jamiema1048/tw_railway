@@ -2,7 +2,7 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import { describe, it, expect, vi, beforeEach } from "vitest";
 import Home from "../src/app/page"; // 根據實際路徑調整
-import { TitleContext } from "../src/app/context/TitleContext";
+import { TitleContext } from "../src/app/(context)/title/TitleContext";
 
 vi.mock("next/head", () => {
   return {
@@ -16,7 +16,7 @@ const renderWithContext = (ui: React.ReactNode, title = "測試標題") => {
   return render(
     <TitleContext.Provider value={{ title, setTitle: vi.fn() }}>
       {ui}
-    </TitleContext.Provider>
+    </TitleContext.Provider>,
   );
 };
 
@@ -29,7 +29,7 @@ describe("Home Component", () => {
   it("應該正確渲染標題文字", () => {
     renderWithContext(<Home />);
     expect(
-      screen.getByRole("heading", { name: "歡迎來到小雨的公路資料網站" })
+      screen.getByRole("heading", { name: "歡迎來到小雨的公路資料網站" }),
     ).toBeInTheDocument();
   });
 

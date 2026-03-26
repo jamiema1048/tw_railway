@@ -1,11 +1,11 @@
 "use client";
 import { useContext, useState, useEffect } from "react";
-import { TitleContext } from "../../context/TitleContext";
-import DistrictGroupedStations from "./DistrictGroupedStations";
+import { TitleContext } from "@/app/(context)/title/TitleContext";
+import DistrictGroupedStations from "@/app/(components)/(railways)/(railway)/DistrictGroupedStations";
 import Head from "next/head";
-import Footer from "../../footer/footer";
-import Loading from "./loading";
-import NotFound from "./not-found";
+import Footer from "@/app/(components)/(footer)/footer";
+// import Loading from "./loading";
+// import NotFound from "./not-found";
 
 interface District {
   districtID: number;
@@ -69,7 +69,13 @@ export default function RailwayContentClient({ data, stations }: Props) {
 
   if (notFoundPage) return <NotFound />;
 
-  if (loading) return <Loading />;
+  if (loading)
+    return (
+      <>
+        {/* <Loading /> */}
+        <h1>Loading</h1>
+      </>
+    );
 
   return (
     <>

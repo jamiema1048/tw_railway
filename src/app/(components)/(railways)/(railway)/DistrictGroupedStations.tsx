@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Loading from "./loading";
+//import Loading from "./loading";
 
 interface Props {
   lineID: number;
@@ -81,19 +81,20 @@ const DistrictGroupedStations: React.FC<Props> = ({
           : [line.lineDistrict];
         for (const d of districts) {
           const districtID = typeof d === "number" ? d : d.id;
-          const order = typeof d === "number" ? Infinity : d.order ?? Infinity;
+          const order =
+            typeof d === "number" ? Infinity : (d.order ?? Infinity);
           if (districtMap[districtID]) {
             districtMap[districtID].push({ ...station, _order: order });
             console.log(`✅ 加入 ${station.name} 到區 ${d}`);
           } else {
             console.warn(
-              `⚠️ ${station.name} 指定的 lineDistrict ${districtID} 在 districtMap 裡不存在`
+              `⚠️ ${station.name} 指定的 lineDistrict ${districtID} 在 districtMap 裡不存在`,
             );
           }
         }
       } else {
         console.log(
-          `❌ ${station.name} 的 lineID ${line.lineID} ≠ 頁面 lineID ${lineID}`
+          `❌ ${station.name} 的 lineID ${line.lineID} ≠ 頁面 lineID ${lineID}`,
         );
       }
       console.log(lineData);
@@ -112,7 +113,8 @@ const DistrictGroupedStations: React.FC<Props> = ({
 
   return loading ? (
     <>
-      <Loading />
+      {/* <Loading /> */}
+      <h1>Loading</h1>
     </>
   ) : (
     <div>
@@ -135,10 +137,10 @@ const DistrictGroupedStations: React.FC<Props> = ({
                     station.status === "active"
                       ? "text-white"
                       : station.status === "disused"
-                      ? "text-gray-400" // 灰色 + 斜體，避免過於顯眼
-                      : station.status === "planned"
-                      ? "text-blue-400 italic"
-                      : "text-gray-500 italic"
+                        ? "text-gray-400" // 灰色 + 斜體，避免過於顯眼
+                        : station.status === "planned"
+                          ? "text-blue-400 italic"
+                          : "text-gray-500 italic"
                   } ${
                     station.hasDetail
                       ? "active:scale-95 hover:scale-[1.02]"

@@ -2,7 +2,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { render, screen, waitFor } from "@testing-library/react";
 import LinePageClient from "../../src/app/railways/LinePageClient";
-import { TitleContext } from "../../src/app/context/TitleContext";
+import { TitleContext } from "../../src/app/(context)/title/TitleContext";
 
 const mockLines = [
   {
@@ -34,7 +34,7 @@ describe("LinePageClient Component", () => {
     render(
       <TitleContext.Provider value={{ title: "", setTitle: setTitleMock }}>
         <LinePageClient lines={mockLines} />
-      </TitleContext.Provider>
+      </TitleContext.Provider>,
     );
 
     expect(screen.getByText(/Loading data/i)).toBeInTheDocument();
@@ -44,7 +44,7 @@ describe("LinePageClient Component", () => {
     render(
       <TitleContext.Provider value={{ title: "", setTitle: setTitleMock }}>
         <LinePageClient lines={mockLines} />
-      </TitleContext.Provider>
+      </TitleContext.Provider>,
     );
 
     // 等待 loading 消失，client useEffect 延遲為 100ms
@@ -62,7 +62,7 @@ describe("LinePageClient Component", () => {
     render(
       <TitleContext.Provider value={{ title: "", setTitle: setTitleMock }}>
         <LinePageClient lines={mockLines} />
-      </TitleContext.Provider>
+      </TitleContext.Provider>,
     );
 
     await waitFor(() => {
@@ -75,7 +75,7 @@ describe("LinePageClient Component", () => {
     render(
       <TitleContext.Provider value={{ title: "", setTitle: setTitleMock }}>
         <LinePageClient lines={mockLines} />
-      </TitleContext.Provider>
+      </TitleContext.Provider>,
     );
 
     await waitFor(() => {

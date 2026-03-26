@@ -1,5 +1,5 @@
 // src/app/railways/LinePageServer.tsx
-import LinePageClient from "./LinePageClient";
+import LinePageClient from "@/app/(client)/(railways)/LinePageClient";
 
 interface Line {
   id: number;

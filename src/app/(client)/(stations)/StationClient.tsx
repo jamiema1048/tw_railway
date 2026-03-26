@@ -1,8 +1,8 @@
 "use client";
 
 import { useContext, useEffect } from "react";
-import { TitleContext } from "../../context/TitleContext";
-import Footer from "../../footer/footer";
+import { TitleContext } from "@/app/(context)/title/TitleContext";
+import Footer from "@/app/(components)/(footer)/footer";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
@@ -74,8 +74,8 @@ export default function StationClient({
           {station.status === "active"
             ? "營運中"
             : station.status === "disused"
-            ? "已廢止"
-            : "規劃中"}
+              ? "已廢止"
+              : "規劃中"}
         </p>
 
         <section className="route-info bg-black-100 p-6 rounded-lg mt-8">
@@ -165,7 +165,7 @@ export default function StationClient({
             {(Array.isArray(station.line) ? station.line : [station.line]).map(
               (line) => {
                 const matchedRailway = railways.find(
-                  (r) => Number(r.id) === Number(line.lineID)
+                  (r) => Number(r.id) === Number(line.lineID),
                 );
                 return (
                   <Link
@@ -178,7 +178,7 @@ export default function StationClient({
                       : `ID: ${line.lineID}`}
                   </Link>
                 );
-              }
+              },
             )}
           </ul>
         </div>
@@ -189,7 +189,7 @@ export default function StationClient({
             {Array.isArray(station.prevStation)
               ? station.prevStation.map((id) => {
                   const match = adjacentStations.find(
-                    (s) => String(s.id) === String(id)
+                    (s) => String(s.id) === String(id),
                   );
                   return match ? (
                     match.hasDetail ? (
@@ -214,7 +214,7 @@ export default function StationClient({
                 })
               : (() => {
                   const match = adjacentStations.find(
-                    (s) => String(s.id) === String(station.prevStation)
+                    (s) => String(s.id) === String(station.prevStation),
                   );
                   return match ? (
                     match.hasDetail ? (
@@ -242,7 +242,7 @@ export default function StationClient({
             {Array.isArray(station.nextStation)
               ? station.nextStation.map((id) => {
                   const match = adjacentStations.find(
-                    (s) => String(s.id) === String(id)
+                    (s) => String(s.id) === String(id),
                   );
                   return match ? (
                     match.hasDetail ? (
@@ -267,7 +267,7 @@ export default function StationClient({
                 })
               : (() => {
                   const match = adjacentStations.find(
-                    (s) => String(s.id) === String(station.nextStation)
+                    (s) => String(s.id) === String(station.nextStation),
                   );
                   return match ? (
                     match.hasDetail ? (

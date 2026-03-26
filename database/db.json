@@ -17097,21 +17097,6 @@
       "hasDetail": true
     },
     {
-      "id": 916,
-      "name": "蚵寮站",
-      "status": "disused",
-      "openDate": "1913年5月25日",
-      "closeDate": "1915年",
-      "miles": "北港起14.5公里",
-      "line": {
-        "lineID": 5100,
-        "lineDistrict": { "id": 2, "order": 9 }
-      },
-      "prevStation": 915,
-      "nextStation": 917,
-      "hasDetail": true
-    },
-    {
       "id": 917,
       "name": "下湖口站",
       "status": "disused",
@@ -28118,7 +28103,7 @@
       "hasDetail": false
     },
     {
-      "id": 1895,
+      "id": 1898,
       "name": "水源地",
       "status": "disused",
       "line": {
@@ -28131,7 +28116,7 @@
       "hasDetail": false
     },
     {
-      "id": 1896,
+      "id": 1899,
       "name": "深溝",
       "status": "disused",
       "line": {
@@ -28141,7 +28126,7 @@
       "hasDetail": false
     },
     {
-      "id": 1897,
+      "id": 1900,
       "name": "羅東站",
       "status": "disused",
       "line": {
@@ -28151,7 +28136,7 @@
       "hasDetail": false
     },
     {
-      "id": 1898,
+      "id": 1901,
       "name": "竹林",
       "status": "disused",
       "line": {
@@ -28161,7 +28146,7 @@
       "hasDetail": false
     },
     {
-      "id": 1899,
+      "id": 1902,
       "name": "十八埒",
       "status": "disused",
       "line": {
@@ -28174,7 +28159,7 @@
       "hasDetail": false
     },
     {
-      "id": 1900,
+      "id": 1903,
       "name": "鐤橄社",
       "status": "disused",
       "line": {
@@ -28187,7 +28172,7 @@
       "hasDetail": false
     },
     {
-      "id": 1901,
+      "id": 1904,
       "name": "利澤簡",
       "status": "disused",
       "line": {
@@ -28197,7 +28182,7 @@
       "hasDetail": false
     },
     {
-      "id": 1902,
+      "id": 1905,
       "name": "五結",
       "status": "disused",
       "line": {
@@ -28207,7 +28192,7 @@
       "hasDetail": false
     },
     {
-      "id": 1903,
+      "id": 1906,
       "name": "四百名",
       "status": "disused",
       "line": {
@@ -28217,7 +28202,7 @@
       "hasDetail": false
     },
     {
-      "id": 1904,
+      "id": 1907,
       "name": "浮崙",
       "status": "disused",
       "line": {
@@ -28230,7 +28215,7 @@
       "hasDetail": false
     },
     {
-      "id": 1905,
+      "id": 1908,
       "name": "廣興",
       "status": "disused",
       "line": {
@@ -28243,7 +28228,7 @@
       "hasDetail": false
     },
     {
-      "id": 1906,
+      "id": 1909,
       "name": "阿里史",
       "status": "disused",
       "line": {
@@ -28253,7 +28238,7 @@
       "hasDetail": false
     },
     {
-      "id": 1907,
+      "id": 1910,
       "name": "三星",
       "status": "disused",
       "line": {
@@ -28263,7 +28248,7 @@
       "hasDetail": false
     },
     {
-      "id": 1908,
+      "id": 1911,
       "name": "天送埤",
       "status": "disused",
       "line": {
@@ -28273,7 +28258,7 @@
       "hasDetail": false
     },
     {
-      "id": 1909,
+      "id": 1912,
       "name": "大洲",
       "status": "disused",
       "line": {
@@ -28283,7 +28268,7 @@
       "hasDetail": false
     },
     {
-      "id": 1910,
+      "id": 1913,
       "name": "茅埔圍",
       "status": "disused",
       "line": {
@@ -28293,7 +28278,7 @@
       "hasDetail": false
     },
     {
-      "id": 1911,
+      "id": 1914,
       "name": "小南澳",
       "status": "disused",
       "line": {
@@ -28303,7 +28288,7 @@
       "hasDetail": false
     },
     {
-      "id": 1912,
+      "id": 1915,
       "name": "冬山站前",
       "status": "disused",
       "line": {
@@ -28313,7 +28298,7 @@
       "hasDetail": false
     },
     {
-      "id": 1913,
+      "id": 1916,
       "name": "阿兼城",
       "status": "disused",
       "line": {
@@ -28323,7 +28308,7 @@
       "hasDetail": false
     },
     {
-      "id": 1914,
+      "id": 1917,
       "name": "蘇澳",
       "status": "disused",
       "line": {
@@ -28336,7 +28321,7 @@
       "hasDetail": false
     },
     {
-      "id": 1915,
+      "id": 1918,
       "name": "蘇澳海岸",
       "status": "disused",
       "line": {
@@ -28346,7 +28331,7 @@
       "hasDetail": false
     },
     {
-      "id": 1916,
+      "id": 1919,
       "name": "南方澳",
       "status": "disused",
       "line": {
@@ -28356,7 +28341,7 @@
       "hasDetail": false
     },
     {
-      "id": 1917,
+      "id": 1920,
       "name": "一結",
       "status": "disused",
       "line": {
@@ -28369,7 +28354,7 @@
       "hasDetail": false
     },
     {
-      "id": 1918,
+      "id": 1921,
       "name": "二結",
       "status": "disused",
       "line": {
@@ -28379,7 +28364,7 @@
       "hasDetail": false
     },
     {
-      "id": 1919,
+      "id": 1922,
       "name": "十三股",
       "status": "disused",
       "line": {
@@ -28389,7 +28374,7 @@
       "hasDetail": false
     },
     {
-      "id": 1920,
+      "id": 1923,
       "name": "花蓮港（蕃務課）",
       "status": "disused",
       "line": {
@@ -28399,7 +28384,7 @@
       "hasDetail": false
     },
     {
-      "id": 1921,
+      "id": 1924,
       "name": "新城",
       "status": "disused",
       "line": {
@@ -28409,7 +28394,7 @@
       "hasDetail": false
     },
     {
-      "id": 1922,
+      "id": 1925,
       "name": "ブセガン",
       "status": "disused",
       "line": {
@@ -28419,7 +28404,7 @@
       "hasDetail": false
     },
     {
-      "id": 1923,
+      "id": 1926,
       "name": "吉野村（舊站）",
       "status": "disused",
       "line": {
@@ -28429,7 +28414,7 @@
       "hasDetail": false
     },
     {
-      "id": 1924,
+      "id": 1927,
       "name": "初音",
       "status": "disused",
       "line": {
@@ -28439,7 +28424,7 @@
       "hasDetail": false
     },
     {
-      "id": 1925,
+      "id": 1928,
       "name": "銅文蘭",
       "status": "disused",
       "line": {
@@ -28449,7 +28434,7 @@
       "hasDetail": false
     },
     {
-      "id": 1926,
+      "id": 1929,
       "name": "瑞穗",
       "status": "disused",
       "line": {
@@ -28459,7 +28444,7 @@
       "hasDetail": false
     },
     {
-      "id": 1927,
+      "id": 1930,
       "name": "瑞穗溫泉",
       "status": "disused",
       "line": {
@@ -28469,7 +28454,7 @@
       "hasDetail": false
     },
     {
-      "id": 1928,
+      "id": 1931,
       "name": "水尾",
       "status": "disused",
       "line": {
@@ -28479,7 +28464,7 @@
       "hasDetail": false
     },
     {
-      "id": 1929,
+      "id": 1932,
       "name": "新水尾",
       "status": "disused",
       "line": {
@@ -28489,7 +28474,7 @@
       "hasDetail": false
     },
     {
-      "id": 1930,
+      "id": 1933,
       "name": "璞石閣",
       "status": "disused",
       "line": {
@@ -28499,7 +28484,7 @@
       "hasDetail": false
     },
     {
-      "id": 1931,
+      "id": 1934,
       "name": "璞石閣站",
       "status": "disused",
       "line": {
@@ -28509,7 +28494,7 @@
       "hasDetail": false
     },
     {
-      "id": 1932,
+      "id": 1935,
       "name": "海口",
       "status": "disused",
       "line": {
@@ -28519,7 +28504,7 @@
       "hasDetail": false
     },
     {
-      "id": 1933,
+      "id": 1936,
       "name": "恆春",
       "status": "disused",
       "line": {
@@ -28529,7 +28514,7 @@
       "hasDetail": false
     },
     {
-      "id": 1934,
+      "id": 1937,
       "name": "恆春",
       "status": "disused",
       "line": {
@@ -28539,7 +28524,7 @@
       "hasDetail": false
     },
     {
-      "id": 1935,
+      "id": 1938,
       "name": "南灣",
       "status": "disused",
       "line": {

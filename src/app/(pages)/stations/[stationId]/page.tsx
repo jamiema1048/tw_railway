@@ -4,7 +4,7 @@ import fs from "fs/promises";
 import path from "path";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import StationClient from "./StationClient";
+import StationClient from "@/app/(client)/(stations)/StationClient";
 import { Metadata } from "next";
 
 interface District {
@@ -87,20 +87,20 @@ export async function generateMetadata({
     const prevIDs = Array.isArray(station.prevStation)
       ? station.prevStation
       : station.prevStation != null
-      ? [station.prevStation]
-      : [];
+        ? [station.prevStation]
+        : [];
 
     const nextIDs = Array.isArray(station.nextStation)
       ? station.nextStation
       : station.nextStation != null
-      ? [station.nextStation]
-      : [];
+        ? [station.nextStation]
+        : [];
 
     const adjacentIDs = [...prevIDs, ...nextIDs];
 
     // 去重處理
     const uniqueAdjacentIDs = [...new Set(adjacentIDs)].filter(
-      (id) => id != null
+      (id) => id != null,
     );
 
     // 只在有前後站時發 fetch
@@ -109,7 +109,7 @@ export async function generateMetadata({
           `http://localhost:9000/stations?${uniqueAdjacentIDs
             .map((id) => `id=${id}`)
             .join("&")}`,
-          { cache: "no-store" }
+          { cache: "no-store" },
         ).then((res) => res.json())
       : [];
 
@@ -118,7 +118,7 @@ export async function generateMetadata({
       : [station.line];
 
     const railway = railways.find(
-      (r) => Number(r.id) === Number(stationLines[0]?.lineID)
+      (r) => Number(r.id) === Number(stationLines[0]?.lineID),
     );
 
     return {
@@ -152,7 +152,7 @@ export default async function StationPage({
         notFound();
       }
       throw new Error(
-        `Failed to fetch station data: ${stationRes.status} ${stationRes.statusText}`
+        `Failed to fetch station data: ${stationRes.status} ${stationRes.statusText}`,
       );
     }
 
@@ -162,7 +162,7 @@ export default async function StationPage({
         notFound();
       }
       throw new Error(
-        `Failed to fetch station data: ${railwayRes.status} ${railwayRes.statusText}`
+        `Failed to fetch station data: ${railwayRes.status} ${railwayRes.statusText}`,
       );
     }
 
@@ -197,12 +197,12 @@ export default async function StationPage({
     const imagesPath = path.join(
       process.cwd(),
       "public",
-      "db_station_image.json"
+      "db_station_image.json",
     );
     const descPath = path.join(
       process.cwd(),
       "public",
-      "db_station_description.json"
+      "db_station_description.json",
     );
 
     // 同時讀取兩個檔案
@@ -223,14 +223,14 @@ export default async function StationPage({
     const prevIDs = Array.isArray(station.prevStation)
       ? station.prevStation
       : station.prevStation != null
-      ? [station.prevStation]
-      : [];
+        ? [station.prevStation]
+        : [];
 
     const nextIDs = Array.isArray(station.nextStation)
       ? station.nextStation
       : station.nextStation != null
-      ? [station.nextStation]
-      : [];
+        ? [station.nextStation]
+        : [];
 
     const adjacentIDs = [...prevIDs, ...nextIDs];
 
@@ -245,7 +245,7 @@ export default async function StationPage({
           `http://localhost:9000/stations?${uniqueAdjacentIDs
             .map((id) => `id=${id}`)
             .join("&")}&_=${Date.now()}`,
-          { cache: "no-store" }
+          { cache: "no-store" },
         ).then((res) => res.json())
       : [];
     console.log(prevIDs);
@@ -284,8 +284,8 @@ export default async function StationPage({
       e instanceof Error
         ? e.message
         : typeof e === "string"
-        ? e
-        : JSON.stringify(e);
+          ? e
+          : JSON.stringify(e);
 
     console.error("Error loading station page:", errorMsg);
     return (

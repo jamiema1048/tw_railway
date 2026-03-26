@@ -1,9 +1,9 @@
 "use client";
 import { useEffect, useState, useContext } from "react";
-import { TitleContext } from "../context/TitleContext";
+import { TitleContext } from "@/app/(context)/title/TitleContext";
 import Head from "next/head";
 import Link from "next/link";
-import Footer from "../footer/footer";
+import Footer from "@/app/(components)/(footer)/footer";
 
 interface Line {
   id: number;
