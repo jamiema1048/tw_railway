@@ -1,6 +1,6 @@
 import mongoose, { Schema, model, models } from "mongoose";
 
-const RailwaySchema = new Schema({
+export const RailwaySchema = new Schema({
   id: { type: Number, required: true, unique: true }, // 台1線的編號 40100
   name: String, // 台1線
   co: Number,

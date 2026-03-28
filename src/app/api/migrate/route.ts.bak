@@ -1,0 +1,77 @@
+// src/app/api/migrate/route.ts
+import { NextResponse } from "next/server";
+import { getConnections } from "@/app/_lib/mongodb_connections";
+import { StationSchema } from "@/models/Station";
+import mongoose from "mongoose";
+
+export async function GET() {
+  try {
+    const { stationConn } = await getConnections();
+
+    // ✨ 關鍵修正：強制刪除舊 Model 緩存，確保讀取最新 Schema
+    if (stationConn.models.Station) {
+      delete stationConn.models.Station;
+    }
+    const StationModel = stationConn.model("Station", StationSchema);
+
+    // 抓取所有資料
+    const stations = await StationModel.find({}).lean();
+    // ✨ 使用 .lean() 拿原始資料，避免 Mongoose 預先轉型
+
+    let updatedCount = 0;
+    const splitRegex = /[ 　、,]+/;
+
+    const bulkOps = stations
+      .map((s: any) => {
+        let updateData: any = {};
+        let needsUpdate = false;
+
+        // 檢查 originalName：如果是字串，才需要拆分
+        if (typeof s.openDate === "string") {
+          updateData.openDate = s.openDate
+            ? s.openDate
+                .split(splitRegex)
+                .filter((n: string) => n.trim() !== "")
+            : [];
+          needsUpdate = true;
+        }
+
+        if (typeof s.closeDate === "string") {
+          updateData.closeDate = s.closeDate
+            ? s.closeDate
+                .split(splitRegex)
+                .filter((n: string) => n.trim() !== "")
+            : [];
+          needsUpdate = true;
+        }
+
+        if (needsUpdate) {
+          return {
+            updateOne: {
+              filter: { _id: s._id },
+              update: { $set: updateData },
+            },
+          };
+        }
+        return null;
+      })
+      .filter(Boolean);
+
+    if (bulkOps.length > 0) {
+      const result = await StationModel.bulkWrite(bulkOps);
+      updatedCount = result.modifiedCount || bulkOps.length;
+    }
+
+    return NextResponse.json({
+      success: true,
+      message: `清洗完成！`,
+      details: {
+        totalFound: stations.length,
+        updated: updatedCount,
+      },
+    });
+  } catch (err: any) {
+    console.error(err);
+    return NextResponse.json({ error: err.message }, { status: 500 });
+  }
+}

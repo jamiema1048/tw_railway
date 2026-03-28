@@ -21,28 +21,56 @@ interface Line {
   district: District[];
 }
 
-interface StationLineInfo {
-  lineID: number;
-  lineDistrict: any;
+// 1. 定義 line 內部的結構
+interface StationLineDistrict {
+  id: number;
+  order: number;
 }
 
+interface StationLineInfo {
+  lineID: number;
+  lineDistrict: StationLineDistrict;
+}
+
+// 2. 定義圖片的詳細結構
+interface StationImage {
+  _id?: string; // MongoDB 自動產生的 ID
+  url: string;
+  description?: string;
+  capturedAt?: string | Date; // Server 端是 Date，傳到 Client 會變 ISO 字串
+}
+
+// 3. 主介面 Station
 interface Station {
+  _id?: string; // MongoDB 的唯一識別碼 (脫水後為字串)
   id: number;
   name: string;
-  status: "active" | "disused" | "planned";
-  openDate?: string;
-  closeDate?: string;
-  originalName?: string;
+  status: "active" | "disused" | "plan"; // 配合 Schema 的 enum
+
+  // 以下皆改為陣列格式，移除問號（因為有 default: []）
+  openDate: string[];
+  closeDate: string[];
+  originalName: string[];
+  miles: string[];
+
   level?: string;
-  miles?: string;
   height?: string;
   stationCode?: string;
+
   line: StationLineInfo[];
-  prevStation?: number[] | number;
-  nextStation?: number[] | number;
-  hasDetail?: boolean;
-  images?: string[];
-  descriptions?: string[];
+
+  // 前後站統一為數字陣列
+  prevStation: number[];
+  nextStation: number[];
+
+  hasDetail: boolean;
+
+  // 圖片結構更新
+  images: StationImage[];
+
+  // timestamps 自動生成的欄位
+  createdAt?: string;
+  updatedAt?: string;
 }
 
 export default function StationClient({
@@ -82,17 +110,17 @@ export default function StationClient({
           <h2 className="text-3xl font-semibold mb-4">車站資料</h2>
           {station.openDate && (
             <h3 className="text-xl mb-4">
-              <strong>設站日期:</strong> {station.openDate}
+              <strong>設站日期:</strong> {station.openDate.join("、")}
             </h3>
           )}
           {station.closeDate && (
             <h3 className="text-xl mb-4">
-              <strong>廢止日期:</strong> {station.closeDate}
+              <strong>廢止日期:</strong> {station.closeDate.join("、")}
             </h3>
           )}
           {station.originalName && (
             <h3 className="text-xl mb-4">
-              <strong>舊名:</strong> {station.originalName}
+              <strong>舊名:</strong> {station.originalName.join("、")}
             </h3>
           )}
 
@@ -103,7 +131,7 @@ export default function StationClient({
           )}
           {station.miles && (
             <h3 className="text-xl mb-4">
-              <strong>里程:</strong> {station.miles}
+              <strong>里程:</strong> {station.miles.join("、")}
             </h3>
           )}
           {station.height && (
@@ -122,39 +150,30 @@ export default function StationClient({
           <h2 className="text-2xl font-semibold mb-4 auto-rows-auto">
             Images and Descriptions
           </h2>
-          {station.images && station.descriptions && (
+          {station.images && (
             <div className="columns-1 sm:columns-2 md:columns-3 gap-4 m-2">
-              {station.images.map((image, index) => (
-                <div key={index} className="media-item inline-block p-4">
+              {station.images.map((img, idx) => (
+                <div key={img._id} className="media-item inline-block p-4">
                   <div className="image-container overflow-hidden rounded-lg">
                     <Image
-                      src={image}
-                      alt={`${station.name} - ${index}`}
+                      src={img.url}
+                      alt={`${station.name} - ${idx}`}
                       width={800}
                       height={600}
                       layout="intrinsic"
                       className="w-full object-cover rounded-lg"
                     />
                   </div>
-                  {station.descriptions[index] && (
+                  {img.description && (
+                    <p className="mt-2 text-sm sm:text-lg">{img.description}</p>
+                  )}
+                  {img.capturedAt && (
                     <p className="mt-2 text-sm sm:text-lg">
-                      {station.descriptions[index]}
+                      {new Date(img.capturedAt).toISOString().split("T")[0]}
                     </p>
                   )}
                 </div>
               ))}
-
-              {station.descriptions.length > station.images.length &&
-                station.descriptions
-                  .slice(station.images.length)
-                  .map((desc, index) => (
-                    <p
-                      key={`desc-${index}`}
-                      className="mt-2 sm:mt-4 text-sm sm:text-lg"
-                    >
-                      {desc}
-                    </p>
-                  ))}
             </div>
           )}
         </section>

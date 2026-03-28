@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-//import Loading from "./loading";
+import Loading from "@/app/(pages)/stations/[stationId]/loading";
 
 interface Props {
   lineID: number;
@@ -113,8 +113,7 @@ const DistrictGroupedStations: React.FC<Props> = ({
 
   return loading ? (
     <>
-      {/* <Loading /> */}
-      <h1>Loading</h1>
+      <Loading />
     </>
   ) : (
     <div>

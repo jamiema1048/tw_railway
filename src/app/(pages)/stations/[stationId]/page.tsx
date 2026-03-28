@@ -1,276 +1,134 @@
-// src/app/stations/[stationId]/page.tsx
 export const dynamic = "force-dynamic";
-import fs from "fs/promises";
-import path from "path";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import StationClient from "@/app/(client)/(stations)/StationClient";
 import { Metadata } from "next";
+import { getConnections } from "@/app/_lib/mongodb_connections";
+import { RailwaySchema } from "@/models/Railway";
+import { StationSchema } from "@/models/Station";
 
-interface District {
-  districtID: number;
-  districtName: string;
-  prevArea?: number;
-  nextArea?: number;
-}
+// 定義 Params 的型別，這在 Next.js 15 是 Promise
+type PageParams = Promise<{ stationId: string }>;
 
-interface Line {
-  id: number;
-  name: string;
-  co: number;
-  district: District[];
-}
-
-interface StationLineInfo {
-  lineID: number;
-  lineDistrict: any;
-}
-
-interface Station {
-  id: number;
-  name: string;
-  status: "active" | "disused" | "planned";
-  openDate?: string;
-  closeDate?: string;
-  originalName?: string;
-  level?: string;
-  miles?: string;
-  height?: string;
-  stationCode?: string;
-  line: StationLineInfo[];
-  prevStation?: number[] | number;
-  nextStation?: number[] | number;
-  hasDetail?: boolean;
-  images?: string[];
-  descriptions?: string[];
-}
-
+// --- Metadata 生成 ---
 export async function generateMetadata({
   params,
 }: {
-  params: { stationId: string };
+  params: PageParams;
 }): Promise<Metadata> {
   try {
-    const [stationRes, railwayRes] = await Promise.all([
-      fetch(`http://localhost:9000/stations?id=${Number(params.stationId)}`, {
-        cache: "no-store",
-      }),
-      fetch("http://localhost:9000/railways", {
-        cache: "no-store",
-      }),
-    ]);
+    // ✨ 修正 1：必須 await params
+    const { stationId } = await params;
 
-    if (!railwayRes.ok) {
-      return {
-        title: "找不到路線資料",
-      };
-    }
-    if (!stationRes.ok) {
-      return {
-        title: "找不到車站資料",
-      };
-    }
+    const { stationConn } = await getConnections();
+    const StationModel =
+      stationConn.models.Station || stationConn.model("Station", StationSchema);
 
-    const stations: Station[] = await stationRes.json();
-    if (stations.length === 0) {
-      throw new Error("No station found with this ID");
-    }
+    const station = await StationModel.findOne({
+      id: Number(stationId),
+    }).lean();
 
-    const railways: Line[] = await railwayRes.json();
-    if (railways.length === 0) {
-      throw new Error("No railway found with this ID");
-    }
+    if (!station) return { title: "找不到車站" };
 
-    const station = stations[0];
-
-    // 取得目前車站資料後，擴充去抓前後站
-    const prevIDs = Array.isArray(station.prevStation)
-      ? station.prevStation
-      : station.prevStation != null
-        ? [station.prevStation]
-        : [];
-
-    const nextIDs = Array.isArray(station.nextStation)
-      ? station.nextStation
-      : station.nextStation != null
-        ? [station.nextStation]
-        : [];
-
-    const adjacentIDs = [...prevIDs, ...nextIDs];
-
-    // 去重處理
-    const uniqueAdjacentIDs = [...new Set(adjacentIDs)].filter(
-      (id) => id != null,
-    );
-
-    // 只在有前後站時發 fetch
-    const adjacentStations: Station[] = uniqueAdjacentIDs.length
-      ? await fetch(
-          `http://localhost:9000/stations?${uniqueAdjacentIDs
-            .map((id) => `id=${id}`)
-            .join("&")}`,
-          { cache: "no-store" },
-        ).then((res) => res.json())
-      : [];
-
-    const stationLines: StationLineInfo[] = Array.isArray(station.line)
-      ? station.line
-      : [station.line];
-
-    const railway = railways.find(
-      (r) => Number(r.id) === Number(stationLines[0]?.lineID),
-    );
-
-    return {
-      title: `${station.name} - 車站資訊`,
-    };
-  } catch (error: any) {
-    return {
-      title: "載入錯誤",
-    };
+    return { title: `${station.name} - 車站資訊` };
+  } catch {
+    return { title: "載入錯誤" };
   }
 }
 
-export default async function StationPage({
-  params,
-}: {
-  params: { stationId: string };
-}) {
+// --- 主頁面 ---
+export default async function StationPage({ params }: { params: PageParams }) {
   try {
-    const [stationRes, railwayRes] = await Promise.all([
-      fetch(`http://localhost:9000/stations?id=${Number(params.stationId)}`, {
-        cache: "no-store",
-      }),
-      fetch("http://localhost:9000/railways", {
-        cache: "no-store",
-      }),
+    // ✨ 修正 2：解構名稱必須與資料夾名稱 [stationId] 一致
+    // 你原本寫 stationParams.stationId 會抓不到值
+    const { stationId: rawStationId } = await params;
+    const stationId = Number(rawStationId);
+
+    if (isNaN(stationId)) notFound();
+
+    const { railwayConn, stationConn } = await getConnections();
+
+    const RailwayModel =
+      railwayConn.models.Railway || railwayConn.model("Railway", RailwaySchema);
+    const StationModel =
+      stationConn.models.Station || stationConn.model("Station", StationSchema);
+
+    // 1. 同時抓取目標車站與所有路線
+    const [rawStation, allRailways] = await Promise.all([
+      StationModel.findOne({ id: stationId }).lean(),
+      RailwayModel.find({}).lean(),
     ]);
 
-    if (!stationRes.ok) {
-      if (stationRes.status === 404) {
-        // API 說找不到 → 直接 404 頁面
-        notFound();
-      }
-      throw new Error(
-        `Failed to fetch station data: ${stationRes.status} ${stationRes.statusText}`,
-      );
-    }
+    if (!rawStation) notFound();
 
-    if (!railwayRes.ok) {
-      if (railwayRes.status === 404) {
-        // API 說找不到 → 直接 404 頁面
-        notFound();
-      }
-      throw new Error(
-        `Failed to fetch station data: ${railwayRes.status} ${railwayRes.statusText}`,
-      );
-    }
-
-    const stations: Station[] = await stationRes.json();
-    if (stations.length === 0) {
-      throw new Error("No station found with this ID");
-    }
-
-    if (!Array.isArray(stations) || stations.length === 0) {
-      // 沒資料時回傳空狀態 UI
-      return (
-        <div className="flex justify-center items-center h-screen text-gray-400">
-          目前沒有可用的車站資料
-        </div>
-      );
-    }
-
-    const railways: Line[] = await railwayRes.json();
-
-    if (!Array.isArray(railways) || railways.length === 0) {
-      // 沒資料時回傳空狀態 UI
-      return (
-        <div className="flex justify-center items-center h-screen text-gray-400">
-          目前沒有可用的路線資料
-        </div>
-      );
-    }
-
-    const station = stations[0];
-
-    // 讀取 JSON 檔案路徑
-    const imagesPath = path.join(
-      process.cwd(),
-      "public",
-      "db_station_image.json",
-    );
-    const descPath = path.join(
-      process.cwd(),
-      "public",
-      "db_station_description.json",
+    // 2. 處理前後站 ID 邏輯
+    const prevIDs = Array.isArray(rawStation.prevStation)
+      ? rawStation.prevStation
+      : rawStation.prevStation
+        ? [rawStation.prevStation]
+        : [];
+    const nextIDs = Array.isArray(rawStation.nextStation)
+      ? rawStation.nextStation
+      : rawStation.nextStation
+        ? [rawStation.nextStation]
+        : [];
+    const uniqueAdjacentIDs = [...new Set([...prevIDs, ...nextIDs])].filter(
+      (id) => id != null,
     );
 
-    // 同時讀取兩個檔案
-    const [imagesDataRaw, descriptionsDataRaw] = await Promise.all([
-      fs.readFile(imagesPath, "utf-8"),
-      fs.readFile(descPath, "utf-8"),
-    ]);
-
-    // 轉成物件 / 陣列
-    const imagesData = JSON.parse(imagesDataRaw);
-    const descriptionsData = JSON.parse(descriptionsDataRaw);
-
-    // 依 stationId 指定資料
-    station.images = imagesData[Number(params.stationId)] || [];
-    station.descriptions = descriptionsData[Number(params.stationId)] || [];
-
-    // 取得目前車站資料後，擴充去抓前後站
-    const prevIDs = Array.isArray(station.prevStation)
-      ? station.prevStation
-      : station.prevStation != null
-        ? [station.prevStation]
+    // 3. 抓取鄰近車站資料
+    const rawAdjacentStations =
+      uniqueAdjacentIDs.length > 0
+        ? await StationModel.find({ id: { $in: uniqueAdjacentIDs } }).lean()
         : [];
 
-    const nextIDs = Array.isArray(station.nextStation)
-      ? station.nextStation
-      : station.nextStation != null
-        ? [station.nextStation]
-        : [];
+    // 4. 資料標準化 (脫水處理)
+    const sanitizeStation = (s: any) => ({
+      ...s,
+      _id: s._id.toString(),
+      line: (Array.isArray(s.line) ? s.line : [s.line]).map((l: any) => ({
+        ...l,
+        _id: l._id?.toString(),
+        // 補強：處理 lineDistrict 如果是物件的情況
+        lineDistrict: l.lineDistrict,
+      })),
+      images: (s.images || []).map((img: any) => ({
+        ...img,
+        _id: img._id?.toString(),
+        capturedAt:
+          img.capturedAt instanceof Date
+            ? img.capturedAt.toISOString()
+            : img.capturedAt,
+      })),
+      prevStation: Array.isArray(s.prevStation)
+        ? s.prevStation
+        : s.prevStation
+          ? [s.prevStation]
+          : [],
+      nextStation: Array.isArray(s.nextStation)
+        ? s.nextStation
+        : s.nextStation
+          ? [s.nextStation]
+          : [],
+    });
 
-    const adjacentIDs = [...prevIDs, ...nextIDs];
+    const station = sanitizeStation(rawStation);
+    const adjacentStations = rawAdjacentStations.map(sanitizeStation);
 
-    // 去重處理
-    const uniqueAdjacentIDs = [...new Set(adjacentIDs)]
-      .filter((id) => id != null)
-      .map((id) => String(id)); // ✅ 加這行
-
-    // 只在有前後站時發 fetch
-    const adjacentStations: Station[] = uniqueAdjacentIDs.length
-      ? await fetch(
-          `http://localhost:9000/stations?${uniqueAdjacentIDs
-            .map((id) => `id=${id}`)
-            .join("&")}&_=${Date.now()}`,
-          { cache: "no-store" },
-        ).then((res) => res.json())
-      : [];
-    console.log(prevIDs);
-    console.log(nextIDs);
-    console.log(adjacentIDs);
-    console.log(uniqueAdjacentIDs);
-    console.log(adjacentStations);
-    await fetch("http://localhost:9000/stations")
-      .then((res) => res.json())
-      .then((data) => console.log(typeof data[0].id)); // ← 看看是 "number" 還是 "string"
-
-    // 確保 station.line 一定是陣列格式
-    const stationLines: StationLineInfo[] = Array.isArray(station.line)
-      ? station.line
-      : [station.line];
-
-    // 用標準化後的 stationLines 處理 matchedRailways
-    const matchedRailways = stationLines
-      .map((l) => railways.find((r) => Number(r.id) === Number(l.lineID)))
-      .filter((r): r is Line => r !== undefined);
-
-    console.log(stations);
-    console.log(station);
-    console.log(railways);
-    console.log(matchedRailways);
+    // 5. 匹配該車站所屬的路線資料 (同時脫水)
+    const matchedRailways = station.line
+      .map((l: any) =>
+        allRailways.find((r: any) => Number(r.id) === Number(l.lineID)),
+      )
+      .filter((r: any) => r !== undefined)
+      .map((r: any) => ({
+        ...r,
+        _id: r._id.toString(),
+        district: (r.district || []).map((d: any) => ({
+          ...d,
+          _id: d._id?.toString(),
+        })),
+      }));
 
     return (
       <StationClient
@@ -280,23 +138,14 @@ export default async function StationPage({
       />
     );
   } catch (e) {
-    const errorMsg =
-      e instanceof Error
-        ? e.message
-        : typeof e === "string"
-          ? e
-          : JSON.stringify(e);
-
-    console.error("Error loading station page:", errorMsg);
+    console.error("Station Page Error:", e);
     return (
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-6">
         <h1 className="text-3xl font-bold mb-4">🚧 發生錯誤</h1>
-        <p className="text-lg mb-6">
-          無法載入這個車站的資料，可能是伺服器或網路有問題。
-        </p>
+        <p className="text-lg mb-6">無法載入車站資料，請檢查資料庫連線。</p>
         <Link
           href="/"
-          className="px-4 py-2 bg-green-600 rounded hover:bg-green-500 active:bg-green-700 transition-colors"
+          className="px-4 py-2 bg-green-600 rounded hover:bg-green-500 transition-colors"
         >
           返回首頁
         </Link>

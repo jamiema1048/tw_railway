@@ -1,6 +1,6 @@
 import mongoose, { Schema, model, models } from "mongoose";
 
-const StationSchema = new Schema(
+export const StationSchema = new Schema(
   {
     id: { type: Number, required: true, unique: true },
     name: String,
@@ -9,11 +9,11 @@ const StationSchema = new Schema(
       enum: ["active", "disused", "plan"],
       default: "active",
     },
-    openDate: String,
-    closeDate: String,
-    originalName: String,
+    openDate: { type: [String], default: [] },
+    closeDate: { type: [String], default: [] },
+    originalName: { type: [String], default: [] },
     level: String,
-    miles: String,
+    miles: { type: [String], default: [] },
     height: String,
     stationCode: String,
     line: [

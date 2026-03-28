@@ -1,4 +1,7 @@
 import RailwayContentClient from "@/app/(client)/(railways)/(railway)/RailwayContentClient";
+import { getConnections } from "@/app/_lib/mongodb_connections";
+import { RailwaySchema } from "@/models/Railway"; // 確保你匯出的是 Schema 而非 Model
+import { StationSchema } from "@/models/Station";
 
 interface District {
   districtID: number;
@@ -53,39 +56,76 @@ interface Props {
 export default async function RailwayContentServer({ params }: Props) {
   try {
     const unwrappedParams = await params;
-    if (!unwrappedParams?.railwayId) {
-      return { notFound: true };
-    }
-    const railwayId = unwrappedParams.railwayId;
+    const railwayId = Number(unwrappedParams?.railwayId);
+    if (!railwayId) return <div>Invalid Railway ID</div>;
 
-    const [railwayRes, stationRes] = await Promise.all([
-      fetch("http://localhost:9000/railways"),
-      fetch("http://localhost:9000/stations"),
+    const { railwayConn, stationConn } = await getConnections();
+
+    const RailwayModel =
+      railwayConn.models.Railway || railwayConn.model("Railway", RailwaySchema);
+    const StationModel =
+      stationConn.models.Station || stationConn.model("Station", StationSchema);
+
+    const [railwayData, allStations] = await Promise.all([
+      RailwayModel.findOne({ id: railwayId }).lean(),
+      StationModel.find({ "line.lineID": railwayId }).lean(),
     ]);
 
-    if (!railwayRes.ok || !stationRes.ok) throw new Error("Fetch failed");
+    if (!railwayData) return <div>Railway Not Found</div>;
 
-    const allRailways: RailwayData[] = await railwayRes.json();
-    const stations: Station[] = await stationRes.json();
+    // 1. 處理單一物件 (Railway)
+    const serializedRailway = {
+      ...railwayData,
+      _id: railwayData._id.toString(),
+      // 如果 district 裡面也有 _id，也要處理
+      district: (railwayData.district || []).map((d: any) => ({
+        ...d,
+        _id: d._id?.toString(),
+      })),
+    };
 
-    const railway = allRailways.find(
-      (rwy) => Number(rwy.id) === Number(railwayId),
-    );
-
-    if (!railway) return { notFound: true };
-
-    const fixedStations = stations.map((s) => ({
+    // 2. 處理陣列 (Stations) - 在這裡就把所有「非純物件」轉掉
+    const serializedStations = allStations.map((s: any) => ({
       ...s,
-      line: Array.isArray(s.line) ? s.line : [s.line],
+      _id: s._id.toString(),
+      // 處理 line 陣列
+      line: (Array.isArray(s.line) ? s.line : s.line ? [s.line] : []).map(
+        (l: any) => ({
+          ...l,
+          _id: l._id?.toString(), // 子文件的 ObjectId 轉字串
+        }),
+      ),
+      // 處理前後站
+      prevStation: Array.isArray(s.prevStation)
+        ? s.prevStation
+        : s.prevStation
+          ? [s.prevStation]
+          : [],
+      nextStation: Array.isArray(s.nextStation)
+        ? s.nextStation
+        : s.nextStation
+          ? [s.nextStation]
+          : [],
+      // 處理圖片 (包含 Date 轉換)
+      images: (s.images || []).map((img: any) => ({
+        ...img,
+        _id: img._id?.toString(),
+        capturedAt:
+          img.capturedAt instanceof Date
+            ? img.capturedAt.toISOString()
+            : img.capturedAt,
+      })),
     }));
 
-    const filteredStations = fixedStations.filter((s) =>
-      s.line.some((l) => Number(l.lineID) === Number(railwayId)),
+    // 3. 直接回傳，不再需要 JSON.parse
+    return (
+      <RailwayContentClient
+        data={serializedRailway}
+        stations={serializedStations}
+      />
     );
-
-    return <RailwayContentClient data={railway} stations={filteredStations} />;
   } catch (error) {
-    console.error(error);
+    console.error("MongoDB Fetch Error:", error);
     return <div>Error loading railway data</div>;
   }
 }
