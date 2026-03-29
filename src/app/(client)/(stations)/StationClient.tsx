@@ -157,7 +157,7 @@ export default function StationClient({
                   <div className="image-container overflow-hidden rounded-lg">
                     <Image
                       src={img.url}
-                      alt={`${station.name} - ${idx}`}
+                      alt={`${img.description}`}
                       width={800}
                       height={600}
                       layout="intrinsic"
