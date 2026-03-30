@@ -187,12 +187,22 @@ export default async function StationPage({ params }: { params: PageParams }) {
     const sanitizeStation = (s: any) => ({
       ...s,
       _id: s._id.toString(),
-      line: (Array.isArray(s.line) ? s.line : [s.line]).map((l: any) => ({
-        ...l,
-        _id: l._id?.toString(),
-        // 補強：處理 lineDistrict 如果是物件的情況
-        lineDistrict: l.lineDistrict,
-      })),
+      line: (Array.isArray(s.line) ? s.line : s.line ? [s.line] : []).map(
+        (l: any) => ({
+          ...l,
+          _id: l._id?.toString(),
+
+          // ✨ 關鍵修正：處理 lineDistrict 陣列或物件中的 ObjectId
+          lineDistrict: Array.isArray(l.lineDistrict)
+            ? l.lineDistrict.map((d: any) => ({
+                ...d,
+                _id: d._id?.toString(), // 如果有 _id 就轉字串，沒有就 undefined
+              }))
+            : l.lineDistrict
+              ? { ...l.lineDistrict, _id: l.lineDistrict._id?.toString() }
+              : null,
+        }),
+      ),
       images: (s.images || []).map((img: any) => ({
         ...img,
         _id: img._id?.toString(),

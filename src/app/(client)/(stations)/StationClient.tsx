@@ -181,24 +181,24 @@ export default function StationClient({
         <div className="my-9">
           <h2 className="text-xl mt-6 mb-5 font-semibold">所屬路線：</h2>
           <ul className="list-disc pl-5">
-            {(Array.isArray(station.line) ? station.line : [station.line]).map(
-              (line) => {
-                const matchedRailway = railways.find(
-                  (r) => Number(r.id) === Number(line.lineID),
-                );
-                return (
-                  <Link
-                    key={line.lineID}
-                    href={`/railways/${line.lineID}`}
-                    className="bg-green-500 text-white hover:text-yellow-300 active:text-yellow-600 hover:bg-green-600 active:bg-green-800 active:shadow-green-400 active:scale-75 hover:scale-[1.05] p-4 rounded active:shadow-md mx-4 transition-all duration-200 ease-in-out"
-                  >
-                    {matchedRailway
-                      ? matchedRailway.name
-                      : `ID: ${line.lineID}`}
-                  </Link>
-                );
-              },
-            )}
+            {station.line.map((line) => {
+              // 1. 利用 find 找不到會回傳 undefined 的特性，搭配 || 做預設值
+              const railwayName =
+                railways.find((r) => Number(r.id) === Number(line.lineID))
+                  ?.name || `ID: ${line.lineID}`;
+
+              return (
+                <Link
+                  key={line.lineID}
+                  href={`/railways/${line.lineID}`}
+                  className="mx-4 p-4 rounded bg-green-500 text-white transition-all duration-200 ease-in-out 
+                 hover:bg-green-600 hover:text-yellow-300 hover:scale-[1.05] 
+                 active:bg-green-800 active:text-yellow-600 active:scale-75 active:shadow-md active:shadow-green-400"
+                >
+                  {railwayName}
+                </Link>
+              );
+            })}
           </ul>
         </div>
 

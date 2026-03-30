@@ -1,26 +1,8 @@
-import React from "react";
+import React, { useMemo } from "react";
 import Link from "next/link";
 import Loading from "@/app/(pages)/stations/[stationId]/loading";
 
-interface Props {
-  lineID: number;
-  lineData: Line; // eg. 縱貫線(基隆=新竹)
-  stations: Station[];
-}
-
-interface District {
-  districtID: number;
-  districtName: string;
-  prevArea?: number;
-  nextArea?: number;
-}
-
-interface Line {
-  id: number;
-  name: string;
-  district: District[];
-}
-
+// 修正後的介面定義，對齊你的 MongoDB Schema
 interface StationLineDistrictInfo {
   id: number;
   order: number;
@@ -28,142 +10,144 @@ interface StationLineDistrictInfo {
 
 interface StationLineInfo {
   lineID: number;
-  lineDistrict: number;
+  lineDistrict: StationLineDistrictInfo[]; // 現在是一個物件
 }
 
 interface Station {
   id: number;
   name: string;
+  status: "active" | "disused" | "plan";
+  hasDetail: boolean;
   line: StationLineInfo[];
+  _order?: number; // 暫時存放排序用
 }
 
-interface RailwayParams {
-  railwayId: string;
-}
-
-interface RailwayData {
-  id: number;
-  name: string;
-  district: District[];
-}
-
-interface RailwayContentProps {
-  params: Promise<RailwayParams> | RailwayParams;
-}
+// ... 其餘 Interface 保持不變
 
 const DistrictGroupedStations: React.FC<Props> = ({
   lineID,
   lineData,
   stations,
   loading,
-  setLoading,
 }) => {
-  // 先建立一個 map: districtID -> 所屬車站[]
-  const districtMap: Record<number, Station[]> = {};
+  // 使用 useMemo 處理複雜的分組與排序邏輯
+  const groupedStations = useMemo(() => {
+    const map: Record<number, Station[]> = {};
 
-  // 初始化每個區的 array
-  for (const district of lineData.district) {
-    districtMap[district.districtID] = [];
-    console.log(districtMap);
-  }
+    // 1. 初始化區塊
+    lineData.district.forEach((d) => {
+      map[d.districtID] = [];
+    });
 
-  // 將每個 station 依據 lineID 與 lineDistrict 加入對應區域
-  for (const station of stations) {
-    const stationLines = Array.isArray(station.line)
-      ? station.line
-      : [station.line];
-    for (const line of stationLines) {
-      console.log(line.lineID === lineID);
-      if (Number(line.lineID) === Number(lineID)) {
-        // 該車站屬於此 route 的某 district
-        const districts = Array.isArray(line.lineDistrict)
-          ? line.lineDistrict
-          : [line.lineDistrict];
-        for (const d of districts) {
-          const districtID = typeof d === "number" ? d : d.id;
-          const order =
-            typeof d === "number" ? Infinity : (d.order ?? Infinity);
-          if (districtMap[districtID]) {
-            districtMap[districtID].push({ ...station, _order: order });
-            console.log(`✅ 加入 ${station.name} 到區 ${d}`);
-          } else {
-            console.warn(
-              `⚠️ ${station.name} 指定的 lineDistrict ${districtID} 在 districtMap 裡不存在`,
-            );
-          }
+    // 2. 分發車站
+    stations.forEach((station) => {
+      const stationLines = Array.isArray(station.line)
+        ? station.line
+        : [station.line];
+
+      stationLines.forEach((l) => {
+        // 確保 lineID 匹配 (轉換成 Number 避免字串比對失敗)
+        if (Number(l.lineID) === Number(lineID)) {
+          const districts = Array.isArray(l.lineDistrict)
+            ? l.lineDistrict
+            : l.lineDistrict
+              ? [l.lineDistrict]
+              : [];
+          districts.forEach((dInfo) => {
+            // 支援兩種格式：純數字 ID 或 物件 { id, order }
+            const dID = typeof dInfo === "number" ? dInfo : dInfo?.id;
+            const order =
+              typeof dInfo === "number" ? Infinity : (dInfo?.order ?? Infinity);
+
+            // 檢查該區 ID 是否屬於目前 Railway 頁面定義的區間
+            if (map[dID]) {
+              // 💡 為了避免同一個站在同一區重複出現（雖然機率低），可以加檢查
+              // 但在這裡直接 push 是正確的，因為虎尾站可能在 District 1 出現，也在 District 2 出現
+              map[dID].push({ ...station, _order: order });
+            }
+          });
         }
-      } else {
-        console.log(
-          `❌ ${station.name} 的 lineID ${line.lineID} ≠ 頁面 lineID ${lineID}`,
-        );
-      }
-      console.log(lineData);
-    }
-    console.log(station);
-  }
-  // 加入排序邏輯
-  for (const districtID in districtMap) {
-    districtMap[districtID].sort((a, b) => a._order - b._order);
-  }
+      });
+    });
 
-  console.log("📦 props.lineID:", lineID);
-  console.log("📦 props.lineData:", lineData);
-  console.log("📦 props.stations:", stations);
-  console.log(districtMap.district);
+    // 3. 各區排序
+    Object.keys(map).forEach((id) => {
+      map[Number(id)].sort((a, b) => (a._order ?? 0) - (b._order ?? 0));
+    });
 
-  return loading ? (
-    <>
-      <Loading />
-    </>
-  ) : (
-    <div>
+    return map;
+  }, [lineID, lineData, stations]);
+
+  if (loading) return <Loading />;
+
+  return (
+    <div className="space-y-8">
       {lineData.district.map((district) => (
-        <div key={district.districtID} className="mb-6">
-          <h2 className="text-2xl font-bold mb-2">{district.districtName}</h2>
-          {district.prevArea ? (
-            <div>
-              <Link href={`/railways/${district.prevArea}`}>以上</Link>
+        <div
+          key={district.districtID}
+          className="border-l-2 border-gray-700 pl-4"
+        >
+          <h2 className="text-2xl font-bold mb-4 flex items-center gap-2">
+            <span className="w-3 h-3 bg-green-500 rounded-full"></span>
+            {district.districtName}
+          </h2>
+
+          {district.prevArea && (
+            <div className="mb-2">
+              <Link
+                href={`/railways/${district.prevArea}`}
+                className="text-blue-400 text-sm hover:underline"
+              >
+                ↑ 上接區段
+              </Link>
             </div>
-          ) : (
-            <></>
           )}
-          <ul className="list-disc pl-5">
-            {districtMap[district.districtID].length > 0 ? (
-              districtMap[district.districtID].map((station) => (
-                <li
-                  key={station.id}
-                  className={`ml-2 list-disc text-xl ${
-                    station.status === "active"
-                      ? "text-white"
-                      : station.status === "disused"
-                        ? "text-gray-400" // 灰色 + 斜體，避免過於顯眼
-                        : station.status === "planned"
-                          ? "text-blue-400 italic"
-                          : "text-gray-500 italic"
-                  } ${
-                    station.hasDetail
-                      ? "active:scale-95 hover:scale-[1.02]"
-                      : ""
-                  }`}
-                >
-                  {station.hasDetail ? (
-                    <Link href={`/stations/${station.id}`}>{station.name}</Link>
-                  ) : (
-                    <>{station.name}</>
-                  )}
+
+          <ul className="space-y-2">
+            {groupedStations[district.districtID]?.length > 0 ? (
+              groupedStations[district.districtID].map((station) => (
+                <li key={station.id} className="group">
+                  <div
+                    className={`text-xl transition-all ${
+                      station.status === "active"
+                        ? "text-white"
+                        : station.status === "disused"
+                          ? "text-gray-500 line-through"
+                          : "text-blue-400 italic"
+                    }`}
+                  >
+                    {station.hasDetail ? (
+                      <Link
+                        href={`/stations/${station.id}`}
+                        className="hover:text-green-400 hover:pl-2 transition-all block"
+                      >
+                        {station.name}
+                      </Link>
+                    ) : (
+                      <span className="opacity-70">
+                        {station.name} (無細節)
+                      </span>
+                    )}
+                  </div>
                 </li>
               ))
             ) : (
-              <li className="text-gray-500">（無車站）</li>
-            )}
-            {district.nextArea ? (
-              <div>
-                <Link href={`/railways/${district.nextArea}`}>以下</Link>
-              </div>
-            ) : (
-              <></>
+              <li className="text-gray-600 italic text-sm">
+                （此區段暫無車站資料）
+              </li>
             )}
           </ul>
+
+          {district.nextArea && (
+            <div className="mt-4">
+              <Link
+                href={`/railways/${district.nextArea}`}
+                className="text-blue-400 text-sm hover:underline"
+              >
+                ↓ 下接區段
+              </Link>
+            </div>
+          )}
         </div>
       ))}
     </div>

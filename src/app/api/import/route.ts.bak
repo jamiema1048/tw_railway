@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { connectToDatabase } from "@/app/_lib/mongodb_station";
+import { connectToStationDatabase } from "@/app/_lib/mongodb_station";
 import Station from "@/models/Station";
 import mongoose from "mongoose";
 
@@ -28603,7 +28603,7 @@ const photoNotes = {
 
 export async function GET() {
   try {
-    await connectToDatabase();
+    await connectToStationDatabase();
     const currentDb = mongoose.connection.name;
     console.log(`📡 連線資料庫: ${currentDb}`);
 
@@ -28637,12 +28637,37 @@ export async function GET() {
         };
       });
 
-      const rawLine = s.line;
-      const lineArray = Array.isArray(rawLine)
-        ? rawLine
-        : rawLine
-          ? [rawLine]
-          : [];
+      const lineArray = Array.isArray(s.line) ? s.line : s.line ? [s.line] : [];
+
+      const processedLine = lineArray.map((l: any) => {
+        // ✨ 核心修正：判斷 lineDistrict 是陣列還是單一物件
+        let districts = [];
+
+        if (Array.isArray(l.lineDistrict)) {
+          // 情況 A: 虎尾站那種陣列格式 [ {id:1, order:5}, {id:2, order:1} ]
+          districts = l.lineDistrict.map((d: any) => ({
+            id: Number(d.id || 0),
+            order: Number(d.order || 0),
+          }));
+        } else if (l.lineDistrict && typeof l.lineDistrict === "object") {
+          // 情況 B: 一般車站的單一物件格式 {id:1, order:1}
+          districts = [
+            {
+              id: Number(l.lineDistrict.id || 0),
+              order: Number(l.lineDistrict.order || 0),
+            },
+          ];
+        } else if (typeof l.lineDistrict === "number") {
+          // 情況 C: 極端情況，只有一個數字 (ID)
+          districts = [{ id: l.lineDistrict, order: 0 }];
+        }
+
+        return {
+          lineID: Number(l.lineID),
+          // 💡 這裡回傳的是陣列，對應 Schema 改成 [lineDistrictSchema]
+          lineDistrict: districts,
+        };
+      });
 
       return {
         id: Number(s.id),
@@ -28655,13 +28680,7 @@ export async function GET() {
         miles: s.miles || "",
         height: s.height || "",
         stationCode: s.stationCode || "",
-        line: lineArray.map((l: any) => ({
-          lineID: Number(l.lineID),
-          lineDistrict: {
-            id: Number(l.lineDistrict?.id || 0),
-            order: Number(l.lineDistrict?.order || 0),
-          },
-        })),
+        line: processedLine,
         prevStation: Array.isArray(s.prevStation)
           ? s.prevStation.map(Number)
           : s.prevStation

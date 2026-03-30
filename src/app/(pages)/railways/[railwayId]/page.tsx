@@ -92,7 +92,17 @@ export default async function RailwayContentServer({ params }: Props) {
       line: (Array.isArray(s.line) ? s.line : s.line ? [s.line] : []).map(
         (l: any) => ({
           ...l,
-          _id: l._id?.toString(), // 子文件的 ObjectId 轉字串
+          _id: l._id?.toString(),
+
+          // ✨ 關鍵修正：處理 lineDistrict 陣列或物件中的 ObjectId
+          lineDistrict: Array.isArray(l.lineDistrict)
+            ? l.lineDistrict.map((d: any) => ({
+                ...d,
+                _id: d._id?.toString(), // 如果有 _id 就轉字串，沒有就 undefined
+              }))
+            : l.lineDistrict
+              ? { ...l.lineDistrict, _id: l.lineDistrict._id?.toString() }
+              : null,
         }),
       ),
       // 處理前後站

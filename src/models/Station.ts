@@ -19,10 +19,13 @@ export const StationSchema = new Schema(
     line: [
       {
         lineID: { type: Number, required: true },
-        lineDistrict: {
-          id: { type: Number, required: true },
-          order: { type: Number, required: true },
-        },
+        // 將 lineDistrict 改為陣列
+        lineDistrict: [
+          {
+            id: { type: Number, required: true },
+            order: { type: Number, required: true },
+          },
+        ],
       },
     ],
     prevStation: { type: [Number], default: [] },
