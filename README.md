@@ -29,6 +29,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 1. Add photo & describtion
 2. Testing
 3. If UI/UX can be better, fix it
+4. Fix stattion area problem
 
 ## Learn More
 
