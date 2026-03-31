@@ -53,6 +53,78 @@ interface Props {
   params: RailwayParams | Promise<RailwayParams>;
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: PageParams;
+}): Promise<Metadata> {
+  try {
+    const unwrappedParams = await params;
+    const railwayId = Number(unwrappedParams?.railwayId);
+    if (!railwayId) return { title: "無效的路線 ID" };
+
+    const { railwayConn } = await getConnections();
+    const RailwayModel =
+      railwayConn.models.Railway || railwayConn.model("Railway", RailwaySchema);
+
+    // 1. 抓取路線資料
+    const railwayData = await RailwayModel.findOne({ id: railwayId }).lean();
+    if (!railwayData) return { title: "找不到路線資料" };
+
+    // 2. 營運單位對照表
+    const coMap: { [key: number]: string } = {
+      1: "台鐵",
+      2: "林鐵",
+      3: "糖鐵",
+      4: "",
+    };
+
+    const coName = coMap[railwayData.co] || "";
+    const systemPrefix = railwayData.systemName
+      ? `${railwayData.systemName}`
+      : "";
+
+    // 3. 動態建構標題 (Title)
+    // 範例：北港糖廠鐵道：嘉義線 | 路線沿革與車站列表
+    // 範例：台鐵縱貫線 | 鐵道路線資料庫
+    const title = systemPrefix
+      ? `${systemPrefix}${coName}：${railwayData.name} | 路線沿革與車站列表`
+      : `${coName}${railwayData.name} | 鐵道路線資料庫`;
+
+    // 4. 動態建構描述 (Description)
+    // 描述中加入起訖站或總長度（如果有資料的話）會更吸引點擊
+    const description = `${systemPrefix}${coName}${railwayData.name}的完整資料紀錄。收錄路線沿革、歷史背景以及所屬車站清單。提供鐵道迷與研究者精確的${railwayData.name}地理與探查資訊。`;
+
+    // 5. 動態建構關鍵字 (Keywords)
+    const keywords = [
+      railwayData.name,
+      coName,
+      systemPrefix,
+      "鐵道路線圖",
+      "路線沿革",
+      "車站列表",
+      "台灣鐵道紀錄",
+    ].filter(Boolean); // 過濾掉空字串
+    console.log({ title, description, keywords });
+
+    return {
+      title,
+      description,
+      keywords,
+      openGraph: {
+        title,
+        description,
+        type: "website",
+        // 如果路線有代表性地圖照片，可在此加入
+        // images: [{ url: railwayData.mapImageUrl }]
+      },
+    };
+  } catch (error) {
+    console.error("Railway Metadata error:", error);
+    return { title: "路線資料載入錯誤" };
+  }
+}
+
 export default async function RailwayContentServer({ params }: Props) {
   try {
     const unwrappedParams = await params;
