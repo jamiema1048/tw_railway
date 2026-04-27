@@ -1,4 +1,4 @@
-import mongoose, { Connection } from "mongoose";
+import mongoose, { Connection, ConnectOptions } from "mongoose";
 
 const RAILWAY_URI = process.env.MONGODB_RAILWAY_URI!;
 const STATION_URI = process.env.MONGODB_STATION_URI!;
@@ -13,20 +13,27 @@ interface MongooseCache {
   station: { conn: Connection | null; promise: Promise<Connection> | null };
 }
 
-// 2. 初始化全域快取
-let cached = (global as any).mongoose_multi as MongooseCache;
-
-if (!cached) {
-  cached = (global as any).mongoose_multi = {
-    railway: { conn: null, promise: null },
-    station: { conn: null, promise: null },
-  };
+// 2. 擴充全域物件型別，消除 (global as any)
+declare global {
+  // eslint-disable-next-line no-var
+  var mongoose_multi: MongooseCache | undefined;
 }
 
+// 3. 初始化全域快取 (使用字面量確保安全)
+
 export async function getConnections() {
-  const options = {
+  let cached = global.mongoose_multi;
+
+  if (!cached) {
+    cached = global.mongoose_multi = {
+      railway: { conn: null, promise: null },
+      station: { conn: null, promise: null },
+    };
+  }
+
+  const options: ConnectOptions = {
     bufferCommands: false,
-    // 在 Serverless 環境中，建議限制連線池大小，避免耗盡 MongoDB Atlas 額度
+    // 在 Serverless 環境中，建議限制連線池大小
     maxPoolSize: 10,
   };
 

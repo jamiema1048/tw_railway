@@ -12,14 +12,18 @@ interface RailwayCache {
   promise: Promise<Connection> | null;
 }
 
-// 初始化全域快取，避免 Serverless 重複連線
-let cached = (global as any).mongoose_railway as RailwayCache;
-
-if (!cached) {
-  cached = (global as any).mongoose_railway = { conn: null, promise: null };
+declare global {
+  // eslint-disable-next-line no-var
+  var mongoose_railway: RailwayCache | undefined;
 }
 
 export const connectToRailwayDatabase = async (): Promise<Connection> => {
+  let cached = global.mongoose_railway;
+
+  if (!cached) {
+    cached = global.mongoose_railway = { conn: null, promise: null };
+  }
+
   // 1. 如果已經有連線，直接回傳
   if (cached.conn) {
     return cached.conn;

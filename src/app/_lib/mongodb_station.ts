@@ -12,14 +12,18 @@ interface StationCache {
   promise: Promise<Connection> | null;
 }
 
-// 初始化全域快取，避免 Serverless 重複連線
-let cached = (global as any).mongoose_station as StationCache;
-
-if (!cached) {
-  cached = (global as any).mongoose_station = { conn: null, promise: null };
+declare global {
+  // eslint-disable-next-line no-var
+  var mongoose_station: StationCache | undefined;
 }
 
 export const connectToStationDatabase = async (): Promise<Connection> => {
+  let cached = global.mongoose_station;
+
+  if (!cached) {
+    cached = global.mongoose_station = { conn: null, promise: null };
+  }
+
   // 1. 如果已經有連線，直接回傳
   if (cached.conn) {
     return cached.conn;

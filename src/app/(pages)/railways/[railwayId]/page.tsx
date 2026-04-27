@@ -1,31 +1,41 @@
+import { Metadata } from "next";
+import { Types } from "mongoose"; // 用於定義 ObjectId
 import RailwayContentClient from "@/app/(client)/(railways)/(railway)/RailwayContentClient";
 import { getConnections } from "@/app/_lib/mongodb_connections";
-import { RailwaySchema } from "@/models/Railway"; // 確保你匯出的是 Schema 而非 Model
+import { RailwaySchema } from "@/models/Railway";
 import { StationSchema } from "@/models/Station";
 
-interface District {
+// --- 1. 基礎屬性介面 ---
+interface BaseDistrict {
   districtID: number;
   districtName: string;
   prevArea?: number;
   nextArea?: number;
 }
 
-interface Line {
-  id: number;
-  name: string;
-  co: number;
-  district: District[];
+// --- 2. 資料庫原始型別 (來自 .lean()) ---
+interface MongoDistrict extends BaseDistrict {
+  _id?: Types.ObjectId;
 }
 
-interface StationLineInfo {
-  lineID: number;
-  lineDistrict: number;
-}
-
-interface Station {
+interface MongoStation {
+  _id: Types.ObjectId;
   id: number;
   name: string;
   status: "active" | "disused" | "planned";
+  line: {
+    lineID: number;
+    lineDistrict: number | MongoDistrict | MongoDistrict[];
+    _id?: Types.ObjectId;
+  }[];
+  prevStation?: number[] | number;
+  nextStation?: number[] | number;
+  images?: {
+    _id?: Types.ObjectId;
+    url: string;
+    capturedAt?: Date | string;
+  }[];
+  // 補上其他可能缺少的欄位
   openDate?: string;
   closeDate?: string;
   originalName?: string;
@@ -33,25 +43,22 @@ interface Station {
   miles?: string;
   height?: string;
   stationCode?: string;
-  line: StationLineInfo[] | StationLineInfo;
-  prevStation?: number[] | number;
-  nextStation?: number[] | number;
   hasDetail?: boolean;
 }
 
-interface RailwayData {
+interface MongoRailway {
+  _id: Types.ObjectId;
   id: number;
   name: string;
-  district: District[];
+  co: number;
+  systemName?: string;
+  district: MongoDistrict[];
 }
 
-interface RailwayParams {
-  railwayId: string;
-}
+// --- 3. 轉化後傳給 Client 的型別 (純字串化) ---
+// 這裡直接複用你原本 Client 端的 Interface，但確保 _id 都是 string
 
-interface Props {
-  params: RailwayParams | Promise<RailwayParams>;
-}
+type PageParams = Promise<{ railwayId: string }>;
 
 export async function generateMetadata({
   params,
@@ -59,76 +66,72 @@ export async function generateMetadata({
   params: PageParams;
 }): Promise<Metadata> {
   try {
-    const unwrappedParams = await params;
-    const railwayId = Number(unwrappedParams?.railwayId);
-    if (!railwayId) return { title: "無效的路線 ID" };
+    // Await params (Next.js 15 必備)
+    const { railwayId: rawId } = await params;
+    const railwayId = Number(rawId);
+
+    if (isNaN(railwayId)) {
+      return { title: "無效的路線 ID" };
+    }
 
     const { railwayConn } = await getConnections();
     const RailwayModel =
       railwayConn.models.Railway || railwayConn.model("Railway", RailwaySchema);
 
-    // 1. 抓取路線資料
-    const railwayData = await RailwayModel.findOne({ id: railwayId }).lean();
-    if (!railwayData) return { title: "找不到路線資料" };
+    // 關鍵修正：透過斷言或泛型告訴 TS 這是 MongoRailway 結構
+    // 使用 lean<MongoRailway>() 或是 as MongoRailway | null
+    const railwayData = (await RailwayModel.findOne({
+      id: railwayId,
+    }).lean()) as MongoRailway | null;
 
-    // 2. 營運單位對照表
-    const coMap: { [key: number]: string } = {
+    if (!railwayData) {
+      return { title: "找不到路線資料" };
+    }
+
+    // 3. 營運單位對照
+    const coMap: Record<number, string> = {
       1: "台鐵",
       2: "林鐵",
       3: "糖鐵",
       4: "",
     };
 
+    // 此時 railwayData 已經有型別提示，不會有 any 報錯
     const coName = coMap[railwayData.co] || "";
-    const systemPrefix = railwayData.systemName
-      ? `${railwayData.systemName}`
-      : "";
+    const systemPrefix = railwayData.systemName || "";
 
-    // 3. 動態建構標題 (Title)
-    // 範例：北港糖廠鐵道：嘉義線 | 路線沿革與車站列表
-    // 範例：台鐵縱貫線 | 鐵道路線資料庫
     const title = systemPrefix
       ? `${systemPrefix}${coName}：${railwayData.name} | 路線沿革與車站列表`
       : `${coName}${railwayData.name} | 鐵道路線資料庫`;
 
-    // 4. 動態建構描述 (Description)
-    // 描述中加入起訖站或總長度（如果有資料的話）會更吸引點擊
-    const description = `${systemPrefix}${coName}${railwayData.name}的完整資料紀錄。收錄路線沿革、歷史背景以及所屬車站清單。提供鐵道迷與研究者精確的${railwayData.name}地理與探查資訊。`;
-
-    // 5. 動態建構關鍵字 (Keywords)
-    const keywords = [
-      railwayData.name,
-      coName,
-      systemPrefix,
-      "鐵道路線圖",
-      "路線沿革",
-      "車站列表",
-      "台灣鐵道紀錄",
-    ].filter(Boolean); // 過濾掉空字串
-    console.log({ title, description, keywords });
+    const description = `${systemPrefix}${coName}${railwayData.name}的完整資料紀錄。收錄路線沿革、歷史背景以及所屬車站清單。`;
 
     return {
       title,
       description,
-      keywords,
       openGraph: {
         title,
         description,
         type: "website",
-        // 如果路線有代表性地圖照片，可在此加入
-        // images: [{ url: railwayData.mapImageUrl }]
       },
+      // 建議也補上 keywords
+      keywords: [railwayData.name, coName, "鐵道資料庫"].filter(Boolean),
     };
   } catch (error) {
-    console.error("Railway Metadata error:", error);
+    // 部署時建議打印更詳細的錯誤到 log
+    console.error("Metadata Generation Error:", error);
     return { title: "路線資料載入錯誤" };
   }
 }
 
-export default async function RailwayContentServer({ params }: Props) {
+export default async function RailwayContentServer({
+  params,
+}: {
+  params: Promise<{ railwayId: string }>;
+}) {
   try {
-    const unwrappedParams = await params;
-    const railwayId = Number(unwrappedParams?.railwayId);
+    const { railwayId: rawId } = await params;
+    const railwayId = Number(rawId);
     if (!railwayId) return <div>Invalid Railway ID</div>;
 
     const { railwayConn, stationConn } = await getConnections();
@@ -138,46 +141,44 @@ export default async function RailwayContentServer({ params }: Props) {
     const StationModel =
       stationConn.models.Station || stationConn.model("Station", StationSchema);
 
-    const [railwayData, allStations] = await Promise.all([
-      RailwayModel.findOne({ id: railwayId }).lean(),
-      StationModel.find({ "line.lineID": railwayId }).lean(),
-    ]);
+    // 強型別化查詢結果
+    const rawRailway = (await RailwayModel.findOne({
+      id: railwayId,
+    }).lean()) as MongoRailway | null;
+    const rawStations = (await StationModel.find({
+      "line.lineID": railwayId,
+    }).lean()) as MongoStation[];
 
-    if (!railwayData) return <div>Railway Not Found</div>;
+    if (!rawRailway) return <div>Railway Not Found</div>;
 
-    // 1. 處理單一物件 (Railway)
+    // --- 序列化處理 (Serialization) ---
+
     const serializedRailway = {
-      ...railwayData,
-      _id: railwayData._id.toString(),
-      // 如果 district 裡面也有 _id，也要處理
-      district: (railwayData.district || []).map((d: any) => ({
+      ...rawRailway,
+      _id: rawRailway._id.toString(),
+      district: (rawRailway.district || []).map((d) => ({
         ...d,
         _id: d._id?.toString(),
       })),
     };
 
-    // 2. 處理陣列 (Stations) - 在這裡就把所有「非純物件」轉掉
-    const serializedStations = allStations.map((s: any) => ({
+    const serializedStations = rawStations.map((s) => ({
       ...s,
       _id: s._id.toString(),
-      // 處理 line 陣列
-      line: (Array.isArray(s.line) ? s.line : s.line ? [s.line] : []).map(
-        (l: any) => ({
-          ...l,
-          _id: l._id?.toString(),
-
-          // ✨ 關鍵修正：處理 lineDistrict 陣列或物件中的 ObjectId
-          lineDistrict: Array.isArray(l.lineDistrict)
-            ? l.lineDistrict.map((d: any) => ({
-                ...d,
-                _id: d._id?.toString(), // 如果有 _id 就轉字串，沒有就 undefined
-              }))
-            : l.lineDistrict
-              ? { ...l.lineDistrict, _id: l.lineDistrict._id?.toString() }
-              : null,
-        }),
-      ),
-      // 處理前後站
+      // 處理 line 陣列及其嵌套的 lineDistrict
+      line: s.line.map((l) => ({
+        ...l,
+        _id: l._id?.toString(),
+        lineDistrict: Array.isArray(l.lineDistrict)
+          ? l.lineDistrict.map((d) => ({ ...d, _id: d._id?.toString() }))
+          : typeof l.lineDistrict === "object" && l.lineDistrict !== null
+            ? {
+                ...l.lineDistrict,
+                _id: (l.lineDistrict as MongoDistrict)._id?.toString(),
+              }
+            : l.lineDistrict, // 如果是 number 則直接回傳
+      })),
+      // 確保前後站為陣列
       prevStation: Array.isArray(s.prevStation)
         ? s.prevStation
         : s.prevStation
@@ -188,8 +189,8 @@ export default async function RailwayContentServer({ params }: Props) {
         : s.nextStation
           ? [s.nextStation]
           : [],
-      // 處理圖片 (包含 Date 轉換)
-      images: (s.images || []).map((img: any) => ({
+      // 處理圖片與日期
+      images: (s.images || []).map((img) => ({
         ...img,
         _id: img._id?.toString(),
         capturedAt:
