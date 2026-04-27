@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { TitleProvider } from "./(context)/title/TitleContext";
 
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <TitleProvider>{children}</TitleProvider>
+        <GoogleAnalytics gaId="G-F6DTZKT38J" />
       </body>
     </html>
   );
