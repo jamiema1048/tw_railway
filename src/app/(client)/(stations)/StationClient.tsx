@@ -22,12 +22,6 @@ import { Station, StationLineDistrict, RailwayData } from "@/types/railway";
 //   district: District[];
 // }
 
-// 1. 定義 line 內部的結構
-interface StationLineDistrict {
-  id: number;
-  order: number;
-}
-
 // interface StationLineInfo {
 //   lineID: number;
 //   lineDistrict: StationLineDistrict;
@@ -79,7 +73,7 @@ export default function StationClient({
   railways,
   adjacentStations,
 }: {
-  station: Station[];
+  station: Station;
   railways: RailwayData[];
   adjacentStations: Station[];
 }) {

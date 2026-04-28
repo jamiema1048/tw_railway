@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 import { Geist, Geist_Mono } from "next/font/google";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
@@ -23,7 +23,9 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
-export default function RootLayout({ children }: RootLayoutProps): JSX.Element {
+export default function RootLayout({
+  children,
+}: RootLayoutProps): React.ReactElement {
   return (
     <html lang="en">
       <body

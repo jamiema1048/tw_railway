@@ -132,7 +132,7 @@ export default async function RailwayContentServer({
         closeDate: Array.isArray(s.closeDate) ? s.closeDate : [],
         originalName: Array.isArray(s.originalName) ? s.originalName : [],
         level: s.level || "",
-        miles: s.miles || "",
+        miles: Array.isArray(s.miles) ? s.miles : [],
         height: s.height || "",
         stationCode: s.stationCode || "",
         hasDetail: !!s.hasDetail,

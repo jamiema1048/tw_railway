@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import Link from "next/link";
 import Loading from "@/app/(pages)/stations/[stationId]/loading";
-import { Station, StationLineDistrict, RailwayData } from "@/types/railway";
+import { Station, RailwayData } from "@/types/railway";
 
 // // 修正後的介面定義，對齊你的 MongoDB Schema
 // interface StationLineDistrictInfo {

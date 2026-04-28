@@ -31,7 +31,7 @@ export interface Station {
   closeDate: string[];
   originalName: string[];
   level: string;
-  miles: string;
+  miles: string[];
   height: string;
   stationCode: string;
   line: StationLine[];
@@ -57,20 +57,20 @@ export interface RailwayData {
 }
 
 // --- D. 伺服器端專用的原始 MongoDB 型別 (給 .lean() 使用) ---
-// export interface MongoStation extends Omit<Station, "_id" | "line" | "images"> {
-//   _id: Types.ObjectId;
-//   line: {
-//     lineID: number;
-//     lineDistrict: number | any | any[]; // 這裡用 any 僅限於描述資料庫可能的混雜情況
-//     _id?: Types.ObjectId;
-//   }[];
-//   images?: {
-//     _id?: Types.ObjectId;
-//     url?: string;
-//     description?: string;
-//     capturedAt?: Date | string;
-//   }[];
-// }
+export interface MongoStation extends Omit<Station, "_id" | "line" | "images"> {
+  _id: Types.ObjectId;
+  line: {
+    lineID: number;
+    lineDistrict: number; // 資料庫可能很亂
+    _id?: Types.ObjectId;
+  }[];
+  images?: {
+    _id?: Types.ObjectId;
+    url?: string;
+    description?: string;
+    capturedAt?: Date | string; // 資料庫可能是 Date
+  }[];
+}
 
 // export interface MongoRailway extends Omit<RailwayData, "_id" | "district"> {
 //   _id: Types.ObjectId;

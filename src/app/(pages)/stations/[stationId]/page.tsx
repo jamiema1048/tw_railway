@@ -11,7 +11,15 @@ import {
   StationLineDistrict,
   StationLine,
   RailwayData,
+  MongoStation,
 } from "@/types/railway";
+
+interface MongoRawDistrict {
+  id?: number;
+  districtID?: number;
+  order?: number;
+  _id?: import("mongoose").Types.ObjectId;
+}
 
 interface BaseDistrict {
   districtID: number;
@@ -25,33 +33,33 @@ interface MongoDistrict extends BaseDistrict {
   _id?: Types.ObjectId;
 }
 
-interface MongoStation {
-  _id: Types.ObjectId;
-  id: number;
-  name: string;
-  status: "active" | "disused" | "plan";
-  line: {
-    lineID: number;
-    lineDistrict: number | MongoDistrict | MongoDistrict[];
-    _id?: Types.ObjectId;
-  }[];
-  prevStation?: number[] | number;
-  nextStation?: number[] | number;
-  images?: {
-    _id?: Types.ObjectId;
-    url: string;
-    capturedAt?: Date | string;
-  }[];
-  // 補上其他可能缺少的欄位
-  openDate?: string;
-  closeDate?: string;
-  originalName?: string;
-  level?: string;
-  miles?: string;
-  height?: string;
-  stationCode?: string;
-  hasDetail?: boolean;
-}
+// interface MongoStation {
+//   _id: Types.ObjectId;
+//   id: number;
+//   name: string;
+//   status: "active" | "disused" | "plan";
+//   line: {
+//     lineID: number;
+//     lineDistrict: number | MongoDistrict | MongoDistrict[];
+//     _id?: Types.ObjectId;
+//   }[];
+//   prevStation?: number[] | number;
+//   nextStation?: number[] | number;
+//   images?: {
+//     _id?: Types.ObjectId;
+//     url: string;
+//     capturedAt?: Date | string;
+//   }[];
+//   // 補上其他可能缺少的欄位
+//   openDate?: string;
+//   closeDate?: string;
+//   originalName?: string;
+//   level?: string;
+//   miles?: string;
+//   height?: string;
+//   stationCode?: string;
+//   hasDetail?: boolean;
+// }
 
 // interface MongoRailway {
 //   _id: Types.ObjectId;
@@ -147,7 +155,7 @@ export default async function StationPage({ params }: { params: PageParams }) {
     const [rawStation, allRailways] = await Promise.all([
       StationModel.findOne({
         id: stationId,
-      }).lean() as Promise<Station | null>,
+      }).lean() as Promise<MongoStation | null>,
       RailwayModel.find({}).lean() as Promise<RailwayData[]>,
     ]);
 
@@ -168,70 +176,103 @@ export default async function StationPage({ params }: { params: PageParams }) {
       uniqueAdjacentIDs.length > 0
         ? ((await StationModel.find({
             id: { $in: uniqueAdjacentIDs },
-          }).lean()) as Station[])
+          }).lean()) as MongoStation[])
         : [];
 
     // --- 強型別化脫水函式 ---
-    const sanitizeStation = (s: Station[]) => ({
-      ...s,
-      _id: s._id.toString(),
-      line: s.line.map((l): StationLine => {
-        let normalized: StationLineDistrict[] = [];
+    const sanitizeStation = (s: MongoStation): Station => {
+      return {
+        // 這裡不使用 ...s 是為了確保屬性轉換過程 100% 型別安全
+        _id: s._id.toString(),
+        id: s.id,
+        name: s.name,
+        status: s.status,
+        openDate: Array.isArray(s.openDate) ? s.openDate : [],
+        closeDate: Array.isArray(s.closeDate) ? s.closeDate : [],
+        originalName: Array.isArray(s.originalName) ? s.originalName : [],
+        level: s.level || "",
+        miles: Array.isArray(s.miles) ? s.miles : [],
+        height: s.height || "",
+        stationCode: s.stationCode || "",
+        hasDetail: !!s.hasDetail,
 
-        // 1. 處理陣列情況
-        if (Array.isArray(l.lineDistrict)) {
-          normalized = l.lineDistrict.map((d): StationLineDistrict => {
-            if (typeof d === "number") {
-              return { id: d, order: 999 };
-            }
-            // 將 d 斷言為我們定義的 Raw 結構，但不使用 any
-            const dObj = d as MongoRawDistrict;
-            return {
-              id: dObj.id ?? dObj.districtID ?? 0, // 優先取 id，若無則取 districtID
-              order: dObj.order ?? 999,
-              _id: dObj._id?.toString(),
-            };
-          });
-        }
-        // 2. 處理單一數字情況
-        else if (typeof l.lineDistrict === "number") {
-          normalized = [{ id: l.lineDistrict, order: 999 }];
-        }
-        // 3. 處理單一物件情況
-        else if (
-          l.lineDistrict !== null &&
-          typeof l.lineDistrict === "object"
-        ) {
-          const dObj = l.lineDistrict as MongoRawDistrict;
-          normalized = [
-            {
-              id: dObj.id ?? dObj.districtID ?? 0,
-              order: dObj.order ?? 999,
-              _id: dObj._id?.toString(),
-            },
-          ];
-        }
+        // 處理 line 陣列及其嵌套結構
+        line: s.line.map((l): StationLine => {
+          let normalized: StationLineDistrict[] = [];
 
-        return {
-          lineID: l.lineID,
-          lineDistrict: normalized,
-          _id: l._id?.toString(),
-        };
-      }),
-      images: (s.images || []).map((img) => ({
-        ...img,
-        _id: img._id?.toString(),
-        capturedAt:
-          img.capturedAt instanceof Date
-            ? img.capturedAt.toISOString()
-            : img.capturedAt,
-      })),
-      prevStation: toArr(s.prevStation),
-      nextStation: toArr(s.nextStation),
-    });
+          if (Array.isArray(l.lineDistrict)) {
+            normalized = l.lineDistrict.map((d): StationLineDistrict => {
+              if (typeof d === "number") return { id: d, order: 999 };
+
+              // 使用我們先前定義的內部介面 MongoRawDistrict 進行斷言，避開 any
+              const dObj = d as MongoRawDistrict;
+              return {
+                id: dObj.id ?? dObj.districtID ?? 0,
+                order: dObj.order ?? 999,
+                _id: dObj._id?.toString(),
+              };
+            });
+          } else if (typeof l.lineDistrict === "number") {
+            normalized = [{ id: l.lineDistrict, order: 999 }];
+          } else if (
+            l.lineDistrict !== null &&
+            typeof l.lineDistrict === "object"
+          ) {
+            const dObj = l.lineDistrict as MongoRawDistrict;
+            normalized = [
+              {
+                id: dObj.id ?? dObj.districtID ?? 0,
+                order: dObj.order ?? 999,
+                _id: dObj._id?.toString(),
+              },
+            ];
+          }
+
+          return {
+            lineID: l.lineID,
+            lineDistrict: normalized,
+            _id: l._id?.toString(),
+          };
+        }),
+
+        // 處理圖片
+        images: (s.images || []).map((img) => {
+          // 1. 處理 capturedAt：確保產出 Date (如果介面要求 Date)
+          // 或 string (如果介面要求 string)。
+          // 根據你的報錯 "assignable to Date"，你的介面目前應該是 Date。
+          let finalDate: Date;
+          if (img.capturedAt instanceof Date) {
+            finalDate = img.capturedAt;
+          } else if (
+            typeof img.capturedAt === "string" &&
+            img.capturedAt !== ""
+          ) {
+            finalDate = new Date(img.capturedAt);
+          } else {
+            finalDate = new Date(); // 或者給一個預設日期
+          }
+
+          return {
+            // 2. 處理 _id：報錯說不能是 undefined，所以給空字串作為 fallback
+            _id: img._id?.toString() || "",
+
+            // 3. 處理 url 與 description：確保不是 undefined
+            url: img.url || "",
+            description: img.description || "",
+
+            capturedAt: finalDate, // 這裡現在是確定的 Date 物件
+          };
+        }),
+
+        // 使用 toArr 確保型別為 number[]
+        prevStation: toArr(s.prevStation),
+        nextStation: toArr(s.nextStation),
+      };
+    };
 
     const station = sanitizeStation(rawStation);
-    const adjacentStations = rawAdjacentStations.map(sanitizeStation);
+    const adjacentStations: Station[] =
+      rawAdjacentStations.map(sanitizeStation);
 
     // 匹配路線資料
     const matchedRailways = station.line
