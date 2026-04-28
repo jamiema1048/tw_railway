@@ -6,40 +6,34 @@ import Head from "next/head";
 import Footer from "@/app/(components)/(footer)/footer";
 import Loading from "@/app/(pages)/railways/[railwayId]/loading";
 import NotFound from "@/app/(pages)/railways/[railwayId]/not-found";
+import { Station, StationLineDistrict, RailwayData } from "@/types/railway";
 
-interface District {
-  districtID: number;
-  districtName: string;
-  prevArea?: number;
-  nextArea?: number;
-}
+// interface District {
+//   districtID: number;
+//   districtName: string;
+//   prevArea?: number;
+//   nextArea?: number;
+// }
 
-interface Line {
-  id: number;
-  name: string;
-  co: number;
-  district: District[];
-}
+// interface StationLineInfo {
+//   lineID: number;
+//   lineDistrict: number;
+// }
 
-interface StationLineInfo {
-  lineID: number;
-  lineDistrict: number;
-}
+// interface Station {
+//   id: number;
+//   name: string;
+//   status: "active" | "disused" | "plan";
+//   line: StationLineInfo[];
+//   prevStation?: number[] | number;
+//   nextStation?: number[] | number;
+// }
 
-interface Station {
-  id: number;
-  name: string;
-  status: "active" | "disused" | "planned";
-  line: StationLineInfo[];
-  prevStation?: number[] | number;
-  nextStation?: number[] | number;
-}
-
-interface RailwayData {
-  id: number;
-  name: string;
-  district: District[];
-}
+// interface RailwayData {
+//   id: number;
+//   name: string;
+//   district: District[];
+// }
 
 interface Props {
   data: RailwayData;

@@ -6,20 +6,21 @@ import Footer from "@/app/(components)/(footer)/footer";
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import { Station, StationLineDistrict, RailwayData } from "@/types/railway";
 
-interface District {
-  districtID: number;
-  districtName: string;
-  prevArea?: number;
-  nextArea?: number;
-}
+// interface District {
+//   districtID: number;
+//   districtName: string;
+//   prevArea?: number;
+//   nextArea?: number;
+// }
 
-interface Line {
-  id: number;
-  name: string;
-  co: number;
-  district: District[];
-}
+// interface Line {
+//   id: number;
+//   name: string;
+//   co: number;
+//   district: District[];
+// }
 
 // 1. 定義 line 內部的結構
 interface StationLineDistrict {
@@ -27,59 +28,59 @@ interface StationLineDistrict {
   order: number;
 }
 
-interface StationLineInfo {
-  lineID: number;
-  lineDistrict: StationLineDistrict;
-}
+// interface StationLineInfo {
+//   lineID: number;
+//   lineDistrict: StationLineDistrict;
+// }
 
-// 2. 定義圖片的詳細結構
-interface StationImage {
-  _id?: string; // MongoDB 自動產生的 ID
-  url: string;
-  description?: string;
-  capturedAt?: string | Date; // Server 端是 Date，傳到 Client 會變 ISO 字串
-}
+// // 2. 定義圖片的詳細結構
+// interface StationImage {
+//   _id?: string; // MongoDB 自動產生的 ID
+//   url: string;
+//   description?: string;
+//   capturedAt?: string | Date; // Server 端是 Date，傳到 Client 會變 ISO 字串
+// }
 
 // 3. 主介面 Station
-interface Station {
-  _id?: string; // MongoDB 的唯一識別碼 (脫水後為字串)
-  id: number;
-  name: string;
-  status: "active" | "disused" | "plan"; // 配合 Schema 的 enum
+// interface Station {
+//   _id?: string; // MongoDB 的唯一識別碼 (脫水後為字串)
+//   id: number;
+//   name: string;
+//   status: "active" | "disused" | "plan"; // 配合 Schema 的 enum
 
-  // 以下皆改為陣列格式，移除問號（因為有 default: []）
-  openDate: string[];
-  closeDate: string[];
-  originalName: string[];
-  miles: string[];
+//   // 以下皆改為陣列格式，移除問號（因為有 default: []）
+//   openDate: string[];
+//   closeDate: string[];
+//   originalName: string[];
+//   miles: string[];
 
-  level?: string;
-  height?: string;
-  stationCode?: string;
+//   level?: string;
+//   height?: string;
+//   stationCode?: string;
 
-  line: StationLineInfo[];
+//   line: StationLineInfo[];
 
-  // 前後站統一為數字陣列
-  prevStation: number[];
-  nextStation: number[];
+//   // 前後站統一為數字陣列
+//   prevStation: number[];
+//   nextStation: number[];
 
-  hasDetail: boolean;
+//   hasDetail: boolean;
 
-  // 圖片結構更新
-  images: StationImage[];
+//   // 圖片結構更新
+//   images: StationImage[];
 
-  // timestamps 自動生成的欄位
-  createdAt?: string;
-  updatedAt?: string;
-}
+//   // timestamps 自動生成的欄位
+//   createdAt?: string;
+//   updatedAt?: string;
+// }
 
 export default function StationClient({
   station,
   railways,
   adjacentStations,
 }: {
-  station: Station;
-  railways: Line[];
+  station: Station[];
+  railways: RailwayData[];
   adjacentStations: Station[];
 }) {
   const { title, setTitle } = useContext(TitleContext);

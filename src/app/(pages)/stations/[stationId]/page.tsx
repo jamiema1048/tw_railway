@@ -6,6 +6,12 @@ import StationClient from "@/app/(client)/(stations)/StationClient";
 import { getConnections } from "@/app/_lib/mongodb_connections";
 import { RailwaySchema } from "@/models/Railway";
 import { StationSchema } from "@/models/Station";
+import {
+  Station,
+  StationLineDistrict,
+  StationLine,
+  RailwayData,
+} from "@/types/railway";
 
 interface BaseDistrict {
   districtID: number;
@@ -23,7 +29,7 @@ interface MongoStation {
   _id: Types.ObjectId;
   id: number;
   name: string;
-  status: "active" | "disused" | "planned";
+  status: "active" | "disused" | "plan";
   line: {
     lineID: number;
     lineDistrict: number | MongoDistrict | MongoDistrict[];
@@ -47,14 +53,14 @@ interface MongoStation {
   hasDetail?: boolean;
 }
 
-interface MongoRailway {
-  _id: Types.ObjectId;
-  id: number;
-  name: string;
-  co: number;
-  systemName?: string;
-  district: MongoDistrict[];
-}
+// interface MongoRailway {
+//   _id: Types.ObjectId;
+//   id: number;
+//   name: string;
+//   co: number;
+//   systemName?: string;
+//   district: MongoDistrict[];
+// }
 // 定義 Params 的型別，這在 Next.js 15 是 Promise
 type PageParams = Promise<{ stationId: string }>;
 
@@ -77,14 +83,14 @@ export async function generateMetadata({
 
     const stationData = (await StationModel.findOne({
       id: stationId,
-    }).lean()) as MongoStation | null;
+    }).lean()) as Station | null;
     if (!stationData) return { title: "找不到車站" };
 
     // 處理多路線
     const lineIDs = stationData.line.map((l) => l.lineID);
     const railways = (await RailwayModel.find({
       id: { $in: lineIDs },
-    }).lean()) as MongoRailway[];
+    }).lean()) as RailwayData[];
     const allLineNames = railways.map((r) => r.name).join("、");
 
     const displayOpenDate = stationData.openDate?.[0] || "資料暫缺";
@@ -141,8 +147,8 @@ export default async function StationPage({ params }: { params: PageParams }) {
     const [rawStation, allRailways] = await Promise.all([
       StationModel.findOne({
         id: stationId,
-      }).lean() as Promise<MongoStation | null>,
-      RailwayModel.find({}).lean() as Promise<MongoRailway[]>,
+      }).lean() as Promise<Station | null>,
+      RailwayModel.find({}).lean() as Promise<RailwayData[]>,
     ]);
 
     if (!rawStation) notFound();
@@ -162,25 +168,56 @@ export default async function StationPage({ params }: { params: PageParams }) {
       uniqueAdjacentIDs.length > 0
         ? ((await StationModel.find({
             id: { $in: uniqueAdjacentIDs },
-          }).lean()) as MongoStation[])
+          }).lean()) as Station[])
         : [];
 
     // --- 強型別化脫水函式 ---
-    const sanitizeStation = (s: MongoStation) => ({
+    const sanitizeStation = (s: Station[]) => ({
       ...s,
       _id: s._id.toString(),
-      line: s.line.map((l) => ({
-        ...l,
-        _id: l._id?.toString(),
-        lineDistrict: Array.isArray(l.lineDistrict)
-          ? l.lineDistrict.map((d) => ({ ...d, _id: d._id?.toString() }))
-          : typeof l.lineDistrict === "object" && l.lineDistrict !== null
-            ? {
-                ...l.lineDistrict,
-                _id: (l.lineDistrict as MongoDistrict)._id?.toString(),
-              }
-            : l.lineDistrict,
-      })),
+      line: s.line.map((l): StationLine => {
+        let normalized: StationLineDistrict[] = [];
+
+        // 1. 處理陣列情況
+        if (Array.isArray(l.lineDistrict)) {
+          normalized = l.lineDistrict.map((d): StationLineDistrict => {
+            if (typeof d === "number") {
+              return { id: d, order: 999 };
+            }
+            // 將 d 斷言為我們定義的 Raw 結構，但不使用 any
+            const dObj = d as MongoRawDistrict;
+            return {
+              id: dObj.id ?? dObj.districtID ?? 0, // 優先取 id，若無則取 districtID
+              order: dObj.order ?? 999,
+              _id: dObj._id?.toString(),
+            };
+          });
+        }
+        // 2. 處理單一數字情況
+        else if (typeof l.lineDistrict === "number") {
+          normalized = [{ id: l.lineDistrict, order: 999 }];
+        }
+        // 3. 處理單一物件情況
+        else if (
+          l.lineDistrict !== null &&
+          typeof l.lineDistrict === "object"
+        ) {
+          const dObj = l.lineDistrict as MongoRawDistrict;
+          normalized = [
+            {
+              id: dObj.id ?? dObj.districtID ?? 0,
+              order: dObj.order ?? 999,
+              _id: dObj._id?.toString(),
+            },
+          ];
+        }
+
+        return {
+          lineID: l.lineID,
+          lineDistrict: normalized,
+          _id: l._id?.toString(),
+        };
+      }),
       images: (s.images || []).map((img) => ({
         ...img,
         _id: img._id?.toString(),
@@ -199,7 +236,7 @@ export default async function StationPage({ params }: { params: PageParams }) {
     // 匹配路線資料
     const matchedRailways = station.line
       .map((l) => allRailways.find((r) => r.id === l.lineID))
-      .filter((r): r is MongoRailway => r !== undefined)
+      .filter((r): r is RailwayData => r !== undefined)
       .map((r) => ({
         ...r,
         _id: r._id.toString(),

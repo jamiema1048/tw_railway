@@ -1,38 +1,52 @@
 import React, { useMemo } from "react";
 import Link from "next/link";
 import Loading from "@/app/(pages)/stations/[stationId]/loading";
+import { Station, StationLineDistrict, RailwayData } from "@/types/railway";
 
-// 修正後的介面定義，對齊你的 MongoDB Schema
-interface StationLineDistrictInfo {
-  id: number;
-  order: number;
-}
+// // 修正後的介面定義，對齊你的 MongoDB Schema
+// interface StationLineDistrictInfo {
+//   id: number;
+//   order: number;
+// }
 
-interface StationLineInfo {
-  lineID: number;
-  lineDistrict: StationLineDistrictInfo[]; // 現在是一個物件
-}
+// interface StationLineInfo {
+//   lineID: number;
+//   lineDistrict: StationLineDistrictInfo[]; // 現在是一個物件
+// }
 
-interface Station {
-  id: number;
-  name: string;
-  status: "active" | "disused" | "plan";
-  hasDetail: boolean;
-  line: StationLineInfo[];
-  _order?: number; // 暫時存放排序用
-}
+// interface Station {
+//   id: number;
+//   name: string;
+//   status: "active" | "disused" | "plan";
+//   hasDetail: boolean;
+//   line: StationLineInfo[];
+//   _order?: number; // 暫時存放排序用
+// }
 
 // ... 其餘 Interface 保持不變
 
-const DistrictGroupedStations: React.FC<Props> = ({
+interface DistrictGroupedStationsProps {
+  lineID: number; // 補上這個
+  lineData: RailwayData; // 補上這個
+  stations: Station[]; // 補上這個
+  loading: boolean; // 補上這個
+  setLoading: React.Dispatch<React.SetStateAction<boolean>>; // 補上這個
+}
+
+interface OrderedStation extends Station {
+  _order: number;
+}
+
+const DistrictGroupedStations: React.FC<DistrictGroupedStationsProps> = ({
   lineID,
   lineData,
   stations,
   loading,
+  setLoading,
 }) => {
   // 使用 useMemo 處理複雜的分組與排序邏輯
   const groupedStations = useMemo(() => {
-    const map: Record<number, Station[]> = {};
+    const map: Record<number, OrderedStation[]> = {};
 
     // 1. 初始化區塊
     lineData.district.forEach((d) => {
